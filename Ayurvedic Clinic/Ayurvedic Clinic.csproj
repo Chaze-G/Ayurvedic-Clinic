@@ -52,7 +52,9 @@
     <Compile Include="Frontend\Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frontend\Forms\SuggestionRow.cs" />
+    <Compile Include="Frontend\Forms\SuggestionRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Frontend\Forms\SuggestionRow.Designer.cs">
       <DependentUpon>SuggestionRow.cs</DependentUpon>
     </Compile>
