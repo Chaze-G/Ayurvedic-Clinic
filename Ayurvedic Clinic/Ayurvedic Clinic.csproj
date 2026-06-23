@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1638678D-3DD9-4818-9CD8-71CFDEB28EF5}</ProjectGuid>
+    <ProjectGuid>{C9D9CCC3-D32F-BE45-597A-854409EB9BC7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Ayurvedic_Clinic</RootNamespace>
     <AssemblyName>Ayurvedic Clinic</AssemblyName>
@@ -46,8 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frontend\Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frontend\Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,7 +84,6 @@
     <Folder Include="Backend\Services\" />
     <Folder Include="Database\" />
     <Folder Include="Frontend\Components\" />
-    <Folder Include="Frontend\Forms\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

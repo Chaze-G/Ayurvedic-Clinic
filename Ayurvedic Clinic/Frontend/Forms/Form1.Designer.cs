@@ -64,6 +64,7 @@
             this.flpSuggestions.Size = new System.Drawing.Size(1711, 590);
             this.flpSuggestions.TabIndex = 1;
             this.flpSuggestions.WrapContents = false;
+            this.flpSuggestions.Paint += new System.Windows.Forms.PaintEventHandler(this.flpSuggestions_Paint);
             // 
             // lblTitle
             // 

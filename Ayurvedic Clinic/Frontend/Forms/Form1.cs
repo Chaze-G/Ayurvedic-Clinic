@@ -74,5 +74,10 @@ namespace Ayurveda_project_final
             
             MessageBox.Show("Load more suggestions here (e.g. next page from DB).");
         }
+
+        private void flpSuggestions_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

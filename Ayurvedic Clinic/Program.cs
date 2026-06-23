@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ayurveda_project_final;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,12 @@ namespace Ayurvedic_Clinic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new unique());
+            
+            
+            Application.Run(new Form1());
+           
+            
+           
         }
     }
 }
