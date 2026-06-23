@@ -1,6 +1,6 @@
 ﻿namespace Ayurveda_project_final
 {
-    partial class Form1
+    partial class Uniquefeature
     {
 
         private System.ComponentModel.IContainer components = null;

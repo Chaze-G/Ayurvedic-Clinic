@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Ayurveda_project_final
 {
-    public partial class Form1 : Form
+    public partial class Uniquefeature : Form
     {
         private List<SuggestionRow> rows = new List<SuggestionRow>();
 
-        public Form1()
+        public Uniquefeature()
         {
             InitializeComponent();
             LoadSuggestions();
