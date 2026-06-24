@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9D9CCC3-D32F-BE45-597A-854409EB9BC7}</ProjectGuid>
+    <ProjectGuid>{1638678D-3DD9-4818-9CD8-71CFDEB28EF5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Ayurvedic_Clinic</RootNamespace>
     <AssemblyName>Ayurvedic Clinic</AssemblyName>
@@ -33,9 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
-    </Reference>
+    <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -60,13 +58,6 @@
     <Compile Include="Frontend\Forms\PatientsHistory.Designer.cs">
       <DependentUpon>PatientsHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frontend\Forms\MedicalPharmacy.resx">
-      <DependentUpon>MedicalPharmacy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\Forms\PatientsHistory.resx">
-      <DependentUpon>PatientsHistory.cs</DependentUpon>
     <Compile Include="Frontend\Forms\ChildRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +84,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frontend\Forms\MedicalPharmacy.resx">
+      <DependentUpon>MedicalPharmacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\PatientsHistory.resx">
+      <DependentUpon>PatientsHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frontend\Forms\ChildRegistration.resx">
       <DependentUpon>ChildRegistration.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,8 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2026-06-23 at 11.47.31.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\WhatsApp Image 2026-06-23 at 11.47.311.jpeg" />
     <None Include="Resources\img by madusha.jpeg" />
     <None Include="Resources\new.png" />
