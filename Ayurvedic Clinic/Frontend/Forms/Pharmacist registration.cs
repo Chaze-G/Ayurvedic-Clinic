@@ -21,5 +21,10 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void Pharmacist_registration_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
