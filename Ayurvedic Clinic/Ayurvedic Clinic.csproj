@@ -46,26 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frontend\Forms\Uniquefeature.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\Forms\Uniquefeature.Designer.cs">
-      <DependentUpon>Uniquefeature.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\Forms\SuggestionRow.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Frontend\Forms\SuggestionRow.Designer.cs">
-      <DependentUpon>SuggestionRow.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frontend\Forms\Uniquefeature.resx">
-      <DependentUpon>Uniquefeature.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\Forms\SuggestionRow.resx">
-      <DependentUpon>SuggestionRow.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -93,6 +75,7 @@
     <Folder Include="Backend\Services\" />
     <Folder Include="Database\" />
     <Folder Include="Frontend\Components\" />
+    <Folder Include="Frontend\Forms\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
