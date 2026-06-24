@@ -66,6 +66,9 @@ namespace Ayurvedic_Clinic.Properties {
         internal static System.Drawing.Bitmap _new {
             get {
                 object obj = ResourceManager.GetObject("new", resourceCulture);
+        internal static System.Drawing.Bitmap Background_img {
+            get {
+                object obj = ResourceManager.GetObject("Background img", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +79,9 @@ namespace Ayurvedic_Clinic.Properties {
         internal static System.Drawing.Bitmap img_by_madusha {
             get {
                 object obj = ResourceManager.GetObject("img by madusha", resourceCulture);
+        internal static System.Drawing.Bitmap background_img_3 {
+            get {
+                object obj = ResourceManager.GetObject("background img 3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
