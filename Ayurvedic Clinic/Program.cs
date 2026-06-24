@@ -1,4 +1,5 @@
-﻿using Ayurveda_project_final;
+﻿using Ayurvedic_Clinic;
+using project_test;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace Ayurvedic_Clinic
             Application.SetCompatibleTextRenderingDefault(false);
             
             
-            Application.Run(new Uniquefeature());
+            Application.Run(new uf ());
            
             
            

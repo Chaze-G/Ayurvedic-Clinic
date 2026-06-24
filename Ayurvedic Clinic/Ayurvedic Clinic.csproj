@@ -46,8 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frontend\Forms\uf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\uf.Designer.cs">
+      <DependentUpon>uf.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frontend\Forms\uf.resx">
+      <DependentUpon>uf.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,8 +84,18 @@
     <Folder Include="Backend\Services\" />
     <Folder Include="Database\" />
     <Folder Include="Frontend\Components\" />
-    <Folder Include="Frontend\Forms\" />
-    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Gemini_Generated_Image_6wriyq6wriyq6wri.png" />
+    <Content Include="Resources\Gemini_Generated_Image_77i7mo77i7mo77i7.png" />
+    <Content Include="Resources\Gemini_Generated_Image_77i7mo77i7mo77i71.png" />
+    <Content Include="Resources\Gemini_Generated_Image_77i7mo77i7mo77i72.png" />
+    <Content Include="Resources\Gemini_Generated_Image_dsbs87dsbs87dsbs.png" />
+    <Content Include="Resources\Gemini_Generated_Image_my30fwmy30fwmy30.png" />
+    <Content Include="Resources\Gemini_Generated_Image_xomrawxomrawxomr.png" />
+    <Content Include="Resources\project background.jpeg" />
+    <Content Include="Resources\project background1.jpeg" />
+    <Content Include="Resources\reized image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
