@@ -240,7 +240,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.WhatsApp_Image_2026_06_23_at_11_47_31;
-            this.ClientSize = new System.Drawing.Size(812, 516);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(801, 687);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
