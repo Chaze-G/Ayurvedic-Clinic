@@ -17,6 +17,8 @@ namespace Ayurvedic_Clinic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MedicalPharmacy());
+            Application.Run(new PatientsHistory());
 
             Application.Run(new DoctorRegistor());
             Application.Run(new ChildRegistration());
