@@ -17,8 +17,13 @@ namespace Ayurvedic_Clinic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+januka
+            Application.Run(new DoctorRegistor());
+            Application.Run(new ChildRegistration());
+
             Application.Run(new Login());
             Application.Run(new AdminDashboard());
+ Test-Branch
         }
     }
 }
