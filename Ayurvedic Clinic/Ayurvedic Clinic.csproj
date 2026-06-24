@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frontend\Forms\ChildRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\ChildRegistration.Designer.cs">
+      <DependentUpon>ChildRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frontend\Forms\DoctorRegistor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frontend\Forms\ChildRegistration.resx">
+      <DependentUpon>ChildRegistration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frontend\Forms\DoctorRegistor.resx">
       <DependentUpon>DoctorRegistor.cs</DependentUpon>
     </EmbeddedResource>
