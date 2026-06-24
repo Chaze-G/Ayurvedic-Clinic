@@ -16,7 +16,9 @@ namespace Ayurvedic_Clinic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new pharmasist_registration());
+            Application.Run(new doctor_prescription());
+            Application.Run(new Patient_registration());
         }
     }
 }
