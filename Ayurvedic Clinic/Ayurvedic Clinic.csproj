@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -86,16 +87,7 @@
     <Folder Include="Frontend\Components\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Gemini_Generated_Image_6wriyq6wriyq6wri.png" />
-    <Content Include="Resources\Gemini_Generated_Image_77i7mo77i7mo77i7.png" />
-    <Content Include="Resources\Gemini_Generated_Image_77i7mo77i7mo77i71.png" />
-    <Content Include="Resources\Gemini_Generated_Image_77i7mo77i7mo77i72.png" />
-    <Content Include="Resources\Gemini_Generated_Image_dsbs87dsbs87dsbs.png" />
-    <Content Include="Resources\Gemini_Generated_Image_my30fwmy30fwmy30.png" />
-    <Content Include="Resources\Gemini_Generated_Image_xomrawxomrawxomr.png" />
-    <Content Include="Resources\project background.jpeg" />
-    <Content Include="Resources\project background1.jpeg" />
-    <Content Include="Resources\reized image.png" />
+    <None Include="Resources\Background image by pabasara.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

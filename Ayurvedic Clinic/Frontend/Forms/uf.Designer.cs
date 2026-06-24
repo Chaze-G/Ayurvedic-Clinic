@@ -222,7 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Gemini_Generated_Image_77i7mo77i7mo77i72;
+            this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_image_by_pabasara;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(867, 733);
             this.Controls.Add(this.label1);
