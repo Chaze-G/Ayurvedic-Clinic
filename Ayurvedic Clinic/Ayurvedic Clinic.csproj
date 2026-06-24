@@ -74,6 +74,61 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frontend\Forms\Pharmacist registration.resx">
       <DependentUpon>Pharmacist registration.cs</DependentUpon>
+    <Compile Include="Frontend\Forms\MedicalPharmacy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\MedicalPharmacy.Designer.cs">
+      <DependentUpon>MedicalPharmacy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\PatientsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\PatientsHistory.Designer.cs">
+      <DependentUpon>PatientsHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\ChildRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\ChildRegistration.Designer.cs">
+      <DependentUpon>ChildRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\DoctorRegistor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\DoctorRegistor.Designer.cs">
+      <DependentUpon>DoctorRegistor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frontend\Forms\MedicalPharmacy.resx">
+      <DependentUpon>MedicalPharmacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\PatientsHistory.resx">
+      <DependentUpon>PatientsHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\ChildRegistration.resx">
+      <DependentUpon>ChildRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\DoctorRegistor.resx">
+      <DependentUpon>DoctorRegistor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +161,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Background img.png" />
+    <None Include="Resources\WhatsApp Image 2026-06-23 at 11.47.31.jpeg" />
+    <None Include="Resources\WhatsApp Image 2026-06-23 at 11.47.311.jpeg" />
+    <None Include="Resources\img by madusha.jpeg" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\Background img.png" />
+    <None Include="Resources\background img 3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
