@@ -266,7 +266,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(246)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.ClientSize = new System.Drawing.Size(1001, 799);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
