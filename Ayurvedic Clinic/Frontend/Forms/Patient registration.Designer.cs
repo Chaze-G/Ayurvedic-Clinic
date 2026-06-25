@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ComboBox cmbGender;
             this.btnNext = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.cmbGender = new System.Windows.Forms.ComboBox();
             this.txtAllergies = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
@@ -43,6 +43,8 @@
             this.txtPatientName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            cmbGender = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnNext
@@ -69,17 +71,17 @@
             // 
             // cmbGender
             // 
-            this.cmbGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Items.AddRange(new object[] {
+            cmbGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            cmbGender.FormattingEnabled = true;
+            cmbGender.Items.AddRange(new object[] {
             "Male",
-            "Female",
-            "Other"});
-            this.cmbGender.Location = new System.Drawing.Point(234, 315);
-            this.cmbGender.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(473, 24);
-            this.cmbGender.TabIndex = 28;
+            "Female"});
+            cmbGender.Location = new System.Drawing.Point(234, 315);
+            cmbGender.Margin = new System.Windows.Forms.Padding(4);
+            cmbGender.Name = "cmbGender";
+            cmbGender.Size = new System.Drawing.Size(473, 24);
+            cmbGender.TabIndex = 28;
+            cmbGender.SelectedIndexChanged += new System.EventHandler(this.cmbGender_SelectedIndexChanged);
             // 
             // txtAllergies
             // 
@@ -198,6 +200,14 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "SUWA SEWANA  - Patient Registration  Form\r\n\r\n\r\n\r\n\r\n";
             // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox2.Location = new System.Drawing.Point(716, 41);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(164, 22);
+            this.textBox2.TabIndex = 31;
+            // 
             // Patient_registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,9 +215,10 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(892, 681);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.cmbGender);
+            this.Controls.Add(cmbGender);
             this.Controls.Add(this.txtAllergies);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtAddress);
@@ -232,7 +243,6 @@
 
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.ComboBox cmbGender;
         private System.Windows.Forms.TextBox txtAllergies;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtAddress;
@@ -245,5 +255,6 @@
         private System.Windows.Forms.TextBox txtPatientName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

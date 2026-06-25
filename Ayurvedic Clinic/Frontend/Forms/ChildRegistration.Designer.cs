@@ -46,6 +46,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.crgenderfemaleradiobut = new System.Windows.Forms.RadioButton();
             this.crgendermaleradiobut = new System.Windows.Forms.RadioButton();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@
             // crnametxt
             // 
             this.crnametxt.Location = new System.Drawing.Point(220, 206);
-            this.crnametxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crnametxt.Margin = new System.Windows.Forms.Padding(4);
             this.crnametxt.Name = "crnametxt";
             this.crnametxt.Size = new System.Drawing.Size(399, 22);
             this.crnametxt.TabIndex = 2;
@@ -85,7 +86,7 @@
             // crcontctnumbertxt
             // 
             this.crcontctnumbertxt.Location = new System.Drawing.Point(220, 274);
-            this.crcontctnumbertxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crcontctnumbertxt.Margin = new System.Windows.Forms.Padding(4);
             this.crcontctnumbertxt.Name = "crcontctnumbertxt";
             this.crcontctnumbertxt.Size = new System.Drawing.Size(399, 22);
             this.crcontctnumbertxt.TabIndex = 4;
@@ -115,7 +116,7 @@
             // cragetxt
             // 
             this.cragetxt.Location = new System.Drawing.Point(220, 311);
-            this.cragetxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cragetxt.Margin = new System.Windows.Forms.Padding(4);
             this.cragetxt.Name = "cragetxt";
             this.cragetxt.Size = new System.Drawing.Size(399, 22);
             this.cragetxt.TabIndex = 8;
@@ -133,7 +134,7 @@
             // cradresstxt
             // 
             this.cradresstxt.Location = new System.Drawing.Point(220, 385);
-            this.cradresstxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cradresstxt.Margin = new System.Windows.Forms.Padding(4);
             this.cradresstxt.Name = "cradresstxt";
             this.cradresstxt.Size = new System.Drawing.Size(399, 22);
             this.cradresstxt.TabIndex = 10;
@@ -151,7 +152,7 @@
             // crallergiestxt
             // 
             this.crallergiestxt.Location = new System.Drawing.Point(220, 422);
-            this.crallergiestxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crallergiestxt.Margin = new System.Windows.Forms.Padding(4);
             this.crallergiestxt.Name = "crallergiestxt";
             this.crallergiestxt.Size = new System.Drawing.Size(399, 22);
             this.crallergiestxt.TabIndex = 12;
@@ -169,7 +170,7 @@
             // crguardianidtxt
             // 
             this.crguardianidtxt.Location = new System.Drawing.Point(220, 238);
-            this.crguardianidtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crguardianidtxt.Margin = new System.Windows.Forms.Padding(4);
             this.crguardianidtxt.Name = "crguardianidtxt";
             this.crguardianidtxt.Size = new System.Drawing.Size(399, 22);
             this.crguardianidtxt.TabIndex = 14;
@@ -193,7 +194,7 @@
             this.crenterbut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.crenterbut.ForeColor = System.Drawing.Color.MintCream;
             this.crenterbut.Location = new System.Drawing.Point(280, 503);
-            this.crenterbut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crenterbut.Margin = new System.Windows.Forms.Padding(4);
             this.crenterbut.Name = "crenterbut";
             this.crenterbut.Size = new System.Drawing.Size(227, 38);
             this.crenterbut.TabIndex = 15;
@@ -206,9 +207,9 @@
             this.groupBox1.Controls.Add(this.crgenderfemaleradiobut);
             this.groupBox1.Controls.Add(this.crgendermaleradiobut);
             this.groupBox1.Location = new System.Drawing.Point(220, 343);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(261, 34);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
@@ -217,7 +218,7 @@
             // 
             this.crgenderfemaleradiobut.AutoSize = true;
             this.crgenderfemaleradiobut.Location = new System.Drawing.Point(149, 9);
-            this.crgenderfemaleradiobut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crgenderfemaleradiobut.Margin = new System.Windows.Forms.Padding(4);
             this.crgenderfemaleradiobut.Name = "crgenderfemaleradiobut";
             this.crgenderfemaleradiobut.Size = new System.Drawing.Size(74, 20);
             this.crgenderfemaleradiobut.TabIndex = 1;
@@ -230,13 +231,21 @@
             // 
             this.crgendermaleradiobut.AutoSize = true;
             this.crgendermaleradiobut.Location = new System.Drawing.Point(32, 9);
-            this.crgendermaleradiobut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crgendermaleradiobut.Margin = new System.Windows.Forms.Padding(4);
             this.crgendermaleradiobut.Name = "crgendermaleradiobut";
             this.crgendermaleradiobut.Size = new System.Drawing.Size(58, 20);
             this.crgendermaleradiobut.TabIndex = 0;
             this.crgendermaleradiobut.TabStop = true;
             this.crgendermaleradiobut.Text = "Male";
             this.crgendermaleradiobut.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox2.Location = new System.Drawing.Point(595, 31);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(164, 22);
+            this.textBox2.TabIndex = 17;
             // 
             // ChildRegistration
             // 
@@ -245,6 +254,7 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.img_by_madusha;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(783, 786);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.crenterbut);
             this.Controls.Add(this.crguardianidtxt);
@@ -261,7 +271,7 @@
             this.Controls.Add(this.crnametxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChildRegistration";
             this.Text = "Chidld registration form";
             this.Load += new System.EventHandler(this.ChildRegistration_Load);
@@ -292,5 +302,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton crgenderfemaleradiobut;
         private System.Windows.Forms.RadioButton crgendermaleradiobut;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

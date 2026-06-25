@@ -21,5 +21,10 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void cmbGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
