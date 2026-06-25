@@ -8,17 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using Ayurvedic_Clinic.Frontend.Forms;
 
 namespace project_test
 {
     public partial class uf : Form
     {
+        private doctor_prescription prescriptionForm;
         Dictionary <string, string> prescriptions= new Dictionary <string, string> ();
         string currentPackage = "";
         Label lastSelectedLabel = null;
-        public uf()
+        public uf(doctor_prescription form)
         {
             InitializeComponent();
+            prescriptionForm = form;
         }
 
         
@@ -35,91 +38,56 @@ namespace project_test
 
         }
 
-        private void btnAddMedicine_Click(object sender, EventArgs e)
-        {
-            string selectedPacks = "";
-
-            if (ufbut2.Checked)
-                selectedPacks += "Back Pain Care Pack\n";
-
-            if (ufbut3.Checked)
-                selectedPacks += "Bowel Care Pack\n";
-
-            if (ufbut4.Checked)
-                selectedPacks += "Cough Care Pack\n";
-
-            if (ufbut5.Checked)
-                selectedPacks += "Diabetic Care Pack\n";
-
-            if (ufbut6.Checked)
-                selectedPacks += "Digestive Care Pack\n";
-
-            if (ufbut7.Checked)
-                selectedPacks += "Fever Care Pack\n";
-
-            if (ufbut8.Checked)
-                selectedPacks += "Gastric Relief Pack\n";
-
-            if (ufbut9.Checked)
-                selectedPacks += "Skin Care Pack\n";
-
-            if (ufbut10.Checked)
-                selectedPacks += "Sleep Support Pack\n";
-
-            
-
-            MessageBox.Show(selectedPacks);
-        }
-
-        
-            private void btnAddPrescription2_Click(object sender, EventArgs e)
+        private void btnAddPrescription2_Click(object sender, EventArgs e)
         {
             string prescription = "";
 
             if (ufbut1.Checked)
-                prescription += "• Back Pain Care Pack\n";
+                prescription += "• Back Pain Care Pack\r\n";
 
             if (ufbut2.Checked)
-                prescription += "• Bowel Care Pack\n";
+                prescription += "• Bowel Care Pack\r\n";
 
             if (ufbut3.Checked)
-                prescription += "• Cough Care Pack\n";
+                prescription += "• Cough Care Pack\r\n";
 
             if (ufbut4.Checked)
-                prescription += "• Diabetic Care Pack\n";
+                prescription += "• Diabetic Care Pack\r\n";
 
             if (ufbut5.Checked)
-                prescription += "• Digestive Care Pack\n";
+                prescription += "• Digestive Care Pack\r\n";
 
             if (ufbut6.Checked)
-                prescription += "• Fever Care Pack\n";
+                prescription += "• Fever Care Pack\r\n";
 
             if (ufbut7.Checked)
-                prescription += "• Gastric Relief Pack\n";
+                prescription += "• Gastric Relief Pack\r\n";
 
             if (ufbut8.Checked)
-                prescription += "• Skin Care Pack\n";
+                prescription += "• Skin Care Pack\r\n";
 
             if (ufbut9.Checked)
-                prescription += "• Sleep Support Pack\n";
+                prescription += "• Sleep Support Pack\r\n";
 
             if (ufbut10.Checked)
-                prescription += "• Urinary Care Pack\n";
+                prescription += "• Urinary Care Pack\r\n";
 
             if (prescription == "")
             {
-                MessageBox.Show("Please select at least one medicine pack.",
-                                "No Selection",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
+                MessageBox.Show("Please select at least one medicine pack.");
+                return;
             }
-            else
-            {
-                MessageBox.Show("Prescription:\n\n" + prescription,
-                                "Selected Medicine Packs",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
-            }
+
+            prescriptionForm.AddMedicinePack(prescription);
+
+            this.Close();
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MedicalPharmacy form2 = new Ayurvedic_Clinic.Frontend.Forms.MedicalPharmacy();
+            form2.Show();
         }
 
         private void uf_Load(object sender, EventArgs e)
@@ -129,7 +97,10 @@ namespace project_test
 
         private void ufbut1_CheckedChanged(object sender, EventArgs e)
         {
-
+            // Replace 'yourDoctorPrescriptionInstance' with your actual doctor_prescription object
+            // var yourDoctorPrescriptionInstance = ...;
+            // project_test.uf form = new project_test.uf(yourDoctorPrescriptionInstance);
+            // form.ShowDialog();
         }
     }
     }
