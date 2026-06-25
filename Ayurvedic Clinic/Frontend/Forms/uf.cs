@@ -39,31 +39,31 @@ namespace project_test
         {
             string selectedPacks = "";
 
-            if (checkBox1.Checked)
+            if (ufbut2.Checked)
                 selectedPacks += "Back Pain Care Pack\n";
 
-            if (checkBox2.Checked)
+            if (ufbut3.Checked)
                 selectedPacks += "Bowel Care Pack\n";
 
-            if (checkBox3.Checked)
+            if (ufbut4.Checked)
                 selectedPacks += "Cough Care Pack\n";
 
-            if (checkBox4.Checked)
+            if (ufbut5.Checked)
                 selectedPacks += "Diabetic Care Pack\n";
 
-            if (checkBox5.Checked)
+            if (ufbut6.Checked)
                 selectedPacks += "Digestive Care Pack\n";
 
-            if (checkBox6.Checked)
+            if (ufbut7.Checked)
                 selectedPacks += "Fever Care Pack\n";
 
-            if (checkBox7.Checked)
+            if (ufbut8.Checked)
                 selectedPacks += "Gastric Relief Pack\n";
 
-            if (checkBox8.Checked)
+            if (ufbut9.Checked)
                 selectedPacks += "Skin Care Pack\n";
 
-            if (checkBox9.Checked)
+            if (ufbut10.Checked)
                 selectedPacks += "Sleep Support Pack\n";
 
             
@@ -76,34 +76,34 @@ namespace project_test
         {
             string prescription = "";
 
-            if (chkCompleted.Checked)
+            if (ufbut1.Checked)
                 prescription += "• Back Pain Care Pack\n";
 
-            if (checkBox1.Checked)
+            if (ufbut2.Checked)
                 prescription += "• Bowel Care Pack\n";
 
-            if (checkBox2.Checked)
+            if (ufbut3.Checked)
                 prescription += "• Cough Care Pack\n";
 
-            if (checkBox3.Checked)
+            if (ufbut4.Checked)
                 prescription += "• Diabetic Care Pack\n";
 
-            if (checkBox4.Checked)
+            if (ufbut5.Checked)
                 prescription += "• Digestive Care Pack\n";
 
-            if (checkBox5.Checked)
+            if (ufbut6.Checked)
                 prescription += "• Fever Care Pack\n";
 
-            if (checkBox6.Checked)
+            if (ufbut7.Checked)
                 prescription += "• Gastric Relief Pack\n";
 
-            if (checkBox7.Checked)
+            if (ufbut8.Checked)
                 prescription += "• Skin Care Pack\n";
 
-            if (checkBox8.Checked)
+            if (ufbut9.Checked)
                 prescription += "• Sleep Support Pack\n";
 
-            if (checkBox9.Checked)
+            if (ufbut10.Checked)
                 prescription += "• Urinary Care Pack\n";
 
             if (prescription == "")

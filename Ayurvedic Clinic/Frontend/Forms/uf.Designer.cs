@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uf));
-            this.btnAddPrescription = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.IbIMedicines = new System.Windows.Forms.Label();
             this.IbIPackName = new System.Windows.Forms.Label();
-            this.chkCompleted = new System.Windows.Forms.CheckBox();
+            this.ufbut1 = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -62,15 +61,15 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.ufbut2 = new System.Windows.Forms.CheckBox();
+            this.ufbut3 = new System.Windows.Forms.CheckBox();
+            this.ufbut4 = new System.Windows.Forms.CheckBox();
+            this.ufbut5 = new System.Windows.Forms.CheckBox();
+            this.ufbut6 = new System.Windows.Forms.CheckBox();
+            this.ufbut7 = new System.Windows.Forms.CheckBox();
+            this.ufbut8 = new System.Windows.Forms.CheckBox();
+            this.ufbut9 = new System.Windows.Forms.CheckBox();
+            this.ufbut10 = new System.Windows.Forms.CheckBox();
             this.btnAddPrescription2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -83,13 +82,6 @@
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnAddPrescription
-            // 
-            this.btnAddPrescription.Location = new System.Drawing.Point(0, 0);
-            this.btnAddPrescription.Name = "btnAddPrescription";
-            this.btnAddPrescription.Size = new System.Drawing.Size(75, 23);
-            this.btnAddPrescription.TabIndex = 35;
             // 
             // label1
             // 
@@ -136,14 +128,14 @@
             this.IbIPackName.Text = "Back Pain Care Pack";
             this.IbIPackName.Click += new System.EventHandler(this.IbIPackName_Click);
             // 
-            // chkCompleted
+            // ufbut1
             // 
-            this.chkCompleted.BackColor = System.Drawing.Color.Transparent;
-            this.chkCompleted.Location = new System.Drawing.Point(625, 81);
-            this.chkCompleted.Name = "chkCompleted";
-            this.chkCompleted.Size = new System.Drawing.Size(24, 35);
-            this.chkCompleted.TabIndex = 15;
-            this.chkCompleted.UseVisualStyleBackColor = false;
+            this.ufbut1.BackColor = System.Drawing.Color.Transparent;
+            this.ufbut1.Location = new System.Drawing.Point(625, 81);
+            this.ufbut1.Name = "ufbut1";
+            this.ufbut1.Size = new System.Drawing.Size(24, 35);
+            this.ufbut1.TabIndex = 15;
+            this.ufbut1.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -434,86 +426,86 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Urinary Carte Pack";
             // 
-            // checkBox1
+            // ufbut2
             // 
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(625, 125);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(24, 35);
-            this.checkBox1.TabIndex = 24;
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.ufbut2.BackColor = System.Drawing.Color.Transparent;
+            this.ufbut2.Location = new System.Drawing.Point(625, 125);
+            this.ufbut2.Name = "ufbut2";
+            this.ufbut2.Size = new System.Drawing.Size(24, 35);
+            this.ufbut2.TabIndex = 24;
+            this.ufbut2.UseVisualStyleBackColor = false;
             // 
-            // checkBox2
+            // ufbut3
             // 
-            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Location = new System.Drawing.Point(625, 167);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(24, 35);
-            this.checkBox2.TabIndex = 25;
-            this.checkBox2.UseVisualStyleBackColor = false;
+            this.ufbut3.BackColor = System.Drawing.Color.Transparent;
+            this.ufbut3.Location = new System.Drawing.Point(625, 167);
+            this.ufbut3.Name = "ufbut3";
+            this.ufbut3.Size = new System.Drawing.Size(24, 35);
+            this.ufbut3.TabIndex = 25;
+            this.ufbut3.UseVisualStyleBackColor = false;
             // 
-            // checkBox3
+            // ufbut4
             // 
-            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox3.Location = new System.Drawing.Point(625, 210);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(24, 35);
-            this.checkBox3.TabIndex = 26;
-            this.checkBox3.UseVisualStyleBackColor = false;
+            this.ufbut4.BackColor = System.Drawing.Color.Transparent;
+            this.ufbut4.Location = new System.Drawing.Point(625, 210);
+            this.ufbut4.Name = "ufbut4";
+            this.ufbut4.Size = new System.Drawing.Size(24, 35);
+            this.ufbut4.TabIndex = 26;
+            this.ufbut4.UseVisualStyleBackColor = false;
             // 
-            // checkBox4
+            // ufbut5
             // 
-            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox4.Location = new System.Drawing.Point(625, 251);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(24, 35);
-            this.checkBox4.TabIndex = 27;
-            this.checkBox4.UseVisualStyleBackColor = false;
+            this.ufbut5.BackColor = System.Drawing.Color.Transparent;
+            this.ufbut5.Location = new System.Drawing.Point(625, 251);
+            this.ufbut5.Name = "ufbut5";
+            this.ufbut5.Size = new System.Drawing.Size(24, 35);
+            this.ufbut5.TabIndex = 27;
+            this.ufbut5.UseVisualStyleBackColor = false;
             // 
-            // checkBox5
+            // ufbut6
             // 
-            this.checkBox5.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox5.Location = new System.Drawing.Point(625, 292);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(24, 35);
-            this.checkBox5.TabIndex = 28;
-            this.checkBox5.UseVisualStyleBackColor = false;
+            this.ufbut6.BackColor = System.Drawing.Color.Transparent;
+            this.ufbut6.Location = new System.Drawing.Point(625, 292);
+            this.ufbut6.Name = "ufbut6";
+            this.ufbut6.Size = new System.Drawing.Size(24, 35);
+            this.ufbut6.TabIndex = 28;
+            this.ufbut6.UseVisualStyleBackColor = false;
             // 
-            // checkBox6
+            // ufbut7
             // 
-            this.checkBox6.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox6.Location = new System.Drawing.Point(625, 334);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(24, 35);
-            this.checkBox6.TabIndex = 29;
-            this.checkBox6.UseVisualStyleBackColor = false;
+            this.ufbut7.BackColor = System.Drawing.Color.Transparent;
+            this.ufbut7.Location = new System.Drawing.Point(625, 334);
+            this.ufbut7.Name = "ufbut7";
+            this.ufbut7.Size = new System.Drawing.Size(24, 35);
+            this.ufbut7.TabIndex = 29;
+            this.ufbut7.UseVisualStyleBackColor = false;
             // 
-            // checkBox7
+            // ufbut8
             // 
-            this.checkBox7.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox7.Location = new System.Drawing.Point(625, 377);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(24, 35);
-            this.checkBox7.TabIndex = 30;
-            this.checkBox7.UseVisualStyleBackColor = false;
+            this.ufbut8.BackColor = System.Drawing.Color.Transparent;
+            this.ufbut8.Location = new System.Drawing.Point(625, 377);
+            this.ufbut8.Name = "ufbut8";
+            this.ufbut8.Size = new System.Drawing.Size(24, 35);
+            this.ufbut8.TabIndex = 30;
+            this.ufbut8.UseVisualStyleBackColor = false;
             // 
-            // checkBox8
+            // ufbut9
             // 
-            this.checkBox8.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox8.Location = new System.Drawing.Point(625, 418);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(24, 35);
-            this.checkBox8.TabIndex = 31;
-            this.checkBox8.UseVisualStyleBackColor = false;
+            this.ufbut9.BackColor = System.Drawing.Color.Transparent;
+            this.ufbut9.Location = new System.Drawing.Point(625, 418);
+            this.ufbut9.Name = "ufbut9";
+            this.ufbut9.Size = new System.Drawing.Size(24, 35);
+            this.ufbut9.TabIndex = 31;
+            this.ufbut9.UseVisualStyleBackColor = false;
             // 
-            // checkBox9
+            // ufbut10
             // 
-            this.checkBox9.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox9.Location = new System.Drawing.Point(625, 464);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(24, 35);
-            this.checkBox9.TabIndex = 32;
-            this.checkBox9.UseVisualStyleBackColor = false;
+            this.ufbut10.BackColor = System.Drawing.Color.Transparent;
+            this.ufbut10.Location = new System.Drawing.Point(625, 464);
+            this.ufbut10.Name = "ufbut10";
+            this.ufbut10.Size = new System.Drawing.Size(24, 35);
+            this.ufbut10.TabIndex = 32;
+            this.ufbut10.UseVisualStyleBackColor = false;
             // 
             // btnAddPrescription2
             // 
@@ -534,18 +526,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(867, 733);
+            this.ClientSize = new System.Drawing.Size(780, 721);
             this.Controls.Add(this.btnAddPrescription2);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.checkBox9);
-            this.Controls.Add(this.checkBox8);
-            this.Controls.Add(this.checkBox7);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.ufbut10);
+            this.Controls.Add(this.ufbut9);
+            this.Controls.Add(this.ufbut8);
+            this.Controls.Add(this.ufbut7);
+            this.Controls.Add(this.ufbut6);
+            this.Controls.Add(this.ufbut5);
+            this.Controls.Add(this.ufbut4);
+            this.Controls.Add(this.ufbut3);
+            this.Controls.Add(this.ufbut2);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
@@ -554,10 +546,9 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.chkCompleted);
+            this.Controls.Add(this.ufbut1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnAddPrescription);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "uf";
@@ -589,12 +580,11 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnAddPrescription;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label IbIPackName;
         private System.Windows.Forms.Label IbIMedicines;
-        private System.Windows.Forms.CheckBox chkCompleted;
+        private System.Windows.Forms.CheckBox ufbut1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -622,15 +612,15 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox ufbut2;
+        private System.Windows.Forms.CheckBox ufbut3;
+        private System.Windows.Forms.CheckBox ufbut4;
+        private System.Windows.Forms.CheckBox ufbut5;
+        private System.Windows.Forms.CheckBox ufbut6;
+        private System.Windows.Forms.CheckBox ufbut7;
+        private System.Windows.Forms.CheckBox ufbut8;
+        private System.Windows.Forms.CheckBox ufbut9;
+        private System.Windows.Forms.CheckBox ufbut10;
         private System.Windows.Forms.Button btnAddPrescription2;
     }
 }
