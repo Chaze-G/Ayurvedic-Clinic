@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\DBConnection.cs" />
     <Compile Include="Frontend\Forms\uf.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,7 +165,6 @@
   <ItemGroup>
     <Folder Include="Backend\Models\" />
     <Folder Include="Backend\Services\" />
-    <Folder Include="Database\" />
     <Folder Include="Frontend\Components\" />
   </ItemGroup>
   <ItemGroup>
