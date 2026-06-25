@@ -63,6 +63,9 @@ namespace Ayurvedic_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Back_img {
+            get {
+                object obj = ResourceManager.GetObject("Back img", resourceCulture);
         internal static System.Drawing.Bitmap _new {
             get {
                 object obj = ResourceManager.GetObject("new", resourceCulture);
@@ -73,6 +76,9 @@ namespace Ayurvedic_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Background_image_by_pabasara {
+            get {
+                object obj = ResourceManager.GetObject("Background image by pabasara", resourceCulture);
         internal static System.Drawing.Bitmap Background_img {
             get {
                 object obj = ResourceManager.GetObject("Background img", resourceCulture);
