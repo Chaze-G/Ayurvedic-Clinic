@@ -512,7 +512,7 @@
             this.btnAddPrescription2.BackColor = System.Drawing.Color.LightGreen;
             this.btnAddPrescription2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddPrescription2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPrescription2.Location = new System.Drawing.Point(290, 543);
+            this.btnAddPrescription2.Location = new System.Drawing.Point(262, 548);
             this.btnAddPrescription2.Name = "btnAddPrescription2";
             this.btnAddPrescription2.Size = new System.Drawing.Size(271, 47);
             this.btnAddPrescription2.TabIndex = 34;

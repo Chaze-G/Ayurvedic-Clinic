@@ -126,6 +126,11 @@ namespace project_test
         {
 
         }
+
+        private void ufbut1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
