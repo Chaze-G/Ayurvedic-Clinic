@@ -26,5 +26,20 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+          private void dpformorepatientdetailbut_Click(object sender, EventArgs e)
+        {
+        
+            Patient_registration pr = new Patient_registration();
+            pr.Show();
+            this.Hide();
+        
     }
-}
+
+        private void dppatienthistorybut_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+    }
+
