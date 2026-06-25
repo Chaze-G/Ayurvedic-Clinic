@@ -73,6 +73,26 @@ namespace Ayurvedic_Clinic.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Back_img {
+            get {
+                object obj = ResourceManager.GetObject("Back img", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background_image_by_pabasara {
+            get {
+                object obj = ResourceManager.GetObject("Background image by pabasara", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Background_img {
             get {
                 object obj = ResourceManager.GetObject("Background img", resourceCulture);
