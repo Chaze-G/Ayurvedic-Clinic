@@ -70,5 +70,57 @@ namespace project_test
 
             MessageBox.Show(selectedPacks);
         }
+
+        
+            private void btnAddPrescription2_Click(object sender, EventArgs e)
+        {
+            string prescription = "";
+
+            if (chkCompleted.Checked)
+                prescription += "• Back Pain Care Pack\n";
+
+            if (checkBox1.Checked)
+                prescription += "• Bowel Care Pack\n";
+
+            if (checkBox2.Checked)
+                prescription += "• Cough Care Pack\n";
+
+            if (checkBox3.Checked)
+                prescription += "• Diabetic Care Pack\n";
+
+            if (checkBox4.Checked)
+                prescription += "• Digestive Care Pack\n";
+
+            if (checkBox5.Checked)
+                prescription += "• Fever Care Pack\n";
+
+            if (checkBox6.Checked)
+                prescription += "• Gastric Relief Pack\n";
+
+            if (checkBox7.Checked)
+                prescription += "• Skin Care Pack\n";
+
+            if (checkBox8.Checked)
+                prescription += "• Sleep Support Pack\n";
+
+            if (checkBox9.Checked)
+                prescription += "• Urinary Care Pack\n";
+
+            if (prescription == "")
+            {
+                MessageBox.Show("Please select at least one medicine pack.",
+                                "No Selection",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show("Prescription:\n\n" + prescription,
+                                "Selected Medicine Packs",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+            }
+        }
     }
-}
+    }
+

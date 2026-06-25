@@ -84,12 +84,7 @@
             this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnAddPrescription
-            // 
-            this.btnAddPrescription.Location = new System.Drawing.Point(0, 0);
-            this.btnAddPrescription.Name = "btnAddPrescription";
-            this.btnAddPrescription.Size = new System.Drawing.Size(75, 23);
-            this.btnAddPrescription.TabIndex = 35;
+            
             // 
             // label1
             // 
@@ -526,6 +521,7 @@
             this.btnAddPrescription2.TabIndex = 34;
             this.btnAddPrescription2.Text = "ADD TO PRESCRIPTION";
             this.btnAddPrescription2.UseVisualStyleBackColor = false;
+            this.btnAddPrescription2.Click += new System.EventHandler(this.btnAddPrescription2_Click);
             // 
             // uf
             // 
