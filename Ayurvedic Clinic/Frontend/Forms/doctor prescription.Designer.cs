@@ -38,7 +38,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.medipacksbut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtbNotes
@@ -129,14 +129,15 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Next Clinic Date";
             // 
-            // label3
+            // medipacksbut
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(569, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 16);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Unigue Feature";
+            this.medipacksbut.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.medipacksbut.Location = new System.Drawing.Point(559, 99);
+            this.medipacksbut.Name = "medipacksbut";
+            this.medipacksbut.Size = new System.Drawing.Size(99, 37);
+            this.medipacksbut.TabIndex = 25;
+            this.medipacksbut.Text = "MEDI PACKS";
+            this.medipacksbut.UseVisualStyleBackColor = false;
             // 
             // doctor_prescription
             // 
@@ -145,6 +146,7 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(788, 753);
+            this.Controls.Add(this.medipacksbut);
             this.Controls.Add(this.rtbNotes);
             this.Controls.Add(this.txtSLMC);
             this.Controls.Add(this.button3);
@@ -155,7 +157,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "doctor_prescription";
             this.Text = "doctor_prescription";
@@ -177,6 +178,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button medipacksbut;
     }
 }

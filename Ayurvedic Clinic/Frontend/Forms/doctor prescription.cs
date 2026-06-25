@@ -21,5 +21,10 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void medipackbut_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
