@@ -117,85 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Background img" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAxZJREFUaEPtmNnrTVEUxz/GZJ4TKW/GTPkDKMWD8UEezMULefohD5LCEyFTyVAo
+        lChKyEyKF4WUEuVRmcKDmb6/9q71W869v32un3s97E+tOvfs9V17n3P2XnvtC5lMJpPJZBgGLAb2AleB
+        58Bb4HswXT8DrgC7gQXAUB+k3gwBNgAPgV812gNgPTDIB/+XjAZOhjfrB1SrfQWOASN8Z23JAOAg8KNg
+        AJ+BS8BGYAYwEugDdAA6hms9+CxgU5hKXwri6KXsB/r6zv+WucDrgg41fZYBPbwggV7AcuBJQdxXwEwv
+        qAW9PS0638F1YKp3rpF2wHTgdkE/O8JXrAm9VX1qG1DZZKl3bCP0ICuA967Pi0BX79waPYG7LtCFOmWL
+        wcBl1/ctoLt3rETnkMttgAOJn1I+Wi/KKE+BT8F0fRSYA7T3ogI0dQ+7MShJdPKORRxyQmWWFKYAj522
+        yB4Bk724AE2pzU6rDFUV7ZBWsM07VGA18K1gsJVMvtKksMtp53uHiOb3O+OoT5YybbSobQdvQq6fAHQL
+        pmvdUxKwvkt8sAI0neyUVoyB3kmcME4vwubTGsPDJhZ114B+3snQP/hEf2kVozUU86XRaY21YBzw0zho
+        IaZw1mjuAV28QwHyuW90Z7xDBeYZjaqBMbbxtGm8YRuqoCkXywqVAKO8QxVUVsRaSjFS07Pd7E7Fm8q7
+        cQHqK0xsqamIyoAYTJtNWaSJesVKYZLRqABsfvC15uZNr6iCMlTUKUZZbL/bfWMV7Fdo0o075kaZMkEb
+        U9Qt8o0JLDT6476xCioeo04P07xT6ofmpLJEKntMoFW+MYGVRq+TXCoq6+P6+agbW4APYdcrwzozgCO+
+        MQFpol6xyrA1DL7smFsw3gxAm4vq+1R6u01NsRqCPYxoSqWyz+gUo2HMNgORrfEOBdjsI9Mxs6Eog9gB
+        nQPGeqew2593vn+UBI1ApYE/uclUT2mzkunat0uTUnrUBVWMOxP/apGPzrrS/HeoxtGUsmV5NGUdTZky
+        NVPD0NFP1eK0YLpOOg5mMplMJpPJ1JHf09lVr6WHHKcAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="WhatsApp Image 2026-06-23 at 11.47.31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Image 2026-06-23 at 11.47.31.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAI1JREFUWEftjDEOwCAMxPj/p9upFSQS8R2wYSkDwufWLpeaZ/GWiUH1lnFD7i7h
+        htxdwg25u4QbcncJN+TuEm7I3f3DU1cSB7uvBIsiuItFEdzFogjuYlEEd7EogrszMf5V757Z38BMjH/V
+        u2f2N4BFEdzFogjuYlEEd7EogrtYFMHdTzx1JXGw+y6XgReTJdMtq9Pk9QAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="WhatsApp Image 2026-06-23 at 11.471" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Image 2026-06-23 at 11.47.311.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAAw1JREFUaEPtmUnITWEYx39CyZw5EmXIwjwLWWFJyVZkSjZ2RGRHyLQhIZENYmFl
+        WMhUMs8yR2RjzJS5f/6nbk/3u/fcz/ed8326v3rrdP/P857/Ofec933e90CV/4/hwGbgJvDeTcebgGEx
+        uCHRHtgN/AJ+19Ck7QLaxeS86QpctcnPwEZgNNDWTcf6B7445grQJXaSF82BczZ2G+gTAwroC9xx7Fmg
+        WQzIg1U29BjoFMUiKOaJc5ZHMWv0LL+zmQlRLMFE57zxI5YbC23kWBRScMK586OQJUdsYnYUUjDXuYei
+        kCWPbEIvZ6X0d+7DKGTJR5toGYUUtHKu+siN5AJkplJaO/dDFLKk0T9Ch21iThRSMM+5B6OQJQts4ngU
+        UnDSubqQ3NAk9NZGNDmlZZJzXgNtopg1K2xG5UHnKBZBMU+dsyyKeaCCTIWZDKlQ6xcDCtCLe9exZ4Cm
+        MSAvVBpftjGVzFrQjHGtpDYW2AJ8dcyllP9Wpuh92FlmQfMT2NEQnvtSDPXi5UbBklLHWuQMicFVqvxF
+        o8kIYInLY615nwGf3HSs36QpRjsXDWIE6g4sBZ4XeWHLtVfAWqBX7DQLugF7gR8Fhu57FJrlO9zTZbaa
+        jvWbNMU8KMj7DuzJapeiCbC4oHzQuL4PGBcDUzAe2F8wN2h9vMjnqBda+ITJnTsK9I5BtaAHcKCgX1Wn
+        tVkglUTPumbP5E5NiwF1wHT3rXNc8GNaJ2iGve6OtfgYEAPqEC2M7vlct7xd+U9o1y2p2zWbdogB9UBH
+        m9c5tV0jD7VG0786euGRJCs0tL70uddHMS0jPUx+83HWjPIQq1bxtrxmyaQ8XhPFDFlnDxcrnblnOlEb
+        tnU+pFWAtmuSjeAZUSzFaSdp7zNvNLnJy6ko1MRgJ2jXWZtPeSMPyQ74oCgWY4ODt0YhR7QclSd5K8t5
+        B0+OQo7IizzpS1BZkguYEoUcmWpP2v0oy2oH66PdwCjmgDxcs6eVUSyGap/kQ1xDavqAmPpzlOqR7V41
+        xY6ybvKwLaM6rEqVRscfU7giizB23HIAAAAASUVORK5CYII=
+</value>
   </data>
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-	<data name="img by madusha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-		<value>..\Resources\img by madusha.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-	</data>
-	<data name="new" type="System.Resources.ResXFileRef, System.Windows.Forms">
-		<value>..\Resources\new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-	</data>
-	<data name="Background img" type="System.Resources.ResXFileRef, System.Windows.Forms">
-		<value>..\Resources\Background img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-	</data>
-	<data name="background img 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-		<value>..\Resources\background img 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-	</data>
 </root>
