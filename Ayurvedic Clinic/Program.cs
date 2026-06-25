@@ -20,6 +20,12 @@ namespace Ayurvedic_Clinic
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            Application.Run(new DoctorRegistor());
+            Application.Run(new ChildRegistration());
+
+            Application.Run(new Login());
+            Application.Run(new AdminDashboard());
+            Application.Run(new SearchID());
             var pharmacistRegistration = new Pharmacist_registration();
             var doctorPrescription = new doctor_prescription();
             var patientRegistration = new Patient_registration();
