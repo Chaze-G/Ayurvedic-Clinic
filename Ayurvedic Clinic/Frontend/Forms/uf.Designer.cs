@@ -84,7 +84,12 @@
             this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
-            
+            // btnAddPrescription
+            // 
+            this.btnAddPrescription.Location = new System.Drawing.Point(0, 0);
+            this.btnAddPrescription.Name = "btnAddPrescription";
+            this.btnAddPrescription.Size = new System.Drawing.Size(75, 23);
+            this.btnAddPrescription.TabIndex = 35;
             // 
             // label1
             // 
@@ -104,7 +109,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.IbIMedicines);
             this.panel1.Controls.Add(this.IbIPackName);
-            this.panel1.Location = new System.Drawing.Point(148, 81);
+            this.panel1.Location = new System.Drawing.Point(186, 81);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(408, 36);
             this.panel1.TabIndex = 14;
@@ -133,8 +138,8 @@
             // 
             // chkCompleted
             // 
-            this.chkCompleted.BackColor = System.Drawing.Color.White;
-            this.chkCompleted.Location = new System.Drawing.Point(577, 81);
+            this.chkCompleted.BackColor = System.Drawing.Color.Transparent;
+            this.chkCompleted.Location = new System.Drawing.Point(625, 81);
             this.chkCompleted.Name = "chkCompleted";
             this.chkCompleted.Size = new System.Drawing.Size(24, 35);
             this.chkCompleted.TabIndex = 15;
@@ -146,7 +151,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(148, 125);
+            this.panel3.Location = new System.Drawing.Point(186, 125);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(408, 36);
             this.panel3.TabIndex = 15;
@@ -178,7 +183,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(148, 167);
+            this.panel4.Location = new System.Drawing.Point(186, 166);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(408, 36);
             this.panel4.TabIndex = 16;
@@ -210,7 +215,7 @@
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(148, 209);
+            this.panel5.Location = new System.Drawing.Point(186, 208);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(408, 36);
             this.panel5.TabIndex = 17;
@@ -242,7 +247,7 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.label11);
-            this.panel6.Location = new System.Drawing.Point(148, 251);
+            this.panel6.Location = new System.Drawing.Point(186, 251);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(408, 36);
             this.panel6.TabIndex = 18;
@@ -274,7 +279,7 @@
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label12);
             this.panel7.Controls.Add(this.label13);
-            this.panel7.Location = new System.Drawing.Point(148, 292);
+            this.panel7.Location = new System.Drawing.Point(186, 291);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(408, 36);
             this.panel7.TabIndex = 19;
@@ -306,7 +311,7 @@
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label14);
             this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(148, 334);
+            this.panel8.Location = new System.Drawing.Point(186, 334);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(408, 36);
             this.panel8.TabIndex = 20;
@@ -338,7 +343,7 @@
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label16);
             this.panel9.Controls.Add(this.label17);
-            this.panel9.Location = new System.Drawing.Point(148, 376);
+            this.panel9.Location = new System.Drawing.Point(186, 377);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(408, 36);
             this.panel9.TabIndex = 21;
@@ -371,7 +376,7 @@
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label18);
             this.panel10.Controls.Add(this.label19);
-            this.panel10.Location = new System.Drawing.Point(148, 418);
+            this.panel10.Location = new System.Drawing.Point(186, 418);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(408, 36);
             this.panel10.TabIndex = 22;
@@ -403,7 +408,7 @@
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label20);
             this.panel11.Controls.Add(this.label21);
-            this.panel11.Location = new System.Drawing.Point(148, 464);
+            this.panel11.Location = new System.Drawing.Point(186, 463);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(408, 36);
             this.panel11.TabIndex = 23;
@@ -431,8 +436,8 @@
             // 
             // checkBox1
             // 
-            this.checkBox1.BackColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(577, 125);
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Location = new System.Drawing.Point(625, 125);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(24, 35);
             this.checkBox1.TabIndex = 24;
@@ -440,8 +445,8 @@
             // 
             // checkBox2
             // 
-            this.checkBox2.BackColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(577, 167);
+            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox2.Location = new System.Drawing.Point(625, 167);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(24, 35);
             this.checkBox2.TabIndex = 25;
@@ -449,8 +454,8 @@
             // 
             // checkBox3
             // 
-            this.checkBox3.BackColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(577, 209);
+            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox3.Location = new System.Drawing.Point(625, 210);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(24, 35);
             this.checkBox3.TabIndex = 26;
@@ -458,8 +463,8 @@
             // 
             // checkBox4
             // 
-            this.checkBox4.BackColor = System.Drawing.Color.White;
-            this.checkBox4.Location = new System.Drawing.Point(577, 251);
+            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox4.Location = new System.Drawing.Point(625, 251);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(24, 35);
             this.checkBox4.TabIndex = 27;
@@ -467,8 +472,8 @@
             // 
             // checkBox5
             // 
-            this.checkBox5.BackColor = System.Drawing.Color.White;
-            this.checkBox5.Location = new System.Drawing.Point(577, 293);
+            this.checkBox5.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox5.Location = new System.Drawing.Point(625, 292);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(24, 35);
             this.checkBox5.TabIndex = 28;
@@ -476,8 +481,8 @@
             // 
             // checkBox6
             // 
-            this.checkBox6.BackColor = System.Drawing.Color.White;
-            this.checkBox6.Location = new System.Drawing.Point(577, 334);
+            this.checkBox6.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox6.Location = new System.Drawing.Point(625, 334);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(24, 35);
             this.checkBox6.TabIndex = 29;
@@ -485,8 +490,8 @@
             // 
             // checkBox7
             // 
-            this.checkBox7.BackColor = System.Drawing.Color.White;
-            this.checkBox7.Location = new System.Drawing.Point(577, 377);
+            this.checkBox7.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox7.Location = new System.Drawing.Point(625, 377);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(24, 35);
             this.checkBox7.TabIndex = 30;
@@ -494,8 +499,8 @@
             // 
             // checkBox8
             // 
-            this.checkBox8.BackColor = System.Drawing.Color.White;
-            this.checkBox8.Location = new System.Drawing.Point(577, 418);
+            this.checkBox8.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox8.Location = new System.Drawing.Point(625, 418);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(24, 35);
             this.checkBox8.TabIndex = 31;
@@ -503,8 +508,8 @@
             // 
             // checkBox9
             // 
-            this.checkBox9.BackColor = System.Drawing.Color.White;
-            this.checkBox9.Location = new System.Drawing.Point(577, 464);
+            this.checkBox9.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox9.Location = new System.Drawing.Point(625, 464);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(24, 35);
             this.checkBox9.TabIndex = 32;
@@ -515,7 +520,7 @@
             this.btnAddPrescription2.BackColor = System.Drawing.Color.LightGreen;
             this.btnAddPrescription2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddPrescription2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPrescription2.Location = new System.Drawing.Point(252, 540);
+            this.btnAddPrescription2.Location = new System.Drawing.Point(290, 543);
             this.btnAddPrescription2.Name = "btnAddPrescription2";
             this.btnAddPrescription2.Size = new System.Drawing.Size(271, 47);
             this.btnAddPrescription2.TabIndex = 34;
@@ -557,6 +562,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "uf";
             this.Text = "5";
+            this.Load += new System.EventHandler(this.uf_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);

@@ -121,6 +121,11 @@ namespace project_test
                                 MessageBoxIcon.Information);
             }
         }
+
+        private void uf_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
