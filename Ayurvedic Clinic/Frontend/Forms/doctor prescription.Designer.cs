@@ -10,7 +10,6 @@
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,90 +21,74 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.rtbNotes = new System.Windows.Forms.RichTextBox();
-            this.txtSLMC = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dtpClinic = new System.Windows.Forms.DateTimePicker();
-            this.dtpDate = new System.Windows.Forms.DateTimePicker();
+            this.dpnotestxt = new System.Windows.Forms.RichTextBox();
+            this.dpslmcnumbertxt = new System.Windows.Forms.TextBox();
+            this.dpsendtopharmacybut = new System.Windows.Forms.Button();
+            this.dpsavebut = new System.Windows.Forms.Button();
+            this.dpDatetxt = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.medipacksbut = new System.Windows.Forms.Button();
+            this.dpmedipacksbut = new System.Windows.Forms.Button();
+            this.dppatienthistorybut = new System.Windows.Forms.Button();
+            this.lblPatientName = new System.Windows.Forms.Label();
+            this.dvnametxt = new System.Windows.Forms.TextBox();
+            this.dpagetxt = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dpallergiestxt = new System.Windows.Forms.TextBox();
+            this.Address = new System.Windows.Forms.Label();
+            this.dpformorepatientdetailbut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // rtbNotes
+            // dpnotestxt
             // 
-            this.rtbNotes.BackColor = System.Drawing.Color.White;
-            this.rtbNotes.Location = new System.Drawing.Point(59, 167);
-            this.rtbNotes.Name = "rtbNotes";
-            this.rtbNotes.Size = new System.Drawing.Size(629, 235);
-            this.rtbNotes.TabIndex = 24;
-            this.rtbNotes.Text = "Notes:";
+            this.dpnotestxt.BackColor = System.Drawing.Color.White;
+            this.dpnotestxt.Location = new System.Drawing.Point(25, 230);
+            this.dpnotestxt.Name = "dpnotestxt";
+            this.dpnotestxt.Size = new System.Drawing.Size(557, 252);
+            this.dpnotestxt.TabIndex = 24;
+            this.dpnotestxt.Text = "Notes-";
             // 
-            // txtSLMC
+            // dpslmcnumbertxt
             // 
-            this.txtSLMC.Location = new System.Drawing.Point(195, 516);
-            this.txtSLMC.Name = "txtSLMC";
-            this.txtSLMC.Size = new System.Drawing.Size(107, 22);
-            this.txtSLMC.TabIndex = 23;
+            this.dpslmcnumbertxt.Location = new System.Drawing.Point(148, 488);
+            this.dpslmcnumbertxt.Name = "dpslmcnumbertxt";
+            this.dpslmcnumbertxt.Size = new System.Drawing.Size(107, 22);
+            this.dpslmcnumbertxt.TabIndex = 23;
             // 
-            // button3
+            // dpsendtopharmacybut
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.button3.Location = new System.Drawing.Point(535, 494);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(153, 41);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "Send to Pharmacy";
-            this.button3.UseVisualStyleBackColor = false;
+            this.dpsendtopharmacybut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
+            this.dpsendtopharmacybut.Location = new System.Drawing.Point(398, 491);
+            this.dpsendtopharmacybut.Name = "dpsendtopharmacybut";
+            this.dpsendtopharmacybut.Size = new System.Drawing.Size(153, 41);
+            this.dpsendtopharmacybut.TabIndex = 22;
+            this.dpsendtopharmacybut.Text = "Send to Pharmacy";
+            this.dpsendtopharmacybut.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // dpsavebut
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.button2.Location = new System.Drawing.Point(424, 494);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 41);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
+            this.dpsavebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
+            this.dpsavebut.Location = new System.Drawing.Point(296, 491);
+            this.dpsavebut.Name = "dpsavebut";
+            this.dpsavebut.Size = new System.Drawing.Size(96, 41);
+            this.dpsavebut.TabIndex = 21;
+            this.dpsavebut.Text = "Save";
+            this.dpsavebut.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // dpDatetxt
             // 
-            this.button1.Location = new System.Drawing.Point(424, 99);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 23);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Patient History";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dtpClinic
-            // 
-            this.dtpClinic.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpClinic.Location = new System.Drawing.Point(195, 458);
-            this.dtpClinic.Name = "dtpClinic";
-            this.dtpClinic.Size = new System.Drawing.Size(107, 22);
-            this.dtpClinic.TabIndex = 19;
-            // 
-            // dtpDate
-            // 
-            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDate.Location = new System.Drawing.Point(472, 46);
-            this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(94, 22);
-            this.dtpDate.TabIndex = 18;
+            this.dpDatetxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpDatetxt.Location = new System.Drawing.Point(656, 27);
+            this.dpDatetxt.Name = "dpDatetxt";
+            this.dpDatetxt.Size = new System.Drawing.Size(94, 22);
+            this.dpDatetxt.TabIndex = 18;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(421, 46);
+            this.label7.Location = new System.Drawing.Point(614, 33);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 16);
             this.label7.TabIndex = 17;
@@ -114,30 +97,92 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(68, 519);
+            this.label6.Location = new System.Drawing.Point(31, 491);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(111, 16);
             this.label6.TabIndex = 16;
             this.label6.Text = "Dr SLMC Number";
             // 
-            // label5
+            // dpmedipacksbut
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(68, 458);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 16);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Next Clinic Date";
+            this.dpmedipacksbut.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.dpmedipacksbut.Location = new System.Drawing.Point(588, 304);
+            this.dpmedipacksbut.Name = "dpmedipacksbut";
+            this.dpmedipacksbut.Size = new System.Drawing.Size(142, 50);
+            this.dpmedipacksbut.TabIndex = 25;
+            this.dpmedipacksbut.Text = "MEDI PACKS";
+            this.dpmedipacksbut.UseVisualStyleBackColor = false;
             // 
-            // medipacksbut
+            // dppatienthistorybut
             // 
-            this.medipacksbut.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.medipacksbut.Location = new System.Drawing.Point(559, 99);
-            this.medipacksbut.Name = "medipacksbut";
-            this.medipacksbut.Size = new System.Drawing.Size(99, 37);
-            this.medipacksbut.TabIndex = 25;
-            this.medipacksbut.Text = "MEDI PACKS";
-            this.medipacksbut.UseVisualStyleBackColor = false;
+            this.dppatienthistorybut.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.dppatienthistorybut.Location = new System.Drawing.Point(588, 254);
+            this.dppatienthistorybut.Name = "dppatienthistorybut";
+            this.dppatienthistorybut.Size = new System.Drawing.Size(142, 44);
+            this.dppatienthistorybut.TabIndex = 26;
+            this.dppatienthistorybut.Text = "Patient History";
+            this.dppatienthistorybut.UseVisualStyleBackColor = false;
+            this.dppatienthistorybut.Click += new System.EventHandler(this.dppatienthistorybut_Click);
+            // 
+            // lblPatientName
+            // 
+            this.lblPatientName.AutoSize = true;
+            this.lblPatientName.Location = new System.Drawing.Point(81, 125);
+            this.lblPatientName.Name = "lblPatientName";
+            this.lblPatientName.Size = new System.Drawing.Size(44, 16);
+            this.lblPatientName.TabIndex = 27;
+            this.lblPatientName.Text = "Name";
+            // 
+            // dvnametxt
+            // 
+            this.dvnametxt.Location = new System.Drawing.Point(131, 126);
+            this.dvnametxt.Name = "dvnametxt";
+            this.dvnametxt.Size = new System.Drawing.Size(527, 22);
+            this.dvnametxt.TabIndex = 28;
+            // 
+            // dpagetxt
+            // 
+            this.dpagetxt.Location = new System.Drawing.Point(717, 119);
+            this.dpagetxt.Name = "dpagetxt";
+            this.dpagetxt.Size = new System.Drawing.Size(57, 22);
+            this.dpagetxt.TabIndex = 29;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(679, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 16);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Age";
+            // 
+            // dpallergiestxt
+            // 
+            this.dpallergiestxt.Location = new System.Drawing.Point(131, 154);
+            this.dpallergiestxt.Multiline = true;
+            this.dpallergiestxt.Name = "dpallergiestxt";
+            this.dpallergiestxt.Size = new System.Drawing.Size(645, 46);
+            this.dpallergiestxt.TabIndex = 31;
+            // 
+            // Address
+            // 
+            this.Address.AutoSize = true;
+            this.Address.Location = new System.Drawing.Point(65, 166);
+            this.Address.Name = "Address";
+            this.Address.Size = new System.Drawing.Size(60, 16);
+            this.Address.TabIndex = 32;
+            this.Address.Text = "Allergies";
+            // 
+            // dpformorepatientdetailbut
+            // 
+            this.dpformorepatientdetailbut.BackColor = System.Drawing.Color.Aquamarine;
+            this.dpformorepatientdetailbut.Location = new System.Drawing.Point(561, 201);
+            this.dpformorepatientdetailbut.Name = "dpformorepatientdetailbut";
+            this.dpformorepatientdetailbut.Size = new System.Drawing.Size(215, 23);
+            this.dpformorepatientdetailbut.TabIndex = 33;
+            this.dpformorepatientdetailbut.Text = "For more Patients\' Details";
+            this.dpformorepatientdetailbut.UseVisualStyleBackColor = false;
+            this.dpformorepatientdetailbut.Click += new System.EventHandler(this.dpformorepatientdetailbut_Click);
             // 
             // doctor_prescription
             // 
@@ -146,17 +191,22 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(788, 753);
-            this.Controls.Add(this.medipacksbut);
-            this.Controls.Add(this.rtbNotes);
-            this.Controls.Add(this.txtSLMC);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dtpClinic);
-            this.Controls.Add(this.dtpDate);
+            this.Controls.Add(this.dpformorepatientdetailbut);
+            this.Controls.Add(this.Address);
+            this.Controls.Add(this.dpallergiestxt);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dpagetxt);
+            this.Controls.Add(this.dvnametxt);
+            this.Controls.Add(this.lblPatientName);
+            this.Controls.Add(this.dppatienthistorybut);
+            this.Controls.Add(this.dpmedipacksbut);
+            this.Controls.Add(this.dpnotestxt);
+            this.Controls.Add(this.dpslmcnumbertxt);
+            this.Controls.Add(this.dpsendtopharmacybut);
+            this.Controls.Add(this.dpsavebut);
+            this.Controls.Add(this.dpDatetxt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "doctor_prescription";
             this.Text = "doctor_prescription";
@@ -168,16 +218,21 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox rtbNotes;
-        private System.Windows.Forms.TextBox txtSLMC;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dtpClinic;
-        private System.Windows.Forms.DateTimePicker dtpDate;
+        private System.Windows.Forms.RichTextBox dpnotestxt;
+        private System.Windows.Forms.TextBox dpslmcnumbertxt;
+        private System.Windows.Forms.Button dpsendtopharmacybut;
+        private System.Windows.Forms.Button dpsavebut;
+        private System.Windows.Forms.DateTimePicker dpDatetxt;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button medipacksbut;
+        private System.Windows.Forms.Button dpmedipacksbut;
+        private System.Windows.Forms.Button dppatienthistorybut;
+        private System.Windows.Forms.Label lblPatientName;        // ← Fixed
+        private System.Windows.Forms.TextBox dvnametxt;
+        private System.Windows.Forms.TextBox dpagetxt;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox dpallergiestxt;
+        private System.Windows.Forms.Label Address;
+        private System.Windows.Forms.Button dpformorepatientdetailbut;
     }
 }
