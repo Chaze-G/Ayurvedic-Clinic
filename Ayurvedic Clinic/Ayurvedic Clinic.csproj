@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9D9CCC3-D32F-BE45-597A-854409EB9BC7}</ProjectGuid>
+    <ProjectGuid>{1638678D-3DD9-4818-9CD8-71CFDEB28EF5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Ayurvedic_Clinic</RootNamespace>
     <AssemblyName>Ayurvedic Clinic</AssemblyName>
