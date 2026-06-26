@@ -29,7 +29,8 @@ namespace Ayurvedic_Clinic
             Application.Run(new ChildRegistration());
 
             Application.Run(new Login());
-            Application.Run(new AdminDashboard());*/
+            Application.Run(new AdminDashboard());
+            Application.Run(new SearchID());
 
         }
     }
