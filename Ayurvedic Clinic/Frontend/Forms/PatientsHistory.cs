@@ -16,5 +16,12 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            doctor_prescription dp = new doctor_prescription();
+            dp .Show();
+            this.Hide();
+        }
     }
 }

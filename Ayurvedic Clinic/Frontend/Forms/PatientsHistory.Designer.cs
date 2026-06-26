@@ -38,7 +38,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.phbackbut = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -142,16 +142,18 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Description :";
             // 
-            // button1
+            // phbackbut
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(598, 467);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 24);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.phbackbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
+            this.phbackbut.Font = new System.Drawing.Font("Maiandra GD", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phbackbut.ForeColor = System.Drawing.Color.DarkGreen;
+            this.phbackbut.Location = new System.Drawing.Point(694, 12);
+            this.phbackbut.Name = "phbackbut";
+            this.phbackbut.Size = new System.Drawing.Size(95, 29);
+            this.phbackbut.TabIndex = 10;
+            this.phbackbut.Text = "<<BACK";
+            this.phbackbut.UseVisualStyleBackColor = false;
+            this.phbackbut.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -253,7 +255,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.phbackbut);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -283,7 +285,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button phbackbut;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;

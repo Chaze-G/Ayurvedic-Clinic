@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ayurvedic_Clinic.Frontend.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -101,6 +102,13 @@ namespace project_test
             // var yourDoctorPrescriptionInstance = ...;
             // project_test.uf form = new project_test.uf(yourDoctorPrescriptionInstance);
             // form.ShowDialog();
+        }
+
+        private void phbackbut_Click(object sender, EventArgs e)
+        {
+            doctor_prescription  dp = new doctor_prescription();
+            dp.Show();
+            this.Hide();
         }
     }
     }
