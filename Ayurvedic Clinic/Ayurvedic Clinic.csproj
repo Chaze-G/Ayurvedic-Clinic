@@ -179,5 +179,11 @@
     <None Include="Resources\new.png" />
     <None Include="Resources\background img 3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bck imj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_6m29i26m29i26m29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -66,6 +66,7 @@
             this.dpsendtopharmacybut.TabIndex = 22;
             this.dpsendtopharmacybut.Text = "Send to Pharmacy";
             this.dpsendtopharmacybut.UseVisualStyleBackColor = false;
+            this.dpsendtopharmacybut.Click += new System.EventHandler(this.dpsendtopharmacybut_Click);
             // 
             // dpsavebut
             // 
@@ -112,6 +113,7 @@
             this.dpmedipacksbut.TabIndex = 25;
             this.dpmedipacksbut.Text = "MEDI PACKS";
             this.dpmedipacksbut.UseVisualStyleBackColor = false;
+            this.dpmedipacksbut.Click += new System.EventHandler(this.dpmedipacksbut_Click);
             // 
             // dppatienthistorybut
             // 
@@ -227,7 +229,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button dpmedipacksbut;
         private System.Windows.Forms.Button dppatienthistorybut;
-        private System.Windows.Forms.Label lblPatientName;        // ← Fixed
+        private System.Windows.Forms.Label lblPatientName;        
         private System.Windows.Forms.TextBox dvnametxt;
         private System.Windows.Forms.TextBox dpagetxt;
         private System.Windows.Forms.Label label1;

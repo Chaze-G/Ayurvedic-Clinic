@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project_test;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,12 +33,31 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         
             Patient_registration pr = new Patient_registration();
             pr.Show();
-            this.Hide();
+            
         
     }
 
         private void dppatienthistorybut_Click(object sender, EventArgs e)
         {
+
+            PatientsHistory patienthis= new PatientsHistory();
+            patienthis.Show();
+            
+        }
+        
+
+        private void dpmedipacksbut_Click(object sender, EventArgs e)
+        {
+       
+            uf uniqueform = new uf();
+            uniqueform.Show();
+           
+        }
+
+        private void dpsendtopharmacybut_Click(object sender, EventArgs e)
+        {
+            Pharmacist_registration pr = new Pharmacist_registration();
+            pr.Show();
 
         }
     }
