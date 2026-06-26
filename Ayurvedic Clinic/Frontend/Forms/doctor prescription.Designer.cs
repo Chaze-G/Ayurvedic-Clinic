@@ -46,6 +46,7 @@
             this.dpnotestxt.BackColor = System.Drawing.Color.White;
             this.dpnotestxt.Location = new System.Drawing.Point(25, 230);
             this.dpnotestxt.Name = "dpnotestxt";
+            this.dpnotestxt.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.dpnotestxt.Size = new System.Drawing.Size(557, 252);
             this.dpnotestxt.TabIndex = 24;
             this.dpnotestxt.Text = "Notes-";
