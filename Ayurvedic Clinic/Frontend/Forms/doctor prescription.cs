@@ -56,7 +56,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private void dpsendtopharmacybut_Click(object sender, EventArgs e)
         {
-            Pharmacist_registration pr = new Pharmacist_registration();
+           MedicalPharmacy pr = new MedicalPharmacy();
             pr.Show();
             this.Hide();
         }

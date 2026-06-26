@@ -70,7 +70,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Ayurvedic_Clinic.Properties.Resources.id_icon;
+            //this.pictureBox1.Image = global::Ayurvedic_Clinic.Properties.Resources.id_icon;
             this.pictureBox1.Location = new System.Drawing.Point(15, 139);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 30);
