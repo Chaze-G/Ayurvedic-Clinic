@@ -31,7 +31,27 @@ namespace Ayurvedic_Clinic
             Application.Run(new Login());
             Application.Run(new AdminDashboard());
             Application.Run(new SearchID());
+            var pharmacistRegistration = new Pharmacist_registration();
+            var doctorPrescription = new doctor_prescription();
+            var patientRegistration = new Patient_registration();
+            var medicalPharmacy = new MedicalPharmacy();
+            var patientsHistory = new PatientsHistory();
+            var doctorRegistor = new DoctorRegistor();
+            var childRegistration = new ChildRegistration();
+            var login = new Login();
+            var adminDashboard = new AdminDashboard();
 
+            //Application.Run(pharmacistRegistration);
+            Application.Run(new uf(doctorPrescription));
+            Application.Run(doctorPrescription);
+            //Application.Run(patientRegistration);
+            //Application.Run(medicalPharmacy);
+            //Application.Run(patientsHistory);
+            //Application.Run(doctorRegistor);
+            //Application.Run(childRegistration);
+            //Application.Run(login);
+            //Application.Run(adminDashboard);
+             // Pass the required argument here
         }
     }
 }
