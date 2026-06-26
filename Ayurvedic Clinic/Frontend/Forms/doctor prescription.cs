@@ -33,7 +33,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         
             Patient_registration pr = new Patient_registration();
             pr.Show();
-            
+            this.Hide();
         
     }
 
@@ -42,7 +42,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
             PatientsHistory patienthis= new PatientsHistory();
             patienthis.Show();
-            
+            this.Hide();
         }
         
 
@@ -51,14 +51,14 @@ namespace Ayurvedic_Clinic.Frontend.Forms
        
             uf uniqueform = new uf();
             uniqueform.Show();
-           
+            this.Hide();
         }
 
         private void dpsendtopharmacybut_Click(object sender, EventArgs e)
         {
             Pharmacist_registration pr = new Pharmacist_registration();
             pr.Show();
-
+            this.Hide();
         }
     }
     }
