@@ -36,7 +36,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         }
             
         
-    }
+    
 
         private void dppatienthistorybut_Click(object sender, EventArgs e)
         {
@@ -49,11 +49,14 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private void dpmedipacksbut_Click(object sender, EventArgs e)
         {
-       
-            uf uniqueform = new uf();
-            uniqueform.Show();
+
+          
+            uf uniqueform = new uf(this);
             this.Hide();
+            uniqueform.ShowDialog();   
+            this.Show();              
         }
+        
 
         private void dpsendtopharmacybut_Click(object sender, EventArgs e)
         {

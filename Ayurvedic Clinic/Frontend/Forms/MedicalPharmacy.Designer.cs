@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.mpTB07 = new System.Windows.Forms.TextBox();
+            this.mpDescriptiontxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -62,13 +62,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Medical Pharmacy";
             // 
-            // mpTB07
+            // mpDescriptiontxt
             // 
-            this.mpTB07.Location = new System.Drawing.Point(156, 288);
-            this.mpTB07.Multiline = true;
-            this.mpTB07.Name = "mpTB07";
-            this.mpTB07.Size = new System.Drawing.Size(500, 105);
-            this.mpTB07.TabIndex = 1;
+            this.mpDescriptiontxt.Location = new System.Drawing.Point(156, 288);
+            this.mpDescriptiontxt.Multiline = true;
+            this.mpDescriptiontxt.Name = "mpDescriptiontxt";
+            this.mpDescriptiontxt.Size = new System.Drawing.Size(500, 105);
+            this.mpDescriptiontxt.TabIndex = 1;
+            this.mpDescriptiontxt.TextChanged += new System.EventHandler(this.mpTB07_TextChanged);
             // 
             // label2
             // 
@@ -262,7 +263,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.mpTB07);
+            this.Controls.Add(this.mpDescriptiontxt);
             this.Controls.Add(this.label1);
             this.Name = "MedicalPharmacy";
             this.Text = "MedicalPharmacy";
@@ -274,7 +275,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox mpTB07;
+        private System.Windows.Forms.TextBox mpDescriptiontxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
