@@ -144,11 +144,12 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(481, 427);
+            this.label10.Location = new System.Drawing.Point(457, 427);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 16);
+            this.label10.Size = new System.Drawing.Size(117, 16);
             this.label10.TabIndex = 10;
-            this.label10.Text = "Doctor Name :";
+            this.label10.Text = "Dr SLMC Number :";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // mpTB04
             // 

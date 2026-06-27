@@ -20,26 +20,31 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         }
 
         public MedicalPharmacy(
-            string patirentName,
- 
+            string patientName,
+            string visitDate,
             string age,
-           
+            string doctorSLMC,
             string allergies,
             string description)
-            
         {
             InitializeComponent();
 
-            mpTB01.Text = patirentName;
-           
+            
+
+            mpTB01.Text = patientName;
+            mpTB08.Text = visitDate;
             mpTB03.Text = age;
-            
-            
+            mpTB09.Text = doctorSLMC;
             mpTB06.Text = allergies;
             mpTB07.Text = description;
-           
-
         }
+
+
+
+
+
+
+
 
         private void mpbut01_Click(object sender, EventArgs e)
         {
@@ -81,6 +86,11 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
             }
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
