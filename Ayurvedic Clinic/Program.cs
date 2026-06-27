@@ -21,25 +21,25 @@ namespace Ayurvedic_Clinic
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Pharmacist_registration());
             Application.Run(new doctor_prescription());
-           /* Application.Run(new Patient_registration());
+            //Application.Run(new Patient_registration());
             Application.Run(new MedicalPharmacy());
-            Application.Run(new PatientsHistory());
+            //Application.Run(new PatientsHistory());
 
-            Application.Run(new DoctorRegistor());
-            Application.Run(new ChildRegistration());
+            //Application.Run(new DoctorRegistor());
+            //Application.Run(new ChildRegistration());
 
-            Application.Run(new Login());
-            Application.Run(new AdminDashboard());
-            Application.Run(new SearchID());
-            var pharmacistRegistration = new Pharmacist_registration();
+            //Application.Run(new Login());
+            //Application.Run(new AdminDashboard());
+            //Application.Run(new SearchID());
+            //var pharmacistRegistration = new Pharmacist_registration();
             var doctorPrescription = new doctor_prescription();
-            var patientRegistration = new Patient_registration();
+            //var patientRegistration = new Patient_registration();
             var medicalPharmacy = new MedicalPharmacy();
-            var patientsHistory = new PatientsHistory();
-            var doctorRegistor = new DoctorRegistor();
-            var childRegistration = new ChildRegistration();
-            var login = new Login();
-            var adminDashboard = new AdminDashboard();
+            //var patientsHistory = new PatientsHistory();
+            //var doctorRegistor = new DoctorRegistor();
+            //var childRegistration = new ChildRegistration();
+            //var login = new Login();
+            //var adminDashboard = new AdminDashboard();
 
             //Application.Run(pharmacistRegistration);
             Application.Run(new uf(doctorPrescription));

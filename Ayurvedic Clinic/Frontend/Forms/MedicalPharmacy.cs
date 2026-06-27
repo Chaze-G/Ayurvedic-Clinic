@@ -19,6 +19,28 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             InitializeComponent();
         }
 
+        public MedicalPharmacy(
+            string patirentName,
+ 
+            string age,
+           
+            string allergies,
+            string description)
+            
+        {
+            InitializeComponent();
+
+            mpTB01.Text = patirentName;
+           
+            mpTB03.Text = age;
+            
+            
+            mpTB06.Text = allergies;
+            mpTB07.Text = description;
+           
+
+        }
+
         private void mpbut01_Click(object sender, EventArgs e)
         {
             try

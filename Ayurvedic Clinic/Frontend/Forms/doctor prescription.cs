@@ -13,6 +13,12 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 {
     public partial class doctor_prescription : Form
     {
+        // Add this declaration inside your doctor_prescription class, typically near other control declarations
+        private System.Windows.Forms.TextBox dpgendertxt;
+        private System.Windows.Forms.TextBox dpcontacttxt;
+        private System.Windows.Forms.TextBox dpaddresstxt;
+        private System.Windows.Forms.TextBox dpdoctornametxt;
+
         public doctor_prescription()
         {
             InitializeComponent();
@@ -36,7 +42,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         }
             
         
-    }
+    
 
         private void dppatienthistorybut_Click(object sender, EventArgs e)
         {
@@ -49,18 +55,24 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private void dpmedipacksbut_Click(object sender, EventArgs e)
         {
-       
-            uf uniqueform = new uf();
+            uf uniqueform = new uf(this);
             uniqueform.Show();
            
         }
 
         private void dpsendtopharmacybut_Click(object sender, EventArgs e)
         {
-            Pharmacist_registration pr = new Pharmacist_registration();
-            pr.Show();
 
+
+            MedicalPharmacy pharmacy = new MedicalPharmacy();
+
+            pharmacy.Show();
+
+            this.Hide();
         }
+
+
+
 
         public void AddMedicinePack(string medicinePack)
         {
