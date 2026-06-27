@@ -39,13 +39,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.mpTB04 = new System.Windows.Forms.TextBox();
             this.mpTB05 = new System.Windows.Forms.TextBox();
             this.mpTB03 = new System.Windows.Forms.TextBox();
             this.mpTB02 = new System.Windows.Forms.TextBox();
             this.mpTB01 = new System.Windows.Forms.TextBox();
-            this.mpTB010 = new System.Windows.Forms.TextBox();
             this.mpTB08 = new System.Windows.Forms.TextBox();
             this.mpTB09 = new System.Windows.Forms.TextBox();
             this.mpTB06 = new System.Windows.Forms.TextBox();
@@ -147,20 +145,12 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(481, 427);
+            this.label10.Location = new System.Drawing.Point(457, 427);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 16);
+            this.label10.Size = new System.Drawing.Size(117, 16);
             this.label10.TabIndex = 10;
-            this.label10.Text = "Doctor Name :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(77, 468);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 16);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Next Clinic Date :";
+            this.label10.Text = "Dr SLMC Number :";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // mpTB04
             // 
@@ -197,13 +187,6 @@
             this.mpTB01.Size = new System.Drawing.Size(356, 22);
             this.mpTB01.TabIndex = 16;
             // 
-            // mpTB010
-            // 
-            this.mpTB010.Location = new System.Drawing.Point(181, 468);
-            this.mpTB010.Name = "mpTB010";
-            this.mpTB010.Size = new System.Drawing.Size(254, 22);
-            this.mpTB010.TabIndex = 17;
-            // 
             // mpTB08
             // 
             this.mpTB08.Location = new System.Drawing.Point(181, 421);
@@ -228,7 +211,7 @@
             // mpbut01
             // 
             this.mpbut01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.mpbut01.Location = new System.Drawing.Point(640, 484);
+            this.mpbut01.Location = new System.Drawing.Point(362, 485);
             this.mpbut01.Name = "mpbut01";
             this.mpbut01.Size = new System.Drawing.Size(117, 22);
             this.mpbut01.TabIndex = 21;
@@ -247,13 +230,11 @@
             this.Controls.Add(this.mpTB06);
             this.Controls.Add(this.mpTB09);
             this.Controls.Add(this.mpTB08);
-            this.Controls.Add(this.mpTB010);
             this.Controls.Add(this.mpTB01);
             this.Controls.Add(this.mpTB02);
             this.Controls.Add(this.mpTB03);
             this.Controls.Add(this.mpTB05);
             this.Controls.Add(this.mpTB04);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -285,13 +266,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox mpTB04;
         private System.Windows.Forms.TextBox mpTB05;
         private System.Windows.Forms.TextBox mpTB03;
         private System.Windows.Forms.TextBox mpTB02;
         private System.Windows.Forms.TextBox mpTB01;
-        private System.Windows.Forms.TextBox mpTB010;
         private System.Windows.Forms.TextBox mpTB08;
         private System.Windows.Forms.TextBox mpTB09;
         private System.Windows.Forms.TextBox mpTB06;
