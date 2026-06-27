@@ -174,6 +174,7 @@
             this.crguardianidtxt.Name = "crguardianidtxt";
             this.crguardianidtxt.Size = new System.Drawing.Size(399, 22);
             this.crguardianidtxt.TabIndex = 14;
+            this.crguardianidtxt.TextChanged += new System.EventHandler(this.crguardianidtxt_TextChanged);
             // 
             // label8
             // 
