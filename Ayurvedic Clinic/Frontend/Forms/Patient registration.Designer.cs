@@ -28,69 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ComboBox cmbGender;
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.txtAllergies = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.ComboBox prgenderdropdown;
+            this.prnextbut = new System.Windows.Forms.Button();
+            this.prsavebut = new System.Windows.Forms.Button();
+            this.prallergiestxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.praddresstxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtContactNo = new System.Windows.Forms.TextBox();
+            this.prcnumbertxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtAge = new System.Windows.Forms.TextBox();
+            this.pragetxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtPatientName = new System.Windows.Forms.TextBox();
+            this.prnametxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            cmbGender = new System.Windows.Forms.ComboBox();
+            prgenderdropdown = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // btnNext
+            // prgenderdropdown
             // 
-            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.btnNext.Location = new System.Drawing.Point(607, 524);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(100, 28);
-            this.btnNext.TabIndex = 30;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = false;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.btnSave.Location = new System.Drawing.Point(452, 524);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 28);
-            this.btnSave.TabIndex = 29;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            // 
-            // cmbGender
-            // 
-            cmbGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            cmbGender.FormattingEnabled = true;
-            cmbGender.Items.AddRange(new object[] {
+            prgenderdropdown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            prgenderdropdown.FormattingEnabled = true;
+            prgenderdropdown.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            cmbGender.Location = new System.Drawing.Point(234, 315);
-            cmbGender.Margin = new System.Windows.Forms.Padding(4);
-            cmbGender.Name = "cmbGender";
-            cmbGender.Size = new System.Drawing.Size(473, 24);
-            cmbGender.TabIndex = 28;
-            cmbGender.SelectedIndexChanged += new System.EventHandler(this.cmbGender_SelectedIndexChanged);
+            prgenderdropdown.Location = new System.Drawing.Point(234, 315);
+            prgenderdropdown.Margin = new System.Windows.Forms.Padding(4);
+            prgenderdropdown.Name = "prgenderdropdown";
+            prgenderdropdown.Size = new System.Drawing.Size(473, 24);
+            prgenderdropdown.TabIndex = 28;
+            prgenderdropdown.SelectedIndexChanged += new System.EventHandler(this.cmbGender_SelectedIndexChanged);
             // 
-            // txtAllergies
+            // prnextbut
             // 
-            this.txtAllergies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtAllergies.Location = new System.Drawing.Point(234, 442);
-            this.txtAllergies.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtAllergies.Name = "txtAllergies";
-            this.txtAllergies.Size = new System.Drawing.Size(473, 22);
-            this.txtAllergies.TabIndex = 27;
+            this.prnextbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
+            this.prnextbut.Location = new System.Drawing.Point(607, 524);
+            this.prnextbut.Margin = new System.Windows.Forms.Padding(4);
+            this.prnextbut.Name = "prnextbut";
+            this.prnextbut.Size = new System.Drawing.Size(100, 28);
+            this.prnextbut.TabIndex = 30;
+            this.prnextbut.Text = "Next";
+            this.prnextbut.UseVisualStyleBackColor = false;
+            // 
+            // prsavebut
+            // 
+            this.prsavebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
+            this.prsavebut.Location = new System.Drawing.Point(452, 524);
+            this.prsavebut.Margin = new System.Windows.Forms.Padding(4);
+            this.prsavebut.Name = "prsavebut";
+            this.prsavebut.Size = new System.Drawing.Size(100, 28);
+            this.prsavebut.TabIndex = 29;
+            this.prsavebut.Text = "Save";
+            this.prsavebut.UseVisualStyleBackColor = false;
+            // 
+            // prallergiestxt
+            // 
+            this.prallergiestxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.prallergiestxt.Location = new System.Drawing.Point(234, 442);
+            this.prallergiestxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.prallergiestxt.Name = "prallergiestxt";
+            this.prallergiestxt.Size = new System.Drawing.Size(473, 22);
+            this.prallergiestxt.TabIndex = 27;
             // 
             // label7
             // 
@@ -102,14 +102,14 @@
             this.label7.TabIndex = 26;
             this.label7.Text = "Allergies :";
             // 
-            // txtAddress
+            // praddresstxt
             // 
-            this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtAddress.Location = new System.Drawing.Point(234, 377);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(473, 22);
-            this.txtAddress.TabIndex = 25;
+            this.praddresstxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.praddresstxt.Location = new System.Drawing.Point(234, 377);
+            this.praddresstxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.praddresstxt.Name = "praddresstxt";
+            this.praddresstxt.Size = new System.Drawing.Size(473, 22);
+            this.praddresstxt.TabIndex = 25;
             // 
             // label6
             // 
@@ -131,15 +131,15 @@
             this.label5.TabIndex = 23;
             this.label5.Text = "Gender :";
             // 
-            // txtContactNo
+            // prcnumbertxt
             // 
-            this.txtContactNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtContactNo.Location = new System.Drawing.Point(234, 248);
-            this.txtContactNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtContactNo.MaxLength = 10;
-            this.txtContactNo.Name = "txtContactNo";
-            this.txtContactNo.Size = new System.Drawing.Size(473, 22);
-            this.txtContactNo.TabIndex = 22;
+            this.prcnumbertxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.prcnumbertxt.Location = new System.Drawing.Point(234, 248);
+            this.prcnumbertxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.prcnumbertxt.MaxLength = 10;
+            this.prcnumbertxt.Name = "prcnumbertxt";
+            this.prcnumbertxt.Size = new System.Drawing.Size(473, 22);
+            this.prcnumbertxt.TabIndex = 22;
             // 
             // label4
             // 
@@ -151,15 +151,15 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "Contact Number:";
             // 
-            // txtAge
+            // pragetxt
             // 
-            this.txtAge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtAge.Location = new System.Drawing.Point(234, 189);
-            this.txtAge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtAge.MaxLength = 3;
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(473, 22);
-            this.txtAge.TabIndex = 20;
+            this.pragetxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.pragetxt.Location = new System.Drawing.Point(234, 189);
+            this.pragetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pragetxt.MaxLength = 3;
+            this.pragetxt.Name = "pragetxt";
+            this.pragetxt.Size = new System.Drawing.Size(473, 22);
+            this.pragetxt.TabIndex = 20;
             // 
             // label3
             // 
@@ -171,14 +171,14 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Age:";
             // 
-            // txtPatientName
+            // prnametxt
             // 
-            this.txtPatientName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.txtPatientName.Location = new System.Drawing.Point(234, 131);
-            this.txtPatientName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPatientName.Name = "txtPatientName";
-            this.txtPatientName.Size = new System.Drawing.Size(473, 22);
-            this.txtPatientName.TabIndex = 18;
+            this.prnametxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.prnametxt.Location = new System.Drawing.Point(234, 131);
+            this.prnametxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.prnametxt.Name = "prnametxt";
+            this.prnametxt.Size = new System.Drawing.Size(473, 22);
+            this.prnametxt.TabIndex = 18;
             // 
             // label2
             // 
@@ -216,19 +216,19 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(892, 681);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(cmbGender);
-            this.Controls.Add(this.txtAllergies);
+            this.Controls.Add(this.prnextbut);
+            this.Controls.Add(this.prsavebut);
+            this.Controls.Add(prgenderdropdown);
+            this.Controls.Add(this.prallergiestxt);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.praddresstxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtContactNo);
+            this.Controls.Add(this.prcnumbertxt);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.pragetxt);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtPatientName);
+            this.Controls.Add(this.prnametxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Patient_registration";
@@ -241,18 +241,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox txtAllergies;
+        private System.Windows.Forms.Button prnextbut;
+        private System.Windows.Forms.Button prsavebut;
+        private System.Windows.Forms.TextBox prallergiestxt;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox praddresstxt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtContactNo;
+        private System.Windows.Forms.TextBox prcnumbertxt;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox pragetxt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPatientName;
+        private System.Windows.Forms.TextBox prnametxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
