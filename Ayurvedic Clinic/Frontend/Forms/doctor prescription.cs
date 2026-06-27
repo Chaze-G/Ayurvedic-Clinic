@@ -36,30 +36,33 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         }
             
         
-    }
+    
 
         private void dppatienthistorybut_Click(object sender, EventArgs e)
         {
 
             PatientsHistory patienthis= new PatientsHistory();
             patienthis.Show();
-            
+            this.Hide();
         }
         
 
         private void dpmedipacksbut_Click(object sender, EventArgs e)
         {
-       
-            uf uniqueform = new uf();
-            uniqueform.Show();
-           
+
+          
+            uf uniqueform = new uf(this);
+            this.Hide();
+            uniqueform.ShowDialog();   
+            this.Show();              
         }
+        
 
         private void dpsendtopharmacybut_Click(object sender, EventArgs e)
         {
-            Pharmacist_registration pr = new Pharmacist_registration();
+           MedicalPharmacy pr = new MedicalPharmacy();
             pr.Show();
-
+            this.Hide();
         }
 
         public void AddMedicinePack(string medicinePack)

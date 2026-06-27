@@ -9,25 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
-using Ayurvedic_Clinic.Frontend.Forms;
 
 namespace project_test
 {
     public partial class uf : Form
     {
         private doctor_prescription prescriptionForm;
-        Dictionary <string, string> prescriptions= new Dictionary <string, string> ();
-        string currentPackage = "";
-        Label lastSelectedLabel = null;
+
         public uf(doctor_prescription form)
         {
             InitializeComponent();
             prescriptionForm = form;
         }
-
-        
-
-        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -80,10 +73,10 @@ namespace project_test
             }
 
             prescriptionForm.AddMedicinePack(prescription);
+            MessageBox.Show("Packs added to prescription successfully!");
 
             this.Close();
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -98,18 +91,12 @@ namespace project_test
 
         private void ufbut1_CheckedChanged(object sender, EventArgs e)
         {
-            // Replace 'yourDoctorPrescriptionInstance' with your actual doctor_prescription object
-            // var yourDoctorPrescriptionInstance = ...;
-            // project_test.uf form = new project_test.uf(yourDoctorPrescriptionInstance);
-            // form.ShowDialog();
+
         }
 
         private void phbackbut_Click(object sender, EventArgs e)
         {
-            doctor_prescription  dp = new doctor_prescription();
-            dp.Show();
-            this.Hide();
+            this.Close();
         }
     }
-    }
-
+}
