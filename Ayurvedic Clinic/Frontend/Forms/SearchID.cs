@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace Ayurvedic_Clinic.Frontend.Forms
 {
-    public partial class PatientsHistory : Form
+    public partial class SearchID : Form
     {
-        public PatientsHistory()
+        public SearchID()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-            doctor_prescription dp = new doctor_prescription();
-            dp .Show();
-            this.Hide();
+
         }
     }
 }
