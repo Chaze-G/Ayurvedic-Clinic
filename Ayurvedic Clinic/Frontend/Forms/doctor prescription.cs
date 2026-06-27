@@ -45,15 +45,20 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
             PatientsHistory patienthis= new PatientsHistory();
             patienthis.Show();
-            
+            this.Hide();
         }
         
 
         private void dpmedipacksbut_Click(object sender, EventArgs e)
-        { 
+        {
+
+          
             uf uniqueform = new uf(this);
-            uniqueform.Show();
+            this.Hide();
+            uniqueform.ShowDialog();   
+            this.Show();              
         }
+        
 
         private void dpsendtopharmacybut_Click(object sender, EventArgs e)
         {

@@ -65,7 +65,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                     cmd.Parameters.AddWithValue("@PatientID", 1);
                     cmd.Parameters.AddWithValue("@DoctorID", 1);
 
-                    cmd.Parameters.AddWithValue("@Description", mpTB07.Text);
+                    cmd.Parameters.AddWithValue("@Description", mpDescriptiontxt.Text);
                     cmd.Parameters.AddWithValue("@VisitDate", DateTime.Now);
 
                     cmd.ExecuteNonQuery();
@@ -76,7 +76,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                                     MessageBoxIcon.Information);
 
                     // Clear only the description box
-                    mpTB07.Clear();
+                    mpDescriptiontxt.Clear();
                 }
             }
             catch (Exception ex)
@@ -89,6 +89,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         }
 
         private void label10_Click(object sender, EventArgs e)
+        private void mpTB07_TextChanged(object sender, EventArgs e)
         {
 
         }

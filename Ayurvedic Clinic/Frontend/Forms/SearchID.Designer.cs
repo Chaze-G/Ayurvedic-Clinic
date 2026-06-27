@@ -75,6 +75,8 @@
             this.pictureBox1.Image = global::Ayurvedic_Clinic.Properties.Resources.background_img_3;
             this.pictureBox1.Location = new System.Drawing.Point(20, 171);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            //this.pictureBox1.Image = global::Ayurvedic_Clinic.Properties.Resources.id_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 139);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(47, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
