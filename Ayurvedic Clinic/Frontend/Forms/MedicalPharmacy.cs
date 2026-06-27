@@ -36,7 +36,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             mpTB03.Text = age;
             mpTB09.Text = doctorSLMC;
             mpTB06.Text = allergies;
-            mpTB07.Text = description;
+            
         }
 
 
@@ -88,7 +88,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             }
         }
 
-        private void label10_Click(object sender, EventArgs e)
+       
         private void mpTB07_TextChanged(object sender, EventArgs e)
         {
 
