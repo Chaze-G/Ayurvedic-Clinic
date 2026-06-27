@@ -36,6 +36,11 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void rphbut_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 //using System;

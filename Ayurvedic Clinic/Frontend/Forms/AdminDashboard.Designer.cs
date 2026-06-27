@@ -206,6 +206,7 @@
             // 
             // rphbut
             // 
+            this.rphbut.AutoSize = true;
             this.rphbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(216)))), ((int)(((byte)(204)))));
             this.rphbut.FlatAppearance.BorderSize = 0;
             this.rphbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -217,6 +218,7 @@
             this.rphbut.TabIndex = 2;
             this.rphbut.Text = "Register Pharmacist";
             this.rphbut.UseVisualStyleBackColor = false;
+            this.rphbut.Click += new System.EventHandler(this.rphbut_Click);
             // 
             // label6
             // 
