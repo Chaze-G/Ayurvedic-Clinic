@@ -47,5 +47,10 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void phregisterdropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
