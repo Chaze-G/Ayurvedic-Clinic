@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.registerlink = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.loginbut = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -57,7 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.registerlink);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.loginbut);
             this.panel1.Controls.Add(this.label4);
@@ -72,29 +72,17 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // registerlink
-            // 
-            this.registerlink.AutoSize = true;
-            this.registerlink.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerlink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(201)))), ((int)(((byte)(193)))));
-            this.registerlink.Location = new System.Drawing.Point(61, 330);
-            this.registerlink.Name = "registerlink";
-            this.registerlink.Size = new System.Drawing.Size(200, 17);
-            this.registerlink.TabIndex = 8;
-            this.registerlink.TabStop = true;
-            this.registerlink.Text = "Register through the receptionist";
-            this.registerlink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.registerlink_LinkClicked);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(84, 302);
+            this.label5.Location = new System.Drawing.Point(95, 299);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(145, 17);
             this.label5.TabIndex = 7;
             this.label5.Text = "Don\'t Have an account?";
+            this.label5.Click += new System.EventHandler(this.label5_Click_1);
             // 
             // loginbut
             // 
@@ -253,6 +241,18 @@
             this.textBox2.Size = new System.Drawing.Size(124, 20);
             this.textBox2.TabIndex = 9;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(201)))), ((int)(((byte)(193)))));
+            this.label6.Location = new System.Drawing.Point(60, 319);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(222, 17);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Please login through the receptionist";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,8 +298,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button loginbut;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.LinkLabel registerlink;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
     }
 }
