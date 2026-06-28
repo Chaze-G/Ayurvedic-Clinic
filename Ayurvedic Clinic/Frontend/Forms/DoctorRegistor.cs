@@ -36,5 +36,15 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phbackbut_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
