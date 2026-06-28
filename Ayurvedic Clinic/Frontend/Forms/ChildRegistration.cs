@@ -41,5 +41,12 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void drbackbut_Click(object sender, EventArgs e)
+        {
+            Patient_registration regpatient = new Patient_registration();
+            regpatient.Show();
+            this.Hide();
+        }
     }
 }

@@ -244,6 +244,7 @@
             this.drbackbut.TabIndex = 22;
             this.drbackbut.Text = "<<BACK";
             this.drbackbut.UseVisualStyleBackColor = false;
+            this.drbackbut.Click += new System.EventHandler(this.drbackbut_Click);
             // 
             // ChildRegistration
             // 
