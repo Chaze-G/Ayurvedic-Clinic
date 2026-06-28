@@ -30,22 +30,24 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.crnametxt = new System.Windows.Forms.TextBox();
+            this.crcontctnumbertxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.cragetxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.cradresstxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.crallergiestxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.crguardianidtxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.crenterbut = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.crgenderfemaleradiobut = new System.Windows.Forms.RadioButton();
+            this.crgendermaleradiobut = new System.Windows.Forms.RadioButton();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.drbackbut = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,19 +74,19 @@
             this.label2.Text = "Patient Name :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // crnametxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 167);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 20);
-            this.textBox1.TabIndex = 2;
+            this.crnametxt.Location = new System.Drawing.Point(165, 167);
+            this.crnametxt.Name = "crnametxt";
+            this.crnametxt.Size = new System.Drawing.Size(300, 20);
+            this.crnametxt.TabIndex = 2;
             // 
-            // textBox2
+            // crcontctnumbertxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 223);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 20);
-            this.textBox2.TabIndex = 4;
+            this.crcontctnumbertxt.Location = new System.Drawing.Point(165, 223);
+            this.crcontctnumbertxt.Name = "crcontctnumbertxt";
+            this.crcontctnumbertxt.Size = new System.Drawing.Size(300, 20);
+            this.crcontctnumbertxt.TabIndex = 4;
             // 
             // label3
             // 
@@ -106,12 +108,12 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Contact Number :";
             // 
-            // textBox4
+            // cragetxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(165, 253);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(300, 20);
-            this.textBox4.TabIndex = 8;
+            this.cragetxt.Location = new System.Drawing.Point(165, 253);
+            this.cragetxt.Name = "cragetxt";
+            this.cragetxt.Size = new System.Drawing.Size(300, 20);
+            this.cragetxt.TabIndex = 8;
             // 
             // label5
             // 
@@ -122,12 +124,12 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Gender :";
             // 
-            // textBox5
+            // cradresstxt
             // 
-            this.textBox5.Location = new System.Drawing.Point(165, 313);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(300, 20);
-            this.textBox5.TabIndex = 10;
+            this.cradresstxt.Location = new System.Drawing.Point(165, 313);
+            this.cradresstxt.Name = "cradresstxt";
+            this.cradresstxt.Size = new System.Drawing.Size(300, 20);
+            this.cradresstxt.TabIndex = 10;
             // 
             // label6
             // 
@@ -138,12 +140,12 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Address :";
             // 
-            // textBox6
+            // crallergiestxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(165, 343);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(300, 20);
-            this.textBox6.TabIndex = 12;
+            this.crallergiestxt.Location = new System.Drawing.Point(165, 343);
+            this.crallergiestxt.Name = "crallergiestxt";
+            this.crallergiestxt.Size = new System.Drawing.Size(300, 20);
+            this.crallergiestxt.TabIndex = 12;
             // 
             // label7
             // 
@@ -154,12 +156,13 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Allergies :";
             // 
-            // textBox7
+            // crguardianidtxt
             // 
-            this.textBox7.Location = new System.Drawing.Point(165, 193);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(300, 20);
-            this.textBox7.TabIndex = 14;
+            this.crguardianidtxt.Location = new System.Drawing.Point(165, 193);
+            this.crguardianidtxt.Name = "crguardianidtxt";
+            this.crguardianidtxt.Size = new System.Drawing.Size(300, 20);
+            this.crguardianidtxt.TabIndex = 14;
+            this.crguardianidtxt.TextChanged += new System.EventHandler(this.crguardianidtxt_TextChanged);
             // 
             // label8
             // 
@@ -171,53 +174,77 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Guardian\'s ID :";
             // 
-            // button1
+            // crenterbut
             // 
-            this.button1.BackColor = System.Drawing.Color.Turquoise;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MintCream;
-            this.button1.Location = new System.Drawing.Point(210, 409);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 31);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Enter";
-            this.button1.UseVisualStyleBackColor = false;
+            this.crenterbut.BackColor = System.Drawing.Color.Turquoise;
+            this.crenterbut.FlatAppearance.BorderSize = 0;
+            this.crenterbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.crenterbut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.crenterbut.ForeColor = System.Drawing.Color.MintCream;
+            this.crenterbut.Location = new System.Drawing.Point(210, 409);
+            this.crenterbut.Name = "crenterbut";
+            this.crenterbut.Size = new System.Drawing.Size(170, 31);
+            this.crenterbut.TabIndex = 15;
+            this.crenterbut.Text = "Enter";
+            this.crenterbut.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.crgenderfemaleradiobut);
+            this.groupBox1.Controls.Add(this.crgendermaleradiobut);
             this.groupBox1.Location = new System.Drawing.Point(165, 279);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(196, 28);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
-            // radioButton1
+            // crgenderfemaleradiobut
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(24, 7);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.crgenderfemaleradiobut.AutoSize = true;
+            this.crgenderfemaleradiobut.Location = new System.Drawing.Point(112, 7);
+            this.crgenderfemaleradiobut.Name = "crgenderfemaleradiobut";
+            this.crgenderfemaleradiobut.Size = new System.Drawing.Size(59, 17);
+            this.crgenderfemaleradiobut.TabIndex = 1;
+            this.crgenderfemaleradiobut.TabStop = true;
+            this.crgenderfemaleradiobut.Text = "Female";
+            this.crgenderfemaleradiobut.UseVisualStyleBackColor = true;
+            this.crgenderfemaleradiobut.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // radioButton2
+            // crgendermaleradiobut
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(112, 7);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.crgendermaleradiobut.AutoSize = true;
+            this.crgendermaleradiobut.Location = new System.Drawing.Point(24, 7);
+            this.crgendermaleradiobut.Name = "crgendermaleradiobut";
+            this.crgendermaleradiobut.Size = new System.Drawing.Size(48, 17);
+            this.crgendermaleradiobut.TabIndex = 0;
+            this.crgendermaleradiobut.TabStop = true;
+            this.crgendermaleradiobut.Text = "Male";
+            this.crgendermaleradiobut.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.textBox2.Location = new System.Drawing.Point(11, 60);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(124, 20);
+            this.textBox2.TabIndex = 17;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // drbackbut
+            // 
+            this.drbackbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
+            this.drbackbut.Font = new System.Drawing.Font("Maiandra GD", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drbackbut.ForeColor = System.Drawing.Color.DarkGreen;
+            this.drbackbut.Location = new System.Drawing.Point(486, 56);
+            this.drbackbut.Margin = new System.Windows.Forms.Padding(2);
+            this.drbackbut.Name = "drbackbut";
+            this.drbackbut.Size = new System.Drawing.Size(71, 24);
+            this.drbackbut.TabIndex = 22;
+            this.drbackbut.Text = "<<BACK";
+            this.drbackbut.UseVisualStyleBackColor = false;
+            this.drbackbut.Click += new System.EventHandler(this.drbackbut_Click);
             // 
             // ChildRegistration
             // 
@@ -226,20 +253,22 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.img_by_madusha;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(587, 639);
+            this.Controls.Add(this.drbackbut);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.crenterbut);
+            this.Controls.Add(this.crguardianidtxt);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.crallergiestxt);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.cradresstxt);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.cragetxt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.crcontctnumbertxt);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.crnametxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ChildRegistration";
@@ -256,21 +285,23 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox crnametxt;
+        private System.Windows.Forms.TextBox crcontctnumbertxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox cragetxt;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox cradresstxt;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox crallergiestxt;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox crguardianidtxt;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button crenterbut;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton crgenderfemaleradiobut;
+        private System.Windows.Forms.RadioButton crgendermaleradiobut;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button drbackbut;
     }
 }

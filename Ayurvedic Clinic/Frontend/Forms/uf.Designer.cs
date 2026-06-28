@@ -71,6 +71,7 @@
             this.ufbut9 = new System.Windows.Forms.CheckBox();
             this.ufbut10 = new System.Windows.Forms.CheckBox();
             this.btnAddPrescription2 = new System.Windows.Forms.Button();
+            this.ufbackbut = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -512,13 +513,26 @@
             this.btnAddPrescription2.BackColor = System.Drawing.Color.LightGreen;
             this.btnAddPrescription2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddPrescription2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPrescription2.Location = new System.Drawing.Point(290, 543);
+            this.btnAddPrescription2.Location = new System.Drawing.Point(262, 548);
             this.btnAddPrescription2.Name = "btnAddPrescription2";
             this.btnAddPrescription2.Size = new System.Drawing.Size(271, 47);
             this.btnAddPrescription2.TabIndex = 34;
             this.btnAddPrescription2.Text = "ADD TO PRESCRIPTION";
             this.btnAddPrescription2.UseVisualStyleBackColor = false;
             this.btnAddPrescription2.Click += new System.EventHandler(this.btnAddPrescription2_Click);
+            // 
+            // ufbackbut
+            // 
+            this.ufbackbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
+            this.ufbackbut.Font = new System.Drawing.Font("Maiandra GD", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ufbackbut.ForeColor = System.Drawing.Color.DarkGreen;
+            this.ufbackbut.Location = new System.Drawing.Point(673, 12);
+            this.ufbackbut.Name = "ufbackbut";
+            this.ufbackbut.Size = new System.Drawing.Size(95, 29);
+            this.ufbackbut.TabIndex = 36;
+            this.ufbackbut.Text = "<<BACK";
+            this.ufbackbut.UseVisualStyleBackColor = false;
+            this.ufbackbut.Click += new System.EventHandler(this.phbackbut_Click);
             // 
             // uf
             // 
@@ -527,6 +541,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(780, 721);
+            this.Controls.Add(this.ufbackbut);
             this.Controls.Add(this.btnAddPrescription2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.ufbut10);
@@ -622,6 +637,7 @@
         private System.Windows.Forms.CheckBox ufbut9;
         private System.Windows.Forms.CheckBox ufbut10;
         private System.Windows.Forms.Button btnAddPrescription2;
+        private System.Windows.Forms.Button ufbackbut;
     }
 }
 

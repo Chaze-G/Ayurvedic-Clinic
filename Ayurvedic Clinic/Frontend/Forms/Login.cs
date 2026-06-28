@@ -30,7 +30,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         private void btnEye_Click(object sender, EventArgs e)
         {
             // switch between dotting the password and showing characters
-            txtPassword.UseSystemPasswordChar = !txtPassword.UseSystemPasswordChar;
+            loginpasswordtxt.UseSystemPasswordChar = !loginpasswordtxt.UseSystemPasswordChar;
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
@@ -69,6 +69,21 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registerlink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+               
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project_test;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 {
     public partial class doctor_prescription : Form
     {
+       
+
         public doctor_prescription()
         {
             InitializeComponent();
@@ -26,5 +29,65 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void dpformorepatientdetailbut_Click(object sender, EventArgs e)
+        {
+            Patient_registration pr = new Patient_registration();
+            pr.Show();
+            this.Hide();
+        }
+            
+        
+    
+
+        private void dppatienthistorybut_Click(object sender, EventArgs e)
+        {
+
+            PatientsHistory patienthis= new PatientsHistory();
+            patienthis.Show();
+            this.Hide();
+        }
+        
+
+        private void dpmedipacksbut_Click(object sender, EventArgs e)
+        {
+
+          
+            uf uniqueform = new uf(this);
+            this.Hide();
+            uniqueform.ShowDialog();   
+            this.Show();              
+        }
+        
+
+        private void dpsendtopharmacybut_Click(object sender, EventArgs e)
+        {
+            MedicalPharmacy pharmacy = new MedicalPharmacy(
+                dvnametxt.Text,
+                dpDatetxt.Text,
+                dpagetxt.Text,
+                dplmcnumbertxt.Text,
+                dpallergiestxt.Text,
+                dpnotestxt.Text);
+
+            pharmacy.Show();
+
+            this.Hide();
+        }
+
+
+
+
+
+        public void AddMedicinePack(string medicinePack)
+        {
+            if (!string.IsNullOrWhiteSpace(dpnotestxt.Text))
+                dpnotestxt.AppendText(Environment.NewLine);
+            dpnotestxt.AppendText(medicinePack);
+        }
+
+        
+        
     }
 }
+
