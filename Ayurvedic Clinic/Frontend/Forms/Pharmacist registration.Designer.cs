@@ -171,6 +171,7 @@
             this.phregbackbut.TabIndex = 22;
             this.phregbackbut.Text = "<<BACK";
             this.phregbackbut.UseVisualStyleBackColor = false;
+            this.phregbackbut.Click += new System.EventHandler(this.phregbackbut_Click);
             // 
             // Pharmacist_registration
             // 
