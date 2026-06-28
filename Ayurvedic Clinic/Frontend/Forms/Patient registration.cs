@@ -49,8 +49,6 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private void prbackbut_Click(object sender, EventArgs e)
         {
-            AdminDashboard dashboada = new AdminDashboard();
-            dashboada.Show();
             this.Hide();
         }
 

@@ -44,7 +44,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private void phbackbut_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
     }
 }
