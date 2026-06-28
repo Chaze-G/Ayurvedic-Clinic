@@ -35,6 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +44,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtPatientID);
@@ -99,22 +103,43 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 67);
+            this.label2.Location = new System.Drawing.Point(30, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(249, 13);
+            this.label2.Size = new System.Drawing.Size(219, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Enter the Patient ID Number to view medical history";
+            this.label2.Text = "Enter the Patient ID Number to view medical ";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 21);
+            this.label1.Location = new System.Drawing.Point(28, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(207, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Search Patient Record";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(55, 84);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(61, 73);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(150, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "history and Doctor prescription";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // SearchID
             // 
@@ -143,5 +168,7 @@
         private System.Windows.Forms.TextBox txtPatientID;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
