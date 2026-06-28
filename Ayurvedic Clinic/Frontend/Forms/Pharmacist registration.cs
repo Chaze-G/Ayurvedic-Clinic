@@ -37,5 +37,15 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             this.Hide();
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

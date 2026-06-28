@@ -38,15 +38,15 @@
             this.phregnametxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.phregbackbut = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // phregisterbut
             // 
             this.phregisterbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(216)))), ((int)(((byte)(204)))));
             this.phregisterbut.ForeColor = System.Drawing.Color.Black;
-            this.phregisterbut.Location = new System.Drawing.Point(216, 434);
+            this.phregisterbut.Location = new System.Drawing.Point(216, 384);
             this.phregisterbut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.phregisterbut.Name = "phregisterbut";
             this.phregisterbut.Size = new System.Drawing.Size(132, 44);
@@ -63,7 +63,7 @@
             "Male",
             "Female",
             "Other"});
-            this.phregisterdropdown.Location = new System.Drawing.Point(145, 364);
+            this.phregisterdropdown.Location = new System.Drawing.Point(145, 325);
             this.phregisterdropdown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.phregisterdropdown.Name = "phregisterdropdown";
             this.phregisterdropdown.Size = new System.Drawing.Size(298, 21);
@@ -72,7 +72,7 @@
             // phrcontactnotxt
             // 
             this.phrcontactnotxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.phrcontactnotxt.Location = new System.Drawing.Point(145, 293);
+            this.phrcontactnotxt.Location = new System.Drawing.Point(145, 281);
             this.phrcontactnotxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.phrcontactnotxt.MaxLength = 10;
             this.phrcontactnotxt.Name = "phrcontactnotxt";
@@ -82,7 +82,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(29, 366);
+            this.label5.Location = new System.Drawing.Point(29, 327);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 13);
@@ -92,7 +92,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 298);
+            this.label4.Location = new System.Drawing.Point(29, 286);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 13);
@@ -102,17 +102,19 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 231);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(29, 248);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Licence No:";
+            this.label3.Text = "Password";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // phrlicencenotxt
             // 
             this.phrlicencenotxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.phrlicencenotxt.Location = new System.Drawing.Point(145, 226);
+            this.phrlicencenotxt.Location = new System.Drawing.Point(145, 243);
             this.phrlicencenotxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.phrlicencenotxt.Name = "phrlicencenotxt";
             this.phrlicencenotxt.Size = new System.Drawing.Size(298, 20);
@@ -149,29 +151,26 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Pharmacist Registration Form";
             // 
-            // textBox2
+            // textBox1
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox2.Location = new System.Drawing.Point(32, 23);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(124, 20);
-            this.textBox2.TabIndex = 21;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.textBox1.Location = new System.Drawing.Point(145, 205);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(298, 20);
+            this.textBox1.TabIndex = 22;
             // 
-            // phregbackbut
+            // label6
             // 
-            this.phregbackbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.phregbackbut.Font = new System.Drawing.Font("Maiandra GD", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phregbackbut.ForeColor = System.Drawing.Color.DarkGreen;
-            this.phregbackbut.Location = new System.Drawing.Point(437, 34);
-            this.phregbackbut.Margin = new System.Windows.Forms.Padding(2);
-            this.phregbackbut.Name = "phregbackbut";
-            this.phregbackbut.Size = new System.Drawing.Size(71, 24);
-            this.phregbackbut.TabIndex = 22;
-            this.phregbackbut.Text = "<<BACK";
-            this.phregbackbut.UseVisualStyleBackColor = false;
-            this.phregbackbut.Click += new System.EventHandler(this.phregbackbut_Click);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(29, 208);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(76, 13);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Licence No:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Pharmacist_registration
             // 
@@ -180,8 +179,8 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(533, 594);
-            this.Controls.Add(this.phregbackbut);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.phregisterbut);
             this.Controls.Add(this.phregisterdropdown);
             this.Controls.Add(this.phrcontactnotxt);
@@ -213,7 +212,7 @@
         private System.Windows.Forms.TextBox phregnametxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button phregbackbut;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6;
     }
 }
