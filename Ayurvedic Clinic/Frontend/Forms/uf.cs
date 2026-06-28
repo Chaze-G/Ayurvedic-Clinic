@@ -16,6 +16,11 @@ namespace project_test
     {
         private doctor_prescription prescriptionForm;
 
+        public uf()
+        {
+            InitializeComponent();
+        }
+
         public uf(doctor_prescription form)
         {
             InitializeComponent();
@@ -72,7 +77,13 @@ namespace project_test
                 return;
             }
 
-            prescriptionForm.AddMedicinePack(prescription);
+            if (prescriptionForm != null)
+            {
+                prescriptionForm.AddMedicinePack(prescription);
+            }
+
+            MessageBox.Show("Packs added successfully!");
+            this.Close();
             MessageBox.Show("Packs added to prescription successfully!");
 
             this.Close();

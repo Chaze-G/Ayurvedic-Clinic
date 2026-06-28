@@ -24,7 +24,7 @@
         private void InitializeComponent()
         {
             this.dpnotestxt = new System.Windows.Forms.RichTextBox();
-            this.dpslmcnumbertxt = new System.Windows.Forms.TextBox();
+            this.dplmcnumbertxt = new System.Windows.Forms.TextBox();
             this.dpsendtopharmacybut = new System.Windows.Forms.Button();
             this.dpsavebut = new System.Windows.Forms.Button();
             this.dpDatetxt = new System.Windows.Forms.DateTimePicker();
@@ -51,12 +51,12 @@
             this.dpnotestxt.TabIndex = 24;
             this.dpnotestxt.Text = "Notes-";
             // 
-            // dpslmcnumbertxt
+            // dplmcnumbertxt
             // 
-            this.dpslmcnumbertxt.Location = new System.Drawing.Point(148, 488);
-            this.dpslmcnumbertxt.Name = "dpslmcnumbertxt";
-            this.dpslmcnumbertxt.Size = new System.Drawing.Size(107, 22);
-            this.dpslmcnumbertxt.TabIndex = 23;
+            this.dplmcnumbertxt.Location = new System.Drawing.Point(148, 488);
+            this.dplmcnumbertxt.Name = "dplmcnumbertxt";
+            this.dplmcnumbertxt.Size = new System.Drawing.Size(107, 22);
+            this.dplmcnumbertxt.TabIndex = 23;
             // 
             // dpsendtopharmacybut
             // 
@@ -101,9 +101,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(31, 491);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 16);
+            this.label6.Size = new System.Drawing.Size(104, 16);
             this.label6.TabIndex = 16;
-            this.label6.Text = "Dr SLMC Number";
+            this.label6.Text = "Dr AMC Number";
             // 
             // dpmedipacksbut
             // 
@@ -204,7 +204,7 @@
             this.Controls.Add(this.dppatienthistorybut);
             this.Controls.Add(this.dpmedipacksbut);
             this.Controls.Add(this.dpnotestxt);
-            this.Controls.Add(this.dpslmcnumbertxt);
+            this.Controls.Add(this.dplmcnumbertxt);
             this.Controls.Add(this.dpsendtopharmacybut);
             this.Controls.Add(this.dpsavebut);
             this.Controls.Add(this.dpDatetxt);
@@ -222,7 +222,7 @@
         #endregion
 
         private System.Windows.Forms.RichTextBox dpnotestxt;
-        private System.Windows.Forms.TextBox dpslmcnumbertxt;
+        private System.Windows.Forms.TextBox dplmcnumbertxt;
         private System.Windows.Forms.Button dpsendtopharmacybut;
         private System.Windows.Forms.Button dpsavebut;
         private System.Windows.Forms.DateTimePicker dpDatetxt;

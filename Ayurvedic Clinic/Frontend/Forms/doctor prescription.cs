@@ -13,6 +13,8 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 {
     public partial class doctor_prescription : Form
     {
+       
+
         public doctor_prescription()
         {
             InitializeComponent();
@@ -60,10 +62,22 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private void dpsendtopharmacybut_Click(object sender, EventArgs e)
         {
-           MedicalPharmacy pr = new MedicalPharmacy();
-            pr.Show();
+            MedicalPharmacy pharmacy = new MedicalPharmacy(
+                dvnametxt.Text,
+                dpDatetxt.Text,
+                dpagetxt.Text,
+                dplmcnumbertxt.Text,
+                dpallergiestxt.Text,
+                dpnotestxt.Text);
+
+            pharmacy.Show();
+
             this.Hide();
         }
+
+
+
+
 
         public void AddMedicinePack(string medicinePack)
         {
@@ -71,6 +85,9 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                 dpnotestxt.AppendText(Environment.NewLine);
             dpnotestxt.AppendText(medicinePack);
         }
+
+        
+        
     }
 }
 

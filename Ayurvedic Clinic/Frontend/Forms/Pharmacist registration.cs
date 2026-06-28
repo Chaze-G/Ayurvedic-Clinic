@@ -26,5 +26,26 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phregbackbut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

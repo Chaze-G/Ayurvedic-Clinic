@@ -31,5 +31,21 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void crguardianidtxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void drbackbut_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+        }
     }
 }

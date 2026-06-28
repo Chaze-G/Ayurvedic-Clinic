@@ -21,5 +21,42 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void cmbGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prnextbut_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prsavebut_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prbackbut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void prifchildbut_Click(object sender, EventArgs e)
+        {
+            ChildRegistration regchild = new ChildRegistration();
+            regchild.Show();
+
+        }
     }
 }
