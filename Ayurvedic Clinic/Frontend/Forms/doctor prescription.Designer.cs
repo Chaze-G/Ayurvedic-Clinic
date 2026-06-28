@@ -51,10 +51,10 @@
             this.dpnotestxt.TabIndex = 24;
             this.dpnotestxt.Text = "Notes-";
             // 
-            // dpslmcnumbertxt
+            // dplmcnumbertxt
             // 
             this.dplmcnumbertxt.Location = new System.Drawing.Point(148, 488);
-            this.dplmcnumbertxt.Name = "dpslmcnumbertxt";
+            this.dplmcnumbertxt.Name = "dplmcnumbertxt";
             this.dplmcnumbertxt.Size = new System.Drawing.Size(107, 22);
             this.dplmcnumbertxt.TabIndex = 23;
             // 
@@ -101,9 +101,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(31, 491);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 16);
+            this.label6.Size = new System.Drawing.Size(104, 16);
             this.label6.TabIndex = 16;
-            this.label6.Text = "Dr SLMC Number";
+            this.label6.Text = "Dr AMC Number";
             // 
             // dpmedipacksbut
             // 

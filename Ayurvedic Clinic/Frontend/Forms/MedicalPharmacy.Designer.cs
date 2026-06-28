@@ -114,9 +114,10 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(457, 427);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 16);
+            this.label10.Size = new System.Drawing.Size(110, 16);
             this.label10.TabIndex = 10;
-            this.label10.Text = "Dr SLMC Number :";
+            this.label10.Text = "Dr AMC Number :";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // mpAgetxt
             // 
@@ -134,7 +135,7 @@
             // 
             // mpDateandtimetxt
             // 
-            this.mpDateandtimetxt.Location = new System.Drawing.Point(181, 421);
+            this.mpDateandtimetxt.Location = new System.Drawing.Point(186, 418);
             this.mpDateandtimetxt.Name = "mpDateandtimetxt";
             this.mpDateandtimetxt.Size = new System.Drawing.Size(254, 22);
             this.mpDateandtimetxt.TabIndex = 18;
@@ -156,11 +157,11 @@
             // mpSavebut
             // 
             this.mpSavebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.mpSavebut.Location = new System.Drawing.Point(324, 483);
+            this.mpSavebut.Location = new System.Drawing.Point(351, 468);
             this.mpSavebut.Name = "mpSavebut";
-            this.mpSavebut.Size = new System.Drawing.Size(117, 22);
+            this.mpSavebut.Size = new System.Drawing.Size(117, 36);
             this.mpSavebut.TabIndex = 21;
-            this.mpSavebut.Text = "Save";
+            this.mpSavebut.Text = "Back";
             this.mpSavebut.UseVisualStyleBackColor = false;
             this.mpSavebut.Click += new System.EventHandler(this.mpbut01_Click);
             // 
