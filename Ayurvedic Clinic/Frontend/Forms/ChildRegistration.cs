@@ -31,5 +31,10 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void crguardianidtxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

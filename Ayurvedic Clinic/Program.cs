@@ -11,9 +11,7 @@ namespace Ayurvedic_Clinic
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+
         [STAThread]
         static void Main()
         {
@@ -21,6 +19,8 @@ namespace Ayurvedic_Clinic
             Application.SetCompatibleTextRenderingDefault(false);
           Application.Run(new Login ());
             Application.Run(new doctor_prescription());
+           Application.Run(new Login ());
+            Application.Run(new AdminDashboard());
         }
     }
 }
