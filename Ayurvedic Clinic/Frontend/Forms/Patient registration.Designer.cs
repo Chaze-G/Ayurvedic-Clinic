@@ -224,7 +224,7 @@
             // prifchildbut
             // 
             this.prifchildbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.prifchildbut.Location = new System.Drawing.Point(87, 71);
+            this.prifchildbut.Location = new System.Drawing.Point(87, 72);
             this.prifchildbut.Name = "prifchildbut";
             this.prifchildbut.Size = new System.Drawing.Size(131, 23);
             this.prifchildbut.TabIndex = 33;
