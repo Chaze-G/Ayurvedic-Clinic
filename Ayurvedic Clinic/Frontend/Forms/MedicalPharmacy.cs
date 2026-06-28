@@ -31,6 +31,12 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
             
 
+            mpTB01.Text = patientName;
+            mpTB08.Text = visitDate;
+            mpTB03.Text = age;
+            mpTB09.Text = doctorSLMC;
+            mpTB06.Text = allergies;
+            
             mpPatientnametxt.Text = patientName;
             mpDateandtimetxt.Text = visitDate;
             mpAgetxt.Text = age;
@@ -90,6 +96,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             }
         }
 
+        
        
         private void label10_Click(object sender, EventArgs e)
         {

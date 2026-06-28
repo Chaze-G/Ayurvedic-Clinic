@@ -72,5 +72,20 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void registerlink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+               
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

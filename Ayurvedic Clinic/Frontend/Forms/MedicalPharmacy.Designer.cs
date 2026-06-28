@@ -163,6 +163,8 @@
             this.label10.Size = new System.Drawing.Size(110, 16);
             this.label10.Size = new System.Drawing.Size(96, 13);
             this.label10.TabIndex = 10;
+            this.label10.Text = "Dr SLMC Number :";
+            //this.label10.Click += new System.EventHandler(this.label10_Click);
             this.label10.Text = "Dr AMC Number :";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
