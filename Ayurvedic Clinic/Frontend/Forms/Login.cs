@@ -72,5 +72,11 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void registerlink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+               AdminDashboard dashboarda= new AdminDashboard();
+               dashboarda.Show();
+        }
     }
 }

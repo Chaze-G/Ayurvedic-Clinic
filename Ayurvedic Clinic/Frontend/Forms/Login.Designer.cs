@@ -83,6 +83,7 @@
             this.registerlink.TabIndex = 8;
             this.registerlink.TabStop = true;
             this.registerlink.Text = "Register through the receptionist";
+            this.registerlink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.registerlink_LinkClicked);
             // 
             // label5
             // 
@@ -247,7 +248,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox2.Location = new System.Drawing.Point(211, 20);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 20);
             this.textBox2.TabIndex = 9;
