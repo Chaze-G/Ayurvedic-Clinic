@@ -51,5 +51,12 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
         }
+
+        private void prifchildbut_Click(object sender, EventArgs e)
+        {
+            ChildRegistration regchild = new ChildRegistration();
+            regchild.Show();
+
+        }
     }
 }

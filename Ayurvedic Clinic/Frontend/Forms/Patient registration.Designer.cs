@@ -230,6 +230,7 @@
             this.prifchildbut.TabIndex = 33;
             this.prifchildbut.Text = "Click to Register a child";
             this.prifchildbut.UseVisualStyleBackColor = false;
+            this.prifchildbut.Click += new System.EventHandler(this.prifchildbut_Click);
             // 
             // Patient_registration
             // 
