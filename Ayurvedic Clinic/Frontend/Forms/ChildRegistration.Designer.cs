@@ -83,7 +83,7 @@
             // 
             // crcontctnumbertxt
             // 
-            this.crcontctnumbertxt.Location = new System.Drawing.Point(165, 223);
+            this.crcontctnumbertxt.Location = new System.Drawing.Point(165, 227);
             this.crcontctnumbertxt.Name = "crcontctnumbertxt";
             this.crcontctnumbertxt.Size = new System.Drawing.Size(300, 20);
             this.crcontctnumbertxt.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(127, 260);
+            this.label3.Location = new System.Drawing.Point(127, 324);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 3;
@@ -110,7 +110,7 @@
             // 
             // cragetxt
             // 
-            this.cragetxt.Location = new System.Drawing.Point(165, 253);
+            this.cragetxt.Location = new System.Drawing.Point(165, 317);
             this.cragetxt.Name = "cragetxt";
             this.cragetxt.Size = new System.Drawing.Size(300, 20);
             this.cragetxt.TabIndex = 8;
@@ -126,7 +126,7 @@
             // 
             // cradresstxt
             // 
-            this.cradresstxt.Location = new System.Drawing.Point(165, 313);
+            this.cradresstxt.Location = new System.Drawing.Point(165, 253);
             this.cradresstxt.Name = "cradresstxt";
             this.cradresstxt.Size = new System.Drawing.Size(300, 20);
             this.cradresstxt.TabIndex = 10;
@@ -134,7 +134,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(108, 316);
+            this.label6.Location = new System.Drawing.Point(108, 256);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 13);
             this.label6.TabIndex = 9;
@@ -158,7 +158,7 @@
             // 
             // crguardianidtxt
             // 
-            this.crguardianidtxt.Location = new System.Drawing.Point(165, 193);
+            this.crguardianidtxt.Location = new System.Drawing.Point(165, 201);
             this.crguardianidtxt.Name = "crguardianidtxt";
             this.crguardianidtxt.Size = new System.Drawing.Size(300, 20);
             this.crguardianidtxt.TabIndex = 14;
@@ -168,11 +168,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(82, 200);
+            this.label8.Location = new System.Drawing.Point(82, 201);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 13);
+            this.label8.Size = new System.Drawing.Size(84, 13);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Guardian\'s ID :";
+            this.label8.Text = "Guardian\'s NIC :";
             // 
             // crenterbut
             // 
@@ -226,7 +226,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox2.Location = new System.Drawing.Point(11, 60);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 20);
             this.textBox2.TabIndex = 17;
