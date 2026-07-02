@@ -45,6 +45,8 @@
             this.prbackbut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.prifchildbut = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             prgenderdropdown = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -55,7 +57,7 @@
             prgenderdropdown.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            prgenderdropdown.Location = new System.Drawing.Point(190, 270);
+            prgenderdropdown.Location = new System.Drawing.Point(190, 272);
             prgenderdropdown.Name = "prgenderdropdown";
             prgenderdropdown.Size = new System.Drawing.Size(356, 21);
             prgenderdropdown.TabIndex = 28;
@@ -64,7 +66,7 @@
             // prsavebut
             // 
             this.prsavebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.prsavebut.Location = new System.Drawing.Point(471, 426);
+            this.prsavebut.Location = new System.Drawing.Point(471, 402);
             this.prsavebut.Name = "prsavebut";
             this.prsavebut.Size = new System.Drawing.Size(75, 23);
             this.prsavebut.TabIndex = 29;
@@ -75,8 +77,8 @@
             // prallergiestxt
             // 
             this.prallergiestxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.prallergiestxt.Location = new System.Drawing.Point(190, 373);
-            this.prallergiestxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prallergiestxt.Location = new System.Drawing.Point(190, 360);
+            this.prallergiestxt.Margin = new System.Windows.Forms.Padding(2);
             this.prallergiestxt.Name = "prallergiestxt";
             this.prallergiestxt.Size = new System.Drawing.Size(356, 20);
             this.prallergiestxt.TabIndex = 27;
@@ -85,7 +87,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(84, 373);
+            this.label7.Location = new System.Drawing.Point(108, 363);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 13);
@@ -95,8 +97,8 @@
             // praddresstxt
             // 
             this.praddresstxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.praddresstxt.Location = new System.Drawing.Point(190, 320);
-            this.praddresstxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.praddresstxt.Location = new System.Drawing.Point(190, 231);
+            this.praddresstxt.Margin = new System.Windows.Forms.Padding(2);
             this.praddresstxt.Name = "praddresstxt";
             this.praddresstxt.Size = new System.Drawing.Size(356, 20);
             this.praddresstxt.TabIndex = 25;
@@ -105,29 +107,31 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(84, 320);
+            this.label6.Location = new System.Drawing.Point(111, 238);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 13);
             this.label6.TabIndex = 24;
             this.label6.Text = "Address :";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(84, 270);
+            this.label5.Location = new System.Drawing.Point(115, 280);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 23;
             this.label5.Text = "Gender :";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // prcnumbertxt
             // 
             this.prcnumbertxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.prcnumbertxt.Location = new System.Drawing.Point(190, 216);
-            this.prcnumbertxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prcnumbertxt.Location = new System.Drawing.Point(190, 191);
+            this.prcnumbertxt.Margin = new System.Windows.Forms.Padding(2);
             this.prcnumbertxt.MaxLength = 10;
             this.prcnumbertxt.Name = "prcnumbertxt";
             this.prcnumbertxt.Size = new System.Drawing.Size(356, 20);
@@ -137,7 +141,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(84, 220);
+            this.label4.Location = new System.Drawing.Point(69, 194);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 13);
@@ -147,8 +151,8 @@
             // pragetxt
             // 
             this.pragetxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.pragetxt.Location = new System.Drawing.Point(190, 168);
-            this.pragetxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pragetxt.Location = new System.Drawing.Point(190, 315);
+            this.pragetxt.Margin = new System.Windows.Forms.Padding(2);
             this.pragetxt.MaxLength = 3;
             this.pragetxt.Name = "pragetxt";
             this.pragetxt.Size = new System.Drawing.Size(356, 20);
@@ -158,18 +162,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(84, 172);
+            this.label3.Location = new System.Drawing.Point(138, 322);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 19;
             this.label3.Text = "Age:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // prnametxt
             // 
             this.prnametxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.prnametxt.Location = new System.Drawing.Point(190, 120);
-            this.prnametxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prnametxt.Margin = new System.Windows.Forms.Padding(2);
             this.prnametxt.Name = "prnametxt";
             this.prnametxt.Size = new System.Drawing.Size(356, 20);
             this.prnametxt.TabIndex = 18;
@@ -189,7 +194,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox2.Location = new System.Drawing.Point(-2, 11);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 20);
             this.textBox2.TabIndex = 31;
@@ -215,7 +220,7 @@
             this.label1.Location = new System.Drawing.Point(55, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(517, 469);
+            this.label1.Size = new System.Drawing.Size(517, 442);
             this.label1.TabIndex = 16;
             this.label1.Text = "SUWA SEWANA  - Patient Registration  Form\r\n\r\n\r\n\r\n\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -232,6 +237,28 @@
             this.prifchildbut.UseVisualStyleBackColor = false;
             this.prifchildbut.Click += new System.EventHandler(this.prifchildbut_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.textBox1.Location = new System.Drawing.Point(190, 154);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.MaxLength = 3;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(356, 20);
+            this.textBox1.TabIndex = 35;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(135, 157);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(36, 13);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "NIC :";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // Patient_registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,6 +266,8 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(669, 553);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.prifchildbut);
             this.Controls.Add(this.prbackbut);
             this.Controls.Add(this.textBox2);
@@ -256,7 +285,7 @@
             this.Controls.Add(this.prnametxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Patient_registration";
             this.Text = "Patient_registration";
             this.Load += new System.EventHandler(this.Patient_registration_Load);
@@ -282,5 +311,7 @@
         private System.Windows.Forms.Button prbackbut;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button prifchildbut;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label8;
     }
 }
