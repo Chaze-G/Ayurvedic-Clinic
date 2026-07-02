@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backend\Models\Doctor.cs" />
+    <Compile Include="Backend\Models\Patient.cs" />
+    <Compile Include="Backend\Models\Person.cs" />
+    <Compile Include="Backend\Models\Pharmacist.cs" />
     <Compile Include="Frontend\Forms\SearchID.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,7 +176,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Backend\Models\" />
     <Folder Include="Backend\Services\" />
     <Folder Include="Frontend\Components\" />
   </ItemGroup>
