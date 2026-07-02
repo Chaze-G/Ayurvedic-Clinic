@@ -31,17 +31,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.phbackbut = new System.Windows.Forms.Button();
             this.phagetxt = new System.Windows.Forms.TextBox();
             this.phallergiestxt = new System.Windows.Forms.TextBox();
             this.phpatientnametxt = new System.Windows.Forms.TextBox();
-            this.phdoctornametxt = new System.Windows.Forms.TextBox();
-            this.phlastclinicdatetxt = new System.Windows.Forms.TextBox();
-            this.phdescriptiontxt = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,33 +66,6 @@
             this.label7.Size = new System.Drawing.Size(66, 16);
             this.label7.TabIndex = 6;
             this.label7.Text = "Allergies :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(307, 193);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 16);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Doctor Name :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(52, 199);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 16);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Last Clinic Date :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(64, 258);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 16);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Description :";
             // 
             // phbackbut
             // 
@@ -133,28 +102,6 @@
             this.phpatientnametxt.Size = new System.Drawing.Size(389, 22);
             this.phpatientnametxt.TabIndex = 15;
             // 
-            // phdoctornametxt
-            // 
-            this.phdoctornametxt.Location = new System.Drawing.Point(426, 187);
-            this.phdoctornametxt.Name = "phdoctornametxt";
-            this.phdoctornametxt.Size = new System.Drawing.Size(323, 22);
-            this.phdoctornametxt.TabIndex = 16;
-            // 
-            // phlastclinicdatetxt
-            // 
-            this.phlastclinicdatetxt.Location = new System.Drawing.Point(164, 193);
-            this.phlastclinicdatetxt.Name = "phlastclinicdatetxt";
-            this.phlastclinicdatetxt.Size = new System.Drawing.Size(100, 22);
-            this.phlastclinicdatetxt.TabIndex = 17;
-            // 
-            // phdescriptiontxt
-            // 
-            this.phdescriptiontxt.Location = new System.Drawing.Point(151, 258);
-            this.phdescriptiontxt.Multiline = true;
-            this.phdescriptiontxt.Name = "phdescriptiontxt";
-            this.phdescriptiontxt.Size = new System.Drawing.Size(466, 231);
-            this.phdescriptiontxt.TabIndex = 18;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -165,6 +112,16 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "Patients\' History";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(-28, -57);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 22;
+            // 
             // PatientsHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -173,22 +130,18 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.WhatsApp_Image_2026_06_23_at_11_47_31;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(801, 687);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.phdescriptiontxt);
-            this.Controls.Add(this.phlastclinicdatetxt);
-            this.Controls.Add(this.phdoctornametxt);
             this.Controls.Add(this.phpatientnametxt);
             this.Controls.Add(this.phallergiestxt);
             this.Controls.Add(this.phagetxt);
             this.Controls.Add(this.phbackbut);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Name = "PatientsHistory";
             this.Text = "PatientsHistory";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,16 +152,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button phbackbut;
         private System.Windows.Forms.TextBox phagetxt;
         private System.Windows.Forms.TextBox phallergiestxt;
         private System.Windows.Forms.TextBox phpatientnametxt;
-        private System.Windows.Forms.TextBox phdoctornametxt;
-        private System.Windows.Forms.TextBox phlastclinicdatetxt;
-        private System.Windows.Forms.TextBox phdescriptiontxt;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

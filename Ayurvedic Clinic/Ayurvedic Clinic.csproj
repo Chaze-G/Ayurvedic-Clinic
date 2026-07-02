@@ -48,8 +48,10 @@
   <ItemGroup>
     <Compile Include="Backend\Models\Doctor.cs" />
     <Compile Include="Backend\Models\Patient.cs" />
+    <Compile Include="Backend\Models\PatientHistory.cs" />
     <Compile Include="Backend\Models\Person.cs" />
     <Compile Include="Backend\Models\Pharmacist.cs" />
+    <Compile Include="Database\PatientHistoryDB.cs" />
     <Compile Include="Frontend\Forms\SearchID.cs">
       <SubType>Form</SubType>
     </Compile>
