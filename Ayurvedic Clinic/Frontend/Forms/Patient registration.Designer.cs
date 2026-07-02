@@ -45,7 +45,7 @@
             this.prbackbut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.prifchildbut = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.prnictxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             prgenderdropdown = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -237,15 +237,15 @@
             this.prifchildbut.UseVisualStyleBackColor = false;
             this.prifchildbut.Click += new System.EventHandler(this.prifchildbut_Click);
             // 
-            // textBox1
+            // prnictxt
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.textBox1.Location = new System.Drawing.Point(190, 154);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.MaxLength = 3;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(356, 20);
-            this.textBox1.TabIndex = 35;
+            this.prnictxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.prnictxt.Location = new System.Drawing.Point(190, 154);
+            this.prnictxt.Margin = new System.Windows.Forms.Padding(2);
+            this.prnictxt.MaxLength = 3;
+            this.prnictxt.Name = "prnictxt";
+            this.prnictxt.Size = new System.Drawing.Size(356, 20);
+            this.prnictxt.TabIndex = 35;
             // 
             // label8
             // 
@@ -266,7 +266,7 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(669, 553);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.prnictxt);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.prifchildbut);
             this.Controls.Add(this.prbackbut);
@@ -311,7 +311,7 @@
         private System.Windows.Forms.Button prbackbut;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button prifchildbut;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox prnictxt;
         private System.Windows.Forms.Label label8;
     }
 }

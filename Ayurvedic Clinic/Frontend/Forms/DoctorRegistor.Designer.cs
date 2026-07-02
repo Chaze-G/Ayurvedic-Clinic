@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panelMain = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.drnametxt = new System.Windows.Forms.TextBox();
@@ -36,7 +38,7 @@
             this.drregisterbut = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.drgendermalecheckbox = new System.Windows.Forms.CheckBox();
-            this.drslmctxt = new System.Windows.Forms.TextBox();
+            this.dramctxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.drcontatcttxt = new System.Windows.Forms.TextBox();
             this.drspecializedtxt = new System.Windows.Forms.TextBox();
@@ -45,8 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.drbackbut = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,25 +63,42 @@
             this.panelMain.Controls.Add(this.drregisterbut);
             this.panelMain.Controls.Add(this.label2);
             this.panelMain.Controls.Add(this.drgendermalecheckbox);
-            this.panelMain.Controls.Add(this.drslmctxt);
+            this.panelMain.Controls.Add(this.dramctxt);
             this.panelMain.Controls.Add(this.label5);
             this.panelMain.Controls.Add(this.drcontatcttxt);
             this.panelMain.Controls.Add(this.drspecializedtxt);
             this.panelMain.Controls.Add(this.label6);
             this.panelMain.Controls.Add(this.label4);
             this.panelMain.Location = new System.Drawing.Point(92, 90);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(2);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(638, 489);
             this.panelMain.TabIndex = 19;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(76, 139);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 15);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Password";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(184, 139);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(194, 20);
+            this.textBox1.TabIndex = 20;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Ayurvedic_Clinic.Properties.Resources._new;
             this.pictureBox1.Location = new System.Drawing.Point(419, 153);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(176, 306);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -153,12 +170,12 @@
             this.drgendermalecheckbox.Text = "Male";
             this.drgendermalecheckbox.UseVisualStyleBackColor = true;
             // 
-            // drslmctxt
+            // dramctxt
             // 
-            this.drslmctxt.Location = new System.Drawing.Point(184, 102);
-            this.drslmctxt.Name = "drslmctxt";
-            this.drslmctxt.Size = new System.Drawing.Size(134, 20);
-            this.drslmctxt.TabIndex = 6;
+            this.dramctxt.Location = new System.Drawing.Point(184, 102);
+            this.dramctxt.Name = "dramctxt";
+            this.dramctxt.Size = new System.Drawing.Size(134, 20);
+            this.dramctxt.TabIndex = 6;
             // 
             // label5
             // 
@@ -218,7 +235,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox3.Location = new System.Drawing.Point(158, 41);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(124, 20);
             this.textBox3.TabIndex = 20;
@@ -237,23 +254,6 @@
             this.drbackbut.Text = "<<BACK";
             this.drbackbut.UseVisualStyleBackColor = false;
             this.drbackbut.Click += new System.EventHandler(this.phbackbut_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(76, 139);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 15);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Password";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(184, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 20;
             // 
             // DoctorRegistor
             // 
@@ -286,7 +286,7 @@
         private System.Windows.Forms.Button drregisterbut;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox drgendermalecheckbox;
-        private System.Windows.Forms.TextBox drslmctxt;
+        private System.Windows.Forms.TextBox dramctxt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox drcontatcttxt;
         private System.Windows.Forms.TextBox drspecializedtxt;

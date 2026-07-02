@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Ayurvedic_Clinic.Database;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -40,10 +42,44 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         private void prsavebut_Click(object sender, EventArgs e)
         {
 
+
+            string nic = prnictxt.Text;
+            string patientName = prnametxt.Text;
+            string contactNo = prcnumbertxt.Text;
+            string address = praddresstxt.Text;
+            string gender = cmbGender.SelectedItem.ToString();
+            int age = int.Parse(pragetxt.Text);
+            string allergies = prallergiestxt.Text;
+
+            using (SqlConnection con = DBConnection.GetConnection())
+            {
+                con.Open();
+
+                string query = "INSERT INTO Patient (NIC, PatientName, ContactNumber, Address, Gender, Age, Allergies, GuardianNIC) " +
+                               "VALUES (@NIC, @PatientName, @ContactNumber, @Address, @Gender, @Age, @Allergies, NULL)";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@NIC", nic);
+                    cmd.Parameters.AddWithValue("@PatientName", patientName);
+                    cmd.Parameters.AddWithValue("@ContactNumber", contactNo);
+                    cmd.Parameters.AddWithValue("@Address", address);
+                    cmd.Parameters.AddWithValue("@Gender", gender);
+                    cmd.Parameters.AddWithValue("@Age", age);
+                    cmd.Parameters.AddWithValue("@Allergies", allergies);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+            MessageBox.Show("Adult Patient registered successfully!");
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
+        { 
 
         }
 
