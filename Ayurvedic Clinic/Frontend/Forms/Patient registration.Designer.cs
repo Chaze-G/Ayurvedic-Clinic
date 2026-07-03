@@ -239,7 +239,7 @@
             this.prnictxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.prnictxt.Location = new System.Drawing.Point(253, 190);
             this.prnictxt.Margin = new System.Windows.Forms.Padding(2);
-            this.prnictxt.MaxLength = 3;
+            this.prnictxt.MaxLength = 30;
             this.prnictxt.Name = "prnictxt";
             this.prnictxt.Size = new System.Drawing.Size(356, 22);
             this.prnictxt.TabIndex = 35;
