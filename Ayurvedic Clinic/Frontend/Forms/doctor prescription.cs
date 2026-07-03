@@ -101,8 +101,10 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             dpnotestxt.AppendText(medicinePack);
         }
 
-        
-        
+        private void dpnotestxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
