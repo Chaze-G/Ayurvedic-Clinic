@@ -237,7 +237,7 @@
             // prnictxt
             // 
             this.prnictxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.prnictxt.Location = new System.Drawing.Point(190, 154);
+            this.prnictxt.Location = new System.Drawing.Point(253, 190);
             this.prnictxt.Margin = new System.Windows.Forms.Padding(2);
             this.prnictxt.MaxLength = 3;
             this.prnictxt.Name = "prnictxt";
@@ -309,6 +309,7 @@
         private System.Windows.Forms.Button prifchildbut;
         private System.Windows.Forms.TextBox prnictxt;
         private System.Windows.Forms.Label label8;
+
         private System.Windows.Forms.ComboBox prgenderdropdown;
     }
 }
