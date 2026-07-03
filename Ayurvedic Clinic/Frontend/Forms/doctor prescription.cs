@@ -80,7 +80,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             patientRegForm.LoadPatientForView(currentPatient.NIC);
             patientRegForm.ShowDialog();
 
-            LoadPatient(currentPatient.NIC);   // Refresh
+            LoadPatient(currentPatient.NIC);   
         }
 
         private void dppatienthistorybut_Click(object sender, EventArgs e)
