@@ -22,7 +22,7 @@ namespace Ayurvedic_Clinic
             //  Application.Run(new doctor_prescription());
             // Application.Run(new Login ());
             //  Application.Run(new AdminDashboard());
-            //Application.Run(new DoctorRegistor());
+           // Application.Run(new DoctorRegistor());
             Application.Run(new Patient_registration());
         }
     }

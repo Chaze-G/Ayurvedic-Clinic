@@ -1,50 +1,29 @@
-﻿using System;
-using System.Data;
+﻿
+using System;
 using System.Data.SqlClient;
 
-namespace Ayurvedic_Clinic.Database
+
+public class PatientHistoryDB
 {
-    internal class PatientHistoryDB
+    private string connectionString = "Server=.;Database=SuwasewanaDB;Integrated Security=True;"; // Move to DBConnection.cs later
+
+    public void SavePrescription(string nic, string amcNumber, string prescriptionText)
     {
-        // will add a new row to the patienthis table
-        public void SaveHistory(string nic, DateTime visitDate, string amcNumber, string prescription)
+        using (SqlConnection conn = new SqlConnection(connectionString))
         {
-            SqlConnection con = DBConnection.GetConnection();
+            string query = @"INSERT INTO PatientHistory (NIC, VisitDate, AMCNumber, Prescription) 
+                           VALUES (@NIC, @VisitDate, @AMCNumber, @Prescription)";
 
-            con.Open();
-
-            string query = "INSERT INTO PatientHistory (NIC, VisitDate, AMCNumber, Prescription) VALUES (@NIC, @VisitDate, @AMCNumber, @Prescription)";
-
-            SqlCommand cmd = new SqlCommand(query, con);
-
+            SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@NIC", nic);
-            cmd.Parameters.AddWithValue("@VisitDate", visitDate);
+            cmd.Parameters.AddWithValue("@VisitDate", DateTime.Now.Date);
             cmd.Parameters.AddWithValue("@AMCNumber", amcNumber);
-            cmd.Parameters.AddWithValue("@Prescription", prescription);
+            cmd.Parameters.AddWithValue("@Prescription", prescriptionText);
 
+            conn.Open();
             cmd.ExecuteNonQuery();
-
-            con.Close();
-        }
-
-        // taking all history of a patient
-        public DataTable GetHistory(string nic)
-        {
-            SqlConnection con = DBConnection.GetConnection();
-
-            string query = "SELECT VisitDate, AMCNumber, Prescription FROM PatientHistory WHERE NIC=@NIC";
-
-            SqlCommand cmd = new SqlCommand(query, con);
-
-            cmd.Parameters.AddWithValue("@NIC", nic);
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-
-            DataTable dt = new DataTable();
-
-            da.Fill(dt);
-
-            return dt;
         }
     }
+
+    
 }

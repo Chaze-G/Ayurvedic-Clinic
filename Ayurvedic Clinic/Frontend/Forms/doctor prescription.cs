@@ -1,25 +1,40 @@
-﻿using project_test;
+﻿
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
+using Ayurvedic_Clinic.Backend.Models;      
+using Ayurvedic_Clinic.Database;
+
 
 namespace Ayurvedic_Clinic.Frontend.Forms
 {
     public partial class doctor_prescription : Form
     {
-       
+        private Patient currentPatient;
+        private string currentAMCNo;
+        private PatientHistoryDB historyDB = new PatientHistoryDB();
 
-        public doctor_prescription()
+        public doctor_prescription(string amcNo)
         {
             InitializeComponent();
+            currentAMCNo = amcNo;
         }
+        /*public void LoadPatient(string nic)
+        {
+            currentPatient = GetPatientByNIC(nic);
 
+            if (currentPatient != null)
+            {
+                lblName.Text = currentPatient.PatientName;
+                lblAge.Text = currentPatient.Age.ToString();
+                lblAllergies.Text = currentPatient.Allergies ?? "None";
+            }
+            else
+            {
+                MessageBox.Show("Patient not found!");
+                this.Close();
+            }
+        }*/
         private void doctor_prescription_Load(object sender, EventArgs e)
         {
 
@@ -53,10 +68,10 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
 
           
-            uf uniqueform = new uf(this);
+            /*uf uniqueform = new uf(this);
             this.Hide();
             uniqueform.ShowDialog();   
-            this.Show();              
+            this.Show();  */            
         }
         
 
