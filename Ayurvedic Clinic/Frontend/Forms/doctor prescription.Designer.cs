@@ -38,6 +38,7 @@
             this.dpallergiestxt = new System.Windows.Forms.TextBox();
             this.Address = new System.Windows.Forms.Label();
             this.dpformorepatientdetailbut = new System.Windows.Forms.Button();
+            this.dpsearchnicbut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dpnotestxt
@@ -47,14 +48,14 @@
             this.dpnotestxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dpnotestxt.Name = "dpnotestxt";
             this.dpnotestxt.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.dpnotestxt.Size = new System.Drawing.Size(557, 253);
+            this.dpnotestxt.Size = new System.Drawing.Size(557, 204);
             this.dpnotestxt.TabIndex = 24;
             this.dpnotestxt.Text = "Notes-";
             this.dpnotestxt.TextChanged += new System.EventHandler(this.dpnotestxt_TextChanged);
             // 
             // dplmcnumbertxt
             // 
-            this.dplmcnumbertxt.Location = new System.Drawing.Point(148, 487);
+            this.dplmcnumbertxt.Location = new System.Drawing.Point(132, 443);
             this.dplmcnumbertxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dplmcnumbertxt.Name = "dplmcnumbertxt";
             this.dplmcnumbertxt.Size = new System.Drawing.Size(107, 22);
@@ -63,7 +64,7 @@
             // dpsendtopharmacybut
             // 
             this.dpsendtopharmacybut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.dpsendtopharmacybut.Location = new System.Drawing.Point(319, 487);
+            this.dpsendtopharmacybut.Location = new System.Drawing.Point(412, 443);
             this.dpsendtopharmacybut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dpsendtopharmacybut.Name = "dpsendtopharmacybut";
             this.dpsendtopharmacybut.Size = new System.Drawing.Size(170, 41);
@@ -75,16 +76,16 @@
             // dpDatetxt
             // 
             this.dpDatetxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dpDatetxt.Location = new System.Drawing.Point(656, 27);
+            this.dpDatetxt.Location = new System.Drawing.Point(664, 80);
             this.dpDatetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dpDatetxt.Name = "dpDatetxt";
-            this.dpDatetxt.Size = new System.Drawing.Size(95, 22);
+            this.dpDatetxt.Size = new System.Drawing.Size(110, 22);
             this.dpDatetxt.TabIndex = 18;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(613, 33);
+            this.label7.Location = new System.Drawing.Point(622, 85);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 16);
             this.label7.TabIndex = 17;
@@ -93,7 +94,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(31, 491);
+            this.label6.Location = new System.Drawing.Point(22, 446);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 16);
             this.label6.TabIndex = 16;
@@ -183,9 +184,20 @@
             this.dpformorepatientdetailbut.Name = "dpformorepatientdetailbut";
             this.dpformorepatientdetailbut.Size = new System.Drawing.Size(215, 23);
             this.dpformorepatientdetailbut.TabIndex = 33;
-            this.dpformorepatientdetailbut.Text = "For more Patients\' Details";
+            this.dpformorepatientdetailbut.Text = "For Patient\'s More Details";
             this.dpformorepatientdetailbut.UseVisualStyleBackColor = false;
             this.dpformorepatientdetailbut.Click += new System.EventHandler(this.dpformorepatientdetailbut_Click);
+            // 
+            // dpsearchnicbut
+            // 
+            this.dpsearchnicbut.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.dpsearchnicbut.Location = new System.Drawing.Point(625, 12);
+            this.dpsearchnicbut.Name = "dpsearchnicbut";
+            this.dpsearchnicbut.Size = new System.Drawing.Size(149, 23);
+            this.dpsearchnicbut.TabIndex = 34;
+            this.dpsearchnicbut.Text = "<<Back to Search NIC";
+            this.dpsearchnicbut.UseVisualStyleBackColor = false;
+            this.dpsearchnicbut.Click += new System.EventHandler(this.dpsearchnicbut_Click);
             // 
             // doctor_prescription
             // 
@@ -194,6 +206,7 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(788, 753);
+            this.Controls.Add(this.dpsearchnicbut);
             this.Controls.Add(this.dpformorepatientdetailbut);
             this.Controls.Add(this.Address);
             this.Controls.Add(this.dpallergiestxt);
@@ -236,5 +249,6 @@
         private System.Windows.Forms.TextBox dpallergiestxt;
         private System.Windows.Forms.Label Address;
         private System.Windows.Forms.Button dpformorepatientdetailbut;
+        private System.Windows.Forms.Button dpsearchnicbut;
     }
 }

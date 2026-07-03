@@ -100,7 +100,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         private void dpmedipacksbut_Click(object sender, EventArgs e)
         {
             uf uniqueform = new uf(this);
-            this.Hide();
+            //this.Hide();need to confirm
             uniqueform.ShowDialog();
             this.Show();
         }
@@ -116,6 +116,8 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             if (currentPatient != null)
             {
                 historyDB.SavePrescription(currentPatient.NIC, currentAMCNo, dpnotestxt.Text);
+                MessageBox.Show("Prescription added to the pharmacy and updated patients History ");
+                return;
             }
 
          
@@ -127,8 +129,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                 dpallergiestxt.Text,
                 dpnotestxt.Text);
 
-            pharmacy.Show();
-            this.Hide();
+           
         }
 
         public void AddMedicinePack(string medicinePack)
@@ -144,6 +145,14 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private void dpsavebut_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void dpsearchnicbut_Click(object sender, EventArgs e)
+        {
+            SearchID sid=new SearchID();
+            sid.Show();
+            this.Hide();
 
         }
     }
