@@ -45,7 +45,7 @@
             this.prbackbut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.prifchildbut = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.prnictxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             prgenderdropdown = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -58,17 +58,17 @@
             "Male",
             "Female"});
             prgenderdropdown.Location = new System.Drawing.Point(253, 335);
-            prgenderdropdown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            prgenderdropdown.Margin = new System.Windows.Forms.Padding(4);
             prgenderdropdown.Name = "prgenderdropdown";
-            prgenderdropdown.Size = new System.Drawing.Size(473, 24);
+            prgenderdropdown.Size = new System.Drawing.Size(403, 24);
             prgenderdropdown.TabIndex = 28;
-            prgenderdropdown.SelectedIndexChanged += new System.EventHandler(this.cmbGender_SelectedIndexChanged);
+            prgenderdropdown.SelectedIndexChanged += new System.EventHandler(this.prgenderdropdown_SelectedIndexChanged);
             // 
             // prsavebut
             // 
             this.prsavebut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
             this.prsavebut.Location = new System.Drawing.Point(628, 495);
-            this.prsavebut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.prsavebut.Margin = new System.Windows.Forms.Padding(4);
             this.prsavebut.Name = "prsavebut";
             this.prsavebut.Size = new System.Drawing.Size(100, 28);
             this.prsavebut.TabIndex = 29;
@@ -153,8 +153,9 @@
             this.pragetxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pragetxt.MaxLength = 3;
             this.pragetxt.Name = "pragetxt";
-            this.pragetxt.Size = new System.Drawing.Size(473, 22);
+            this.pragetxt.Size = new System.Drawing.Size(384, 22);
             this.pragetxt.TabIndex = 20;
+            this.pragetxt.TextChanged += new System.EventHandler(this.pragetxt_TextChanged);
             // 
             // label3
             // 
@@ -225,7 +226,7 @@
             // 
             this.prifchildbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
             this.prifchildbut.Location = new System.Drawing.Point(116, 89);
-            this.prifchildbut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.prifchildbut.Margin = new System.Windows.Forms.Padding(4);
             this.prifchildbut.Name = "prifchildbut";
             this.prifchildbut.Size = new System.Drawing.Size(175, 28);
             this.prifchildbut.TabIndex = 33;
@@ -233,16 +234,15 @@
             this.prifchildbut.UseVisualStyleBackColor = false;
             this.prifchildbut.Click += new System.EventHandler(this.prifchildbut_Click);
             // 
-            // textBox1
+            // prnictxt
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.textBox1.Location = new System.Drawing.Point(253, 190);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.MaxLength = 20;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(473, 22);
-            this.textBox1.TabIndex = 35;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.prnictxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.prnictxt.Location = new System.Drawing.Point(190, 154);
+            this.prnictxt.Margin = new System.Windows.Forms.Padding(2);
+            this.prnictxt.MaxLength = 3;
+            this.prnictxt.Name = "prnictxt";
+            this.prnictxt.Size = new System.Drawing.Size(356, 22);
+            this.prnictxt.TabIndex = 35;
             // 
             // label8
             // 
@@ -261,8 +261,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(892, 681);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(669, 553);
+            this.Controls.Add(this.prnictxt);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.prifchildbut);
             this.Controls.Add(this.prbackbut);
@@ -307,7 +307,8 @@
         private System.Windows.Forms.Button prbackbut;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button prifchildbut;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox prnictxt;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox prgenderdropdown;
     }
 }
