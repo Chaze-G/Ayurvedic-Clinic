@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Ayurvedic_Clinic.Frontend.Forms
 {
@@ -123,6 +124,61 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         private void pragetxt_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+
+
+        public void LoadPatientForView(string nic)
+        {
+            string connString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
+
+            using (SqlConnection con = new SqlConnection(connString))
+            {
+                string query = "SELECT * FROM Patient WHERE NIC = @NIC";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@NIC", nic);
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    prnictxt.Text = reader["NIC"].ToString();
+                    prnametxt.Text = reader["PatientName"].ToString();
+                    pragetxt.Text = reader["Age"].ToString();
+                    prcnumbertxt.Text = reader["ContactNumber"]?.ToString() ?? "";
+                    praddresstxt.Text = reader["Address"]?.ToString() ?? "";
+                    prallergiestxt.Text = reader["Allergies"]?.ToString() ?? "";
+
+                    string gender = reader["Gender"]?.ToString();
+                    if (!string.IsNullOrEmpty(gender) && prgenderdropdown.Items.Contains(gender))
+                    {
+                        prgenderdropdown.SelectedItem = gender;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Patient not found!");
+                    return;
+                }
+            }
+
+        
+            prnictxt.ReadOnly = true;
+            prnametxt.ReadOnly = true;
+            pragetxt.ReadOnly = true;
+            prcnumbertxt.ReadOnly = true;
+            praddresstxt.ReadOnly = true;
+            prallergiestxt.ReadOnly = true;
+            prgenderdropdown.Enabled = false;
+
+            
+            this.Text = "Patient Full Details - View Only";
+            prsavebut.Visible = false;           // Hide Save button
+            prifchildbut.Visible = false;        // Hide Child button
+
+            //back  button changes
+            prbackbut.Text = "Close";
         }
     }
 }

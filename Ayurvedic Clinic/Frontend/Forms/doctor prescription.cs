@@ -1,10 +1,9 @@
-﻿
+﻿using Ayurvedic_Clinic.Backend.Models;
+using Ayurvedic_Clinic.Database;
+using project_test;
 using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-using Ayurvedic_Clinic.Backend.Models;      
-using Ayurvedic_Clinic.Database;
-
 
 namespace Ayurvedic_Clinic.Frontend.Forms
 {
@@ -19,64 +18,101 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             InitializeComponent();
             currentAMCNo = amcNo;
         }
-        /*public void LoadPatient(string nic)
+
+        public void LoadPatient(string nic)
         {
             currentPatient = GetPatientByNIC(nic);
 
             if (currentPatient != null)
             {
-                lblName.Text = currentPatient.PatientName;
-                lblAge.Text = currentPatient.Age.ToString();
-                lblAllergies.Text = currentPatient.Allergies ?? "None";
+                dvnametxt.Text = currentPatient.Name;           // From Person base class
+                dpagetxt.Text = currentPatient.Age.ToString();
+                dpallergiestxt.Text = currentPatient.Allergies ?? "None";
             }
             else
             {
                 MessageBox.Show("Patient not found!");
                 this.Close();
             }
-        }*/
-        private void doctor_prescription_Load(object sender, EventArgs e)
-        {
-
         }
 
-        private void medipackbut_Click(object sender, EventArgs e)
+        private Patient GetPatientByNIC(string nic)
         {
+            string connString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
 
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                string query = "SELECT * FROM Patient WHERE NIC = @NIC";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@NIC", nic);
+
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    Patient p = new Patient();
+
+                    p.NIC = reader["NIC"].ToString();
+                    p.Name = reader["PatientName"].ToString();
+
+                    if (int.TryParse(reader["Age"]?.ToString(), out int age))
+                        p.Age = age;
+
+                    p.Gender = reader["Gender"]?.ToString();
+                    p.Allergies = reader["Allergies"]?.ToString();
+
+                    return p;
+                }
+            }
+            return null;
         }
 
         private void dpformorepatientdetailbut_Click(object sender, EventArgs e)
         {
-            Patient_registration pr = new Patient_registration();
-            pr.Show();
-            this.Hide();
+            if (currentPatient == null)
+            {
+                MessageBox.Show("No patient loaded.");
+                return;
+            }
+
+            Patient_registration patientRegForm = new Patient_registration();
+            patientRegForm.LoadPatientForView(currentPatient.NIC);
+            patientRegForm.ShowDialog();
+
+            LoadPatient(currentPatient.NIC);   // Refresh
         }
-            
-        
-    
 
         private void dppatienthistorybut_Click(object sender, EventArgs e)
         {
-
-            PatientsHistory patienthis= new PatientsHistory();
+            PatientsHistory patienthis = new PatientsHistory();
             patienthis.Show();
             this.Hide();
         }
-        
 
         private void dpmedipacksbut_Click(object sender, EventArgs e)
         {
-
-          
-            /*uf uniqueform = new uf(this);
+            uf uniqueform = new uf(this);
             this.Hide();
-            uniqueform.ShowDialog();   
-            this.Show();  */            
+            uniqueform.ShowDialog();
+            this.Show();
         }
-        
 
         private void dpsendtopharmacybut_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(dpnotestxt.Text))
+            {
+                MessageBox.Show("Please write the prescription before sending to pharmacy.");
+                return;
+            }
+
+            // Save to History
+            if (currentPatient != null)
+            {
+                historyDB.SavePrescription(currentPatient.NIC, currentAMCNo, dpnotestxt.Text);
+            }
+
+            // Open Pharmacy (your original code)
             MedicalPharmacy pharmacy = new MedicalPharmacy(
                 dvnametxt.Text,
                 dpDatetxt.Text,
@@ -86,13 +122,8 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                 dpnotestxt.Text);
 
             pharmacy.Show();
-
             this.Hide();
         }
-
-
-
-
 
         public void AddMedicinePack(string medicinePack)
         {
@@ -101,10 +132,8 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             dpnotestxt.AppendText(medicinePack);
         }
 
-        private void dpnotestxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        private void doctor_prescription_Load(object sender, EventArgs e) { }
+        private void medipackbut_Click(object sender, EventArgs e) { }
+        private void dpnotestxt_TextChanged(object sender, EventArgs e) { }
     }
 }
-

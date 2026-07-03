@@ -5,8 +5,8 @@ using System.Data.SqlClient;
 
 public class PatientHistoryDB
 {
-    private string connectionString = "Server=.;Database=SuwasewanaDB;Integrated Security=True;"; // Move to DBConnection.cs later
-
+    
+    private string connectionString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
     public void SavePrescription(string nic, string amcNumber, string prescriptionText)
     {
         using (SqlConnection conn = new SqlConnection(connectionString))
