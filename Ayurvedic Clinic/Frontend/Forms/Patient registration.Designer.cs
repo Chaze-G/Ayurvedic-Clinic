@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ComboBox prgenderdropdown;
+            this.prgenderdropdown=new System.Windows.Forms.ComboBox();
             this.prsavebut = new System.Windows.Forms.Button();
             this.prallergiestxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
