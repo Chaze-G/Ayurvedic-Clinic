@@ -25,15 +25,14 @@ namespace Ayurvedic_Clinic
             // Application.Run(new DoctorRegistor());
             Application.Run(new Patient_registration());
 
-           /* // === TEST DOCTOR PRESCRIPTION FORM DIRECTLY ===
-            doctor_prescription docForm = new doctor_prescription("AMC-TEST-001"); // Fake AMC Number
-
-            // Change this NIC to one that exists in your Patient table
+           /*sithmi's trail hard coded sample
+            doctor_prescription docForm = new doctor_prescription("AMC-TEST-001"); 
+            
             docForm.LoadPatient("200562001632");
 
             Application.Run(docForm);
-*/
 
+*/
 
         }
     }

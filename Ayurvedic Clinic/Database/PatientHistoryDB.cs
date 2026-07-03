@@ -1,12 +1,11 @@
-﻿
-using System;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
-
 
 public class PatientHistoryDB
 {
-    
     private string connectionString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
+
     public void SavePrescription(string nic, string amcNumber, string prescriptionText)
     {
         using (SqlConnection conn = new SqlConnection(connectionString))
@@ -25,5 +24,26 @@ public class PatientHistoryDB
         }
     }
 
-    
+
+    public DataTable GetPatientHistory(string nic)
+    {
+        DataTable dt = new DataTable();
+
+        using (SqlConnection conn = new SqlConnection(connectionString))
+        {
+            string query = @"SELECT HistoryID, 
+                                    VisitDate, 
+                                    AMCNumber, 
+                                    Prescription 
+                             FROM PatientHistory 
+                             WHERE NIC = @NIC 
+                             ORDER BY VisitDate DESC";
+
+            SqlDataAdapter da = new SqlDataAdapter(query, conn);
+            da.SelectCommand.Parameters.AddWithValue("@NIC", nic);
+            da.Fill(dt);
+        }
+
+        return dt;
+    }
 }

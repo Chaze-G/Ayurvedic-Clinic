@@ -25,7 +25,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
             if (currentPatient != null)
             {
-                dvnametxt.Text = currentPatient.Name;           // From Person base class
+                dvnametxt.Text = currentPatient.Name;       
                 dpagetxt.Text = currentPatient.Age.ToString();
                 dpallergiestxt.Text = currentPatient.Allergies ?? "None";
             }
@@ -85,9 +85,16 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private void dppatienthistorybut_Click(object sender, EventArgs e)
         {
-            PatientsHistory patienthis = new PatientsHistory();
-            patienthis.Show();
-            this.Hide();
+            if (currentPatient == null)
+            {
+                MessageBox.Show("Please load a patient first.");
+                return;
+            }
+
+            PatientsHistory historyForm = new PatientsHistory();
+            historyForm.LoadPatientHistory(currentPatient.NIC);
+            historyForm.Show();
+            // this.Hide();  //later will discuss with others
         }
 
         private void dpmedipacksbut_Click(object sender, EventArgs e)
@@ -106,13 +113,12 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                 return;
             }
 
-            // Save to History
             if (currentPatient != null)
             {
                 historyDB.SavePrescription(currentPatient.NIC, currentAMCNo, dpnotestxt.Text);
             }
 
-            // Open Pharmacy (your original code)
+         
             MedicalPharmacy pharmacy = new MedicalPharmacy(
                 dvnametxt.Text,
                 dpDatetxt.Text,
@@ -135,5 +141,10 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         private void doctor_prescription_Load(object sender, EventArgs e) { }
         private void medipackbut_Click(object sender, EventArgs e) { }
         private void dpnotestxt_TextChanged(object sender, EventArgs e) { }
+
+        private void dpsavebut_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
