@@ -38,7 +38,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private Patient GetPatientByNIC(string nic)
         {
-            string connString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
+            string connString = @"Server=(localdb)\MSSQLLocalDB.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
 
             using (SqlConnection conn = new SqlConnection(connString))
             {
