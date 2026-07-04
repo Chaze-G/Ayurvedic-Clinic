@@ -57,6 +57,7 @@
     <Compile Include="Database\DoctorDB.cs" />
     <Compile Include="Database\PatientDB.cs" />
     <Compile Include="Database\PatientHistoryDB.cs" />
+    <Compile Include="Database\UserDB.cs" />
     <Compile Include="Frontend\Forms\SearchID.cs">
       <SubType>Form</SubType>
     </Compile>

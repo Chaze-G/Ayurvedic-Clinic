@@ -55,6 +55,15 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
             DoctorDB.SaveDoctor(d);
 
+            //This part connect the user table and UserDB.cs
+
+            User u = new User();
+            u.Username = d.AMCNo;
+            u.Password = drpasswordtxt.Text;   
+            u.Role = "Doctor";
+
+            UserDB.InsertUser(u);
+
             MessageBox.Show("Doctor registered successfully!");
         }
 

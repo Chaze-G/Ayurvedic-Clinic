@@ -30,9 +30,10 @@
         {
             this.panelMain = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.drpasswordtxt = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.drnametxt = new System.Windows.Forms.TextBox();
             this.drgenderfemalecheckbox = new System.Windows.Forms.CheckBox();
             this.drregisterbut = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.drbackbut = new System.Windows.Forms.Button();
-            this.drnametxt = new System.Windows.Forms.TextBox();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             // 
             this.panelMain.BackColor = System.Drawing.Color.White;
             this.panelMain.Controls.Add(this.label7);
-            this.panelMain.Controls.Add(this.textBox1);
+            this.panelMain.Controls.Add(this.drpasswordtxt);
             this.panelMain.Controls.Add(this.pictureBox1);
             this.panelMain.Controls.Add(this.label3);
             this.panelMain.Controls.Add(this.drnametxt);
@@ -86,12 +86,12 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "Password";
             // 
-            // textBox1
+            // drpasswordtxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(184, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 20;
+            this.drpasswordtxt.Location = new System.Drawing.Point(184, 139);
+            this.drpasswordtxt.Name = "drpasswordtxt";
+            this.drpasswordtxt.Size = new System.Drawing.Size(194, 20);
+            this.drpasswordtxt.TabIndex = 20;
             // 
             // pictureBox1
             // 
@@ -114,6 +114,15 @@
             this.label3.Size = new System.Drawing.Size(86, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "Doctor Name :";
+            // 
+            // drnametxt
+            // 
+            this.drnametxt.BackColor = System.Drawing.Color.White;
+            this.drnametxt.Location = new System.Drawing.Point(184, 66);
+            this.drnametxt.Name = "drnametxt";
+            this.drnametxt.Size = new System.Drawing.Size(230, 20);
+            this.drnametxt.TabIndex = 2;
+            this.drnametxt.TextChanged += new System.EventHandler(this.drnametxt_TextChanged);
             // 
             // drgenderfemalecheckbox
             // 
@@ -247,15 +256,6 @@
             this.drbackbut.UseVisualStyleBackColor = false;
             this.drbackbut.Click += new System.EventHandler(this.phbackbut_Click);
             // 
-            // drnametxt
-            // 
-            this.drnametxt.BackColor = System.Drawing.Color.White;
-            this.drnametxt.Location = new System.Drawing.Point(184, 66);
-            this.drnametxt.Name = "drnametxt";
-            this.drnametxt.Size = new System.Drawing.Size(230, 20);
-            this.drnametxt.TabIndex = 2;
-            this.drnametxt.TextChanged += new System.EventHandler(this.drnametxt_TextChanged);
-            // 
             // DoctorRegistor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,7 +296,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button drbackbut;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox drpasswordtxt;
         private System.Windows.Forms.TextBox drnametxt;
     }
 }
