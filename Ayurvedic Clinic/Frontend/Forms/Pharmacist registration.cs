@@ -1,4 +1,5 @@
-﻿using Ayurvedic_Clinic.Database;
+﻿using Ayurvedic_Clinic.Backend.Models;
+using Ayurvedic_Clinic.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,36 +21,25 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
-        
-            {
-                string pharmacistName = phregnametxt.Text;
-                string licenceNo = phreglicencetxt.Text;
-                string contactNo = phrcontactnotxt.Text;
-                string gender = phregisterdropdown.SelectedItem.ToString();
+        {
+            Pharmacist ph = new Pharmacist();
 
-                
+            ph.Name = phregnametxt.Text;
+            ph.LicenseNumber = phreglicencetxt.Text;
+            ph.ContactNumber = phrcontactnotxt.Text;
+            ph.Gender = phregisterdropdown.SelectedItem.ToString();
 
-                using (SqlConnection con = DBConnection.GetConnection())
-                {
-                    con.Open();
+            PharmacistDB.SavePharmacist(ph);
 
-                    string query = "INSERT INTO Pharmacist (PharmacistName, LicenseNo, ContactNumber, Gender) " +
-                                   "VALUES (@PharmacistName, @LicenseNo, @ContactNo, @Gender)";
+            User u = new User();
+            u.Username = ph.LicenseNumber;
+            u.Password = phrlicencenotxt.Text;
+            u.Role = "Pharmacist";
 
-                    using (SqlCommand cmd = new SqlCommand(query, con))
-                    {
-                        cmd.Parameters.AddWithValue("@PharmacistName", pharmacistName);
-                        cmd.Parameters.AddWithValue("@LicenseNo", licenceNo);
-                        cmd.Parameters.AddWithValue("@ContactNo", contactNo);
-                        cmd.Parameters.AddWithValue("@Gender", gender);
+            UserDB.InsertUser(u);
 
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-
-                MessageBox.Show("Pharmacist registered successfully!");
-            }
-        
+            MessageBox.Show("Pharmacist registered successfully!");
+        }
 
         private void Pharmacist_registration_Load(object sender, EventArgs e)
         {
