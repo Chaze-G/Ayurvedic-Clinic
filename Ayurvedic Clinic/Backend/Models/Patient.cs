@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ayurvedic_Clinic.Backend.Models
 {
-   
-   
 
-    public class Patient : person
+
+
+    public class Patient : Person
     {
         public int Age { get; set; }
         public string Gender { get; set; }
@@ -17,11 +17,16 @@ namespace Ayurvedic_Clinic.Backend.Models
 
         public string NIC { get; set; }
 
-        public string Address { get; set; }
+        public override string GetPermissions()
+        {
+            return "Can register and view personal medical history.";
+        }
     }
+
+}
 
     
     
         
-    }
+    
 

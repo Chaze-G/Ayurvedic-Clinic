@@ -38,36 +38,38 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private Patient GetPatientByNIC(string nic)
         {
-            string connString = @"Server=(localdb)\MSSQLLocalDB.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
 
-            using (SqlConnection conn = new SqlConnection(connString))
-            {
-                string query = "SELECT * FROM Patient WHERE NIC = @NIC";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@NIC", nic);
+            using (SqlConnection conn = DBConnection.GetConnection())
+            
+               
 
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.Read())
                 {
-                    Patient p = new Patient();
+                    string query = "SELECT * FROM Patient WHERE NIC = @NIC";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@NIC", nic);
 
-                    p.NIC = reader["NIC"].ToString();
-                    p.Name = reader["PatientName"].ToString();
+                    conn.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
 
-                    if (int.TryParse(reader["Age"]?.ToString(), out int age))
-                        p.Age = age;
+                    if (reader.Read())
+                    {
+                        Patient p = new Patient();
 
-                    p.Gender = reader["Gender"]?.ToString();
-                    p.Allergies = reader["Allergies"]?.ToString();
+                        p.NIC = reader["NIC"].ToString();
+                        p.Name = reader["PatientName"].ToString();
 
-                    return p;
+                        if (int.TryParse(reader["Age"]?.ToString(), out int age))
+                            p.Age = age;
+
+                        p.Gender = reader["Gender"]?.ToString();
+                        p.Allergies = reader["Allergies"]?.ToString();
+
+                        return p;
+                    }
                 }
+                return null;
             }
-            return null;
-        }
-
+        
         private void dpformorepatientdetailbut_Click(object sender, EventArgs e)
         {
             if (currentPatient == null)

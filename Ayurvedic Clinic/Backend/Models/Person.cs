@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace Ayurvedic_Clinic.Backend.Models
 {
-    public class person
+    public class Person
     {
         
         public string Name { get; set; }
         public string ContactNumber { get; set; }
-        
+        public virtual string GetPermissions()
 
+        {
+            return "General User";
+        }
        
     }
 }
