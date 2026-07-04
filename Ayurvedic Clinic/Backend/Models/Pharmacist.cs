@@ -9,6 +9,12 @@ namespace Ayurvedic_Clinic.Backend.Models
     public class Pharmacist : person
     {
        public string LicenseNumber { get; set; }
-        
+
+        public override string GetPermissions()
+        {
+            return "Can view prescriptiona and dispenese medicine.";
+        }
+
+
     }
 }

@@ -162,7 +162,7 @@
             this.mpSavebut.TabIndex = 21;
             this.mpSavebut.Text = "Back";
             this.mpSavebut.UseVisualStyleBackColor = false;
-            this.mpSavebut.Click += new System.EventHandler(this.mpbut01_Click);
+            this.mpSavebut.Click += new System.EventHandler(this.mpSavebut_Click);
             // 
             // MedicalPharmacy
             // 

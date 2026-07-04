@@ -12,7 +12,11 @@ namespace Ayurvedic_Clinic.Backend.Models
         public string Name { get; set; }
         public string ContactNumber { get; set; }
         public string Address { get; set; }
+        public virtual string GetPermissions()
 
+        {
+            return "General User";
+        }
        
     }
 }

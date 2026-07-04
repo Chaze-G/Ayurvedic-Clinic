@@ -16,6 +16,11 @@ namespace Ayurvedic_Clinic.Backend.Models
         public string Allergies { get; set; }
 
         public string NIC { get; set; }
+
+        public override string GetPermissions()
+        {
+            return "Can register and view personal medical history.";
+        }
     }
 
     
