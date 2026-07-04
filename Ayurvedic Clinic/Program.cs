@@ -28,7 +28,7 @@ namespace Ayurvedic_Clinic
            //sithmi's trail hard coded sample
             doctor_prescription docForm = new doctor_prescription("AMC-TEST-001"); 
             
-            docForm.LoadPatient("200562001632c1");
+            docForm.LoadPatient("200562001632");
 
             Application.Run(docForm);
 
