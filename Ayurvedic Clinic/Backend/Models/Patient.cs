@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ayurvedic_Clinic.Backend.Models
 {
-   
-   
+
+
 
     public class Patient : Person
     {
@@ -21,9 +21,12 @@ namespace Ayurvedic_Clinic.Backend.Models
         {
             return "Can register and view personal medical history.";
         }
+    }
+
+}
 
     
     
         
-    }
+    
 
