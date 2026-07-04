@@ -1,4 +1,5 @@
-﻿using Ayurvedic_Clinic.Database;
+﻿using Ayurvedic_Clinic.Backend.Models;
+using Ayurvedic_Clinic.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,41 +43,23 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private void prsavebut_Click(object sender, EventArgs e)
         {
+            Patient p = new Patient();
 
+            // from Person 
+            //Inheritance used
+            p.Name = prnametxt.Text;
+            p.ContactNumber = prcnumbertxt.Text;
 
-            string nic = prnictxt.Text;
-            string patientName = prnametxt.Text;
-            string contactNo = prcnumbertxt.Text;
-            string address = praddresstxt.Text;
-            string gender = prgenderdropdown.SelectedItem.ToString();
-            int age = int.Parse(pragetxt.Text);
-            string allergies = prallergiestxt.Text;
+            // from Patient (child class)
+            p.NIC = prnictxt.Text;
+            p.Age = int.Parse(pragetxt.Text);
+            p.Gender = prgenderdropdown.SelectedItem.ToString();
+            p.Allergies = prallergiestxt.Text;
+            p.Address= praddresstxt.Text;
+            
+            PatientDB.SavePatient(p);
 
-            using (SqlConnection con = DBConnection.GetConnection())
-            {
-                con.Open();
-
-                string query = "INSERT INTO Patient (NIC, PatientName, ContactNumber, Address, Gender, Age, Allergies, GuardianNIC) " +
-                               "VALUES (@NIC, @PatientName, @ContactNumber, @Address, @Gender, @Age, @Allergies, NULL)";
-
-                using (SqlCommand cmd = new SqlCommand(query, con))
-                {
-                    cmd.Parameters.AddWithValue("@NIC", nic);
-                    cmd.Parameters.AddWithValue("@PatientName", patientName);
-                    cmd.Parameters.AddWithValue("@ContactNumber", contactNo);
-                    cmd.Parameters.AddWithValue("@Address", address);
-                    cmd.Parameters.AddWithValue("@Gender", gender);
-                    cmd.Parameters.AddWithValue("@Age", age);
-                    cmd.Parameters.AddWithValue("@Allergies", allergies);
-
-                    cmd.ExecuteNonQuery();
-                }
-            }
-
-            MessageBox.Show("Adult Patient registered successfully!");
-
-
-
+            MessageBox.Show("Patient registered successfully!");
         }
 
         private void label1_Click(object sender, EventArgs e)

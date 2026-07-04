@@ -38,8 +38,9 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         //load name to phnametxt 
           private void LoadPatientName()
         {
+            string connString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
 
-            using (SqlConnection conn = DBConnection.GetConnection())
+            using (SqlConnection conn = new SqlConnection(connString))
             {
 
                 string query = "SELECT PatientName FROM Patient WHERE NIC = @NIC";

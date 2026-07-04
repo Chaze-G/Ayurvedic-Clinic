@@ -17,7 +17,7 @@ namespace Ayurvedic_Clinic.Backend.Models
 
         public string NIC { get; set; }
 
-       
+        public string Address { get; set; }
     }
 
     

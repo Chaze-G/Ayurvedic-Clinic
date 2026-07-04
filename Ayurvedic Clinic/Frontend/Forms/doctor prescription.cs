@@ -42,6 +42,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private Patient GetPatientByNIC(string nic)
         {
+            string connString = @"Server=(localdb)\MSSQLLocalDB.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
 
             using (SqlConnection conn = DBConnection.GetConnection())
             
@@ -69,8 +70,8 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
                         p.Name = reader["PatientName"].ToString();
 
-                        if (int.TryParse(reader["Age"]?.ToString(), out int age))
-                            p.Age = age;
+                    if (int.TryParse(reader["Age"]?.ToString(), out int age))
+                        p.Age = age;
 
                         p.Gender = reader["Gender"]?.ToString();
 
