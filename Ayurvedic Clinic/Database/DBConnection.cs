@@ -5,12 +5,10 @@ namespace Ayurvedic_Clinic.Database
     public static class DBConnection
     {
         // Your personal connection string
-        private static string connectionString =
-            "Server=DESKTOP-0DQD6HP\\SQLEXPRESS;Database=SuwasewanaDB;Trusted_Connection=True;";
-
         public static SqlConnection GetConnection()
         {
-            return new SqlConnection(connectionString);
+            string connString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
+            return new SqlConnection(connString);
         }
     }
 }

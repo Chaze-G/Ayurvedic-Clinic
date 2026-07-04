@@ -38,9 +38,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private Patient GetPatientByNIC(string nic)
         {
-            string connString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
-
-            using (SqlConnection conn = new SqlConnection(connString))
+            using (SqlConnection conn = DBConnection.GetConnection())
             {
                 string query = "SELECT * FROM Patient WHERE NIC = @NIC";
                 SqlCommand cmd = new SqlCommand(query, conn);

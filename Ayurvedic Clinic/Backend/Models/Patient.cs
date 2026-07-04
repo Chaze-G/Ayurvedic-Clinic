@@ -16,6 +16,8 @@ namespace Ayurvedic_Clinic.Backend.Models
         public string Allergies { get; set; }
 
         public string NIC { get; set; }
+
+       
     }
 
     

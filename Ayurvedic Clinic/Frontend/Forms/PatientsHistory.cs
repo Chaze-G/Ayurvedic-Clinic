@@ -1,4 +1,5 @@
-﻿using Ayurvedic_Clinic.Backend.Models;   
+﻿using Ayurvedic_Clinic.Backend.Models;
+using Ayurvedic_Clinic.Database;
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -26,9 +27,8 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         
           private void LoadPatientName()
         {
-            string connString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
 
-            using (SqlConnection conn = new SqlConnection(connString))
+            using (SqlConnection conn = DBConnection.GetConnection())
             {
                 string query = "SELECT PatientName FROM Patient WHERE NIC = @NIC";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -54,6 +54,11 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         }
 
         private void phbackbut_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phnametxt_TextChanged(object sender, EventArgs e)
         {
 
         }
