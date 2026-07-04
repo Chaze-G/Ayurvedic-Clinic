@@ -53,6 +53,7 @@
     <Compile Include="Backend\Models\PatientHistory.cs" />
     <Compile Include="Backend\Models\Person.cs" />
     <Compile Include="Backend\Models\Pharmacist.cs" />
+    <Compile Include="Database\DoctorDB.cs" />
     <Compile Include="Database\PatientDB.cs" />
     <Compile Include="Database\PatientHistoryDB.cs" />
     <Compile Include="Frontend\Forms\SearchID.cs">

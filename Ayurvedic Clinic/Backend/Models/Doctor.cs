@@ -8,7 +8,8 @@ namespace Ayurvedic_Clinic.Backend.Models
 {
    public class Doctor : person
     {
-        public string AMCNumber { get; set; }
-        public string Specilization { get; set; }
+        public string AMCNo { get; set; }
+        public string SpecializedFor { get; set; }
+        public string Gender { get; set; }
     }
 }
