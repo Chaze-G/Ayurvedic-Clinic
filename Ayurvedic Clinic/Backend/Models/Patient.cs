@@ -9,7 +9,7 @@ namespace Ayurvedic_Clinic.Backend.Models
    
    
 
-    public class Patient : person
+    public class Patient : Person
     {
         public int Age { get; set; }
         public string Gender { get; set; }

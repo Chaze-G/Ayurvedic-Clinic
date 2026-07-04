@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ayurvedic_Clinic.Backend.Models
 {
-   public class Doctor : person
+   public class Doctor : Person
     {
         public string AMCNumber { get; set; }
         public string Specilization { get; set; }
