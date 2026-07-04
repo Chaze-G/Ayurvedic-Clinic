@@ -25,4 +25,34 @@ public class UserDB
             }
         }
     }
+    //Login Part
+    public static User ValidateLogin(string username, string password)
+    {
+        using (SqlConnection con = DBConnection.GetConnection())
+        {
+            con.Open();
+
+            string query = "SELECT Username, Password, Role FROM Users WHERE Username=@Username AND Password=@Password";
+
+            using (SqlCommand cmd = new SqlCommand(query, con))
+            {
+                cmd.Parameters.AddWithValue("@Username", username);
+                cmd.Parameters.AddWithValue("@Password", password);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    User u = new User();
+                    u.Username = reader["Username"].ToString();
+                    u.Password = reader["Password"].ToString();
+                    u.Role = reader["Role"].ToString();
+
+                    return u;
+                }
+            }
+        }
+
+        return null;
+    }
 }

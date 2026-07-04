@@ -33,7 +33,10 @@ namespace Ayurvedic_Clinic
             //Application.Run(docForm);
 
 
-            Application.Run(new DoctorRegistor());
+            
+            //Application.Run(new DoctorRegistor());
+            Application.Run(new Login());
+
 
         }
     }
