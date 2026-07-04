@@ -53,8 +53,6 @@
     <Compile Include="Backend\Models\PatientHistory.cs" />
     <Compile Include="Backend\Models\Person.cs" />
     <Compile Include="Backend\Models\Pharmacist.cs" />
-    <Compile Include="Backend\Services\PharmacyServices.cs" />
-    <Compile Include="Backend\Services\PrescriptionService.cs" />
     <Compile Include="Database\PatientDB.cs" />
     <Compile Include="Database\PatientHistoryDB.cs" />
     <Compile Include="Frontend\Forms\SearchID.cs">
@@ -183,6 +181,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Backend\Services\" />
     <Folder Include="Frontend\Components\" />
   </ItemGroup>
   <ItemGroup>
