@@ -37,8 +37,6 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             }
             else if (Session.Role == "Pharmacist")
             {
-                MessageBox.Show("Pharmacist logged in - opening pharmacy view");
-
                 MedicalPharmacy form = new MedicalPharmacy();
                 form.Show();
                 this.Hide();
