@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ayurvedic_Clinic.Database;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -29,7 +30,7 @@ public class PatientHistoryDB
     {
         DataTable dt = new DataTable();
 
-        using (SqlConnection conn = new SqlConnection(connectionString))
+        using (SqlConnection conn = DBConnection.GetConnection())
         {
             string query = @"SELECT HistoryID, 
                                     VisitDate, 

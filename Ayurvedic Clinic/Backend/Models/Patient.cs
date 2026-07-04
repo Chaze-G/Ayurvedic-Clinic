@@ -21,7 +21,6 @@ namespace Ayurvedic_Clinic.Backend.Models
         {
             return "Can register and view personal medical history.";
         }
-    }
 
     
     
