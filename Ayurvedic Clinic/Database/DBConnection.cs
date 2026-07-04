@@ -4,8 +4,10 @@ namespace Ayurvedic_Clinic.Database
 {
     public static class DBConnection
     {
-        private static readonly string connectionString =
-            "Server=(localdb)\\MSSQLLocalDB;Database=SuwasewanaDB;Integrated Security=True;TrustServerCertificate=True;";
+        // Your personal connection string
+        private static string connectionString =
+            "Server=DESKTOP-0DQD6HP\\SQLEXPRESS;Database=SuwasewanaDB;Trusted_Connection=True;";
+
         public static SqlConnection GetConnection()
         {
             return new SqlConnection(connectionString);

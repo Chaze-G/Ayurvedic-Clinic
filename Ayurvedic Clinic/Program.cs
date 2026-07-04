@@ -19,11 +19,21 @@ namespace Ayurvedic_Clinic
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Application.Run(new Login ());
-            //  Application.Run(new doctor_prescription());
+            // Application.Run(new doctor_prescription());
             // Application.Run(new Login ());
             //  Application.Run(new AdminDashboard());
-           // Application.Run(new DoctorRegistor());
-            Application.Run(new PatientsHistory());
+            // Application.Run(new DoctorRegistor());
+            Application.Run(new Patient_registration());
+
+           /*sithmi's trail hard coded sample
+            doctor_prescription docForm = new doctor_prescription("AMC-TEST-001"); 
+            
+            docForm.LoadPatient("200562001632");
+
+            Application.Run(docForm);*/
+
+
+
         }
     }
 }
