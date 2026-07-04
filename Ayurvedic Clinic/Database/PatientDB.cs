@@ -39,5 +39,24 @@ namespace Ayurvedic_Clinic.Database
                 }
             }
         }
+        //Checking patient exsits or not
+        public static bool PatientExists(string nic)
+        {
+            using (SqlConnection con = DBConnection.GetConnection())
+            {
+                con.Open();
+
+                string query = "SELECT COUNT(*) FROM Patient WHERE NIC = @NIC";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@NIC", nic);
+
+                    int count = (int)cmd.ExecuteScalar();
+
+                    return count > 0;
+                }
+            }
+        }
     }
 }

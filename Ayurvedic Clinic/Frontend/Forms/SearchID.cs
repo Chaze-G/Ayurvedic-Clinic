@@ -1,4 +1,5 @@
 ﻿using Ayurvedic_Clinic.Backend.Models;
+using Ayurvedic_Clinic.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,10 +28,14 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
             string nic = txtPatientID.Text;
 
+            if (!PatientDB.PatientExists(nic))
+            {
+                MessageBox.Show("Patient not found!");
+                return;
+            }
+
             if (Session.Role == "Doctor")
             {
-                MessageBox.Show("Doctor logged in - opening prescription form");
-
                 doctor_prescription form = new doctor_prescription(Session.Username);
                 form.Show();
                 this.Hide();
