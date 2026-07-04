@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.panelMain = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.drnametxt = new System.Windows.Forms.TextBox();
             this.drgenderfemalecheckbox = new System.Windows.Forms.CheckBox();
             this.drregisterbut = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,8 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.drbackbut = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.drnametxt = new System.Windows.Forms.TextBox();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -70,18 +70,35 @@
             this.panelMain.Controls.Add(this.label6);
             this.panelMain.Controls.Add(this.label4);
             this.panelMain.Location = new System.Drawing.Point(92, 90);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(2);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(638, 489);
             this.panelMain.TabIndex = 19;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(76, 139);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 15);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Password";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(184, 139);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(194, 20);
+            this.textBox1.TabIndex = 20;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Ayurvedic_Clinic.Properties.Resources._new;
             this.pictureBox1.Location = new System.Drawing.Point(419, 153);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(176, 306);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -97,14 +114,6 @@
             this.label3.Size = new System.Drawing.Size(86, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "Doctor Name :";
-            // 
-            // drnametxt
-            // 
-            this.drnametxt.BackColor = System.Drawing.Color.White;
-            this.drnametxt.Location = new System.Drawing.Point(184, 66);
-            this.drnametxt.Name = "drnametxt";
-            this.drnametxt.Size = new System.Drawing.Size(230, 20);
-            this.drnametxt.TabIndex = 2;
             // 
             // drgenderfemalecheckbox
             // 
@@ -218,7 +227,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.textBox3.Location = new System.Drawing.Point(158, 41);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(124, 20);
             this.textBox3.TabIndex = 20;
@@ -238,22 +247,14 @@
             this.drbackbut.UseVisualStyleBackColor = false;
             this.drbackbut.Click += new System.EventHandler(this.phbackbut_Click);
             // 
-            // label7
+            // drnametxt
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(76, 139);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 15);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Password";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(184, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 20;
+            this.drnametxt.BackColor = System.Drawing.Color.White;
+            this.drnametxt.Location = new System.Drawing.Point(184, 66);
+            this.drnametxt.Name = "drnametxt";
+            this.drnametxt.Size = new System.Drawing.Size(230, 20);
+            this.drnametxt.TabIndex = 2;
+            this.drnametxt.TextChanged += new System.EventHandler(this.drnametxt_TextChanged);
             // 
             // DoctorRegistor
             // 
@@ -281,7 +282,6 @@
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox drnametxt;
         private System.Windows.Forms.CheckBox drgenderfemalecheckbox;
         private System.Windows.Forms.Button drregisterbut;
         private System.Windows.Forms.Label label2;
@@ -297,5 +297,6 @@
         private System.Windows.Forms.Button drbackbut;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox drnametxt;
     }
 }
