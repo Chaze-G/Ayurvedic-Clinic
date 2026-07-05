@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Ayurvedic_Clinic.Backend.Models;
+using Ayurvedic_Clinic.Database;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,8 +26,28 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string nic = txtPatientID.Text;
 
+            if (!PatientDB.PatientExists(nic))
+            {
+                MessageBox.Show("Patient not found!");
+                return;
+            }
+
+            if (Session.Role == "Doctor")
+            {
+                doctor_prescription form = new doctor_prescription(Session.Username);
+                form.Show();
+                this.Hide();
+            }
+            else if (Session.Role == "Pharmacist")
+            {
+                MedicalPharmacy form = new MedicalPharmacy();
+                form.Show();
+                this.Hide();
+            }
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {

@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ayurvedic_Clinic.Backend.Models
 {
-    public class person
+    public class User
     {
-        
-        public string Name { get; set; }
-        public string ContactNumber { get; set; }
-        
+        public string Username { get; set; }
 
-       
+        public string Password { get; set; }
+
+        public string Role { get; set; }
     }
 }
-

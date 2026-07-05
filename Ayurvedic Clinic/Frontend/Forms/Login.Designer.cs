@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.loginbut = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -72,6 +72,18 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(201)))), ((int)(((byte)(193)))));
+            this.label6.Location = new System.Drawing.Point(60, 319);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(222, 17);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Please login through the receptionist";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -97,6 +109,7 @@
             this.loginbut.TabIndex = 6;
             this.loginbut.Text = "Login";
             this.loginbut.UseVisualStyleBackColor = false;
+            this.loginbut.Click += new System.EventHandler(this.loginbut_Click);
             // 
             // label4
             // 
@@ -175,6 +188,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(276, 27);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // loginusernametxt
             // 
@@ -183,7 +197,7 @@
             this.loginusernametxt.Location = new System.Drawing.Point(30, 3);
             this.loginusernametxt.Multiline = true;
             this.loginusernametxt.Name = "loginusernametxt";
-            this.loginusernametxt.Size = new System.Drawing.Size(196, 22);
+            this.loginusernametxt.Size = new System.Drawing.Size(221, 22);
             this.loginusernametxt.TabIndex = 1;
             this.loginusernametxt.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -240,18 +254,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 20);
             this.textBox2.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(201)))), ((int)(((byte)(193)))));
-            this.label6.Location = new System.Drawing.Point(60, 319);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(222, 17);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Please login through the receptionist";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Login
             // 

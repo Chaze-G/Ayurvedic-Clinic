@@ -40,7 +40,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.crallergiestxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.crguardianidtxt = new System.Windows.Forms.TextBox();
+            this.crnicchildnotxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.crenterbut = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,6 +48,8 @@
             this.crgendermaleradiobut = new System.Windows.Forms.RadioButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.drbackbut = new System.Windows.Forms.Button();
+            this.crguardiannictxt = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,11 +94,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(127, 324);
+            this.label3.Location = new System.Drawing.Point(127, 320);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Age :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -118,11 +121,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(111, 286);
+            this.label5.Location = new System.Drawing.Point(111, 288);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "Gender :";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // cradresstxt
             // 
@@ -150,29 +154,31 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(107, 350);
+            this.label7.Location = new System.Drawing.Point(107, 346);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 13);
             this.label7.TabIndex = 11;
             this.label7.Text = "Allergies :";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // crguardianidtxt
+            // crnicchildnotxt
             // 
-            this.crguardianidtxt.Location = new System.Drawing.Point(165, 201);
-            this.crguardianidtxt.Name = "crguardianidtxt";
-            this.crguardianidtxt.Size = new System.Drawing.Size(300, 20);
-            this.crguardianidtxt.TabIndex = 14;
-            this.crguardianidtxt.TextChanged += new System.EventHandler(this.crguardianidtxt_TextChanged);
+            this.crnicchildnotxt.Location = new System.Drawing.Point(165, 197);
+            this.crnicchildnotxt.Name = "crnicchildnotxt";
+            this.crnicchildnotxt.Size = new System.Drawing.Size(300, 20);
+            this.crnicchildnotxt.TabIndex = 14;
+            this.crnicchildnotxt.TextChanged += new System.EventHandler(this.crguardianidtxt_TextChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(82, 201);
+            this.label8.Location = new System.Drawing.Point(82, 200);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 13);
+            this.label8.Size = new System.Drawing.Size(80, 13);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Guardian\'s NIC :";
+            this.label8.Text = "NIC + Child No:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // crenterbut
             // 
@@ -187,6 +193,7 @@
             this.crenterbut.TabIndex = 15;
             this.crenterbut.Text = "Enter";
             this.crenterbut.UseVisualStyleBackColor = false;
+            this.crenterbut.Click += new System.EventHandler(this.crenterbut_Click);
             // 
             // groupBox1
             // 
@@ -246,6 +253,23 @@
             this.drbackbut.UseVisualStyleBackColor = false;
             this.drbackbut.Click += new System.EventHandler(this.drbackbut_Click);
             // 
+            // crguardiannictxt
+            // 
+            this.crguardiannictxt.Location = new System.Drawing.Point(165, 369);
+            this.crguardiannictxt.Name = "crguardiannictxt";
+            this.crguardiannictxt.Size = new System.Drawing.Size(300, 20);
+            this.crguardiannictxt.TabIndex = 24;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(75, 372);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(84, 13);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Guardian\'s NIC :";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // ChildRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -253,11 +277,13 @@
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.img_by_madusha;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(587, 639);
+            this.Controls.Add(this.crguardiannictxt);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.drbackbut);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.crenterbut);
-            this.Controls.Add(this.crguardianidtxt);
+            this.Controls.Add(this.crnicchildnotxt);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.crallergiestxt);
             this.Controls.Add(this.label7);
@@ -295,7 +321,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox crallergiestxt;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox crguardianidtxt;
+        private System.Windows.Forms.TextBox crnicchildnotxt;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button crenterbut;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -303,5 +329,7 @@
         private System.Windows.Forms.RadioButton crgendermaleradiobut;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button drbackbut;
+        private System.Windows.Forms.TextBox crguardiannictxt;
+        private System.Windows.Forms.Label label9;
     }
 }

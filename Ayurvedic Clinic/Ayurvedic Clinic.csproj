@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,8 +50,16 @@
   <ItemGroup>
     <Compile Include="Backend\Models\Doctor.cs" />
     <Compile Include="Backend\Models\Patient.cs" />
+    <Compile Include="Backend\Models\PatientHistory.cs" />
     <Compile Include="Backend\Models\Person.cs" />
     <Compile Include="Backend\Models\Pharmacist.cs" />
+    <Compile Include="Backend\Models\Session.cs" />
+    <Compile Include="Backend\Models\User.cs" />
+    <Compile Include="Database\DoctorDB.cs" />
+    <Compile Include="Database\PatientDB.cs" />
+    <Compile Include="Database\PatientHistoryDB.cs" />
+    <Compile Include="Database\PharmacistDB.cs" />
+    <Compile Include="Database\UserDB.cs" />
     <Compile Include="Frontend\Forms\SearchID.cs">
       <SubType>Form</SubType>
     </Compile>

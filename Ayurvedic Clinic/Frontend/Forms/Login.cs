@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ayurvedic_Clinic.Backend.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -86,6 +87,32 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         private void label5_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void loginbut_Click(object sender, EventArgs e)
+        {
+            User u = UserDB.ValidateLogin(loginusernametxt.Text, loginpasswordtxt.Text);
+
+            if (u != null)
+            {
+                Session.Username = u.Username;
+                Session.Role = u.Role;
+
+                MessageBox.Show("Login successful!");
+
+                SearchID form = new SearchID(); 
+                form.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password!");
+            }
         }
     }
 }
