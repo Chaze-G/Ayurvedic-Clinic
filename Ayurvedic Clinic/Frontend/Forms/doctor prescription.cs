@@ -266,5 +266,10 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             this.Hide();
 
         }
+
+        private void dvnametxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -36,7 +36,8 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
             if (Session.Role == "Doctor")
             {
-                doctor_prescription form = new doctor_prescription(Session.Username);
+                doctor_prescription form = new doctor_prescription("");  
+                form.LoadPatient(nic);   //tke nic details       
                 form.Show();
                 this.Hide();
             }
@@ -44,6 +45,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             {
                 MedicalPharmacy form = new MedicalPharmacy(nic);
                 form.Show();
+              
                 this.Hide();
             }
         }
