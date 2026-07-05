@@ -164,7 +164,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             PatientsHistory hisFrm = new PatientsHistory();
 
 
-            hisFrm.LoadPatientHistory(currentPatient.NIC);
+            hisFrm.LoadPatientHistory(currentPatient.NIC, dplmcnumbertxt.Text);//amc numb passing
 
             hisFrm.Show();
 
@@ -268,6 +268,11 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         }
 
         private void dvnametxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dplmcnumbertxt_TextChanged(object sender, EventArgs e)
         {
 
         }

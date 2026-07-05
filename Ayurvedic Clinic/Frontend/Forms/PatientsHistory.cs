@@ -80,15 +80,24 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
 
         //loadname, his under current nic via declared methods-calling all
-        public void LoadPatientHistory(string nic)
+        public void LoadPatientHistory(string nic, string amcNumber = "")
         {
             currentNIC = nic;
 
             LoadPatientName();
 
             LoadHistory();
-        }
 
+            //taking dpamctxt  hisgrid having atleast  row
+            if (!string.IsNullOrEmpty(amcNumber) && dataGridView1.Rows.Count >= 0)
+            {
+                dataGridView1.Rows[0].Cells["AMCNumber"].Value = amcNumber;
+
+
+
+
+            }
+        }
 
 
 
@@ -107,6 +116,11 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         
 
         private void phnametxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phnametxt_TextChanged_1(object sender, EventArgs e)
         {
 
         }

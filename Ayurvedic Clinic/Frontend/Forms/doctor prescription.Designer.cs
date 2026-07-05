@@ -60,6 +60,7 @@
             this.dplmcnumbertxt.Name = "dplmcnumbertxt";
             this.dplmcnumbertxt.Size = new System.Drawing.Size(107, 22);
             this.dplmcnumbertxt.TabIndex = 23;
+            this.dplmcnumbertxt.TextChanged += new System.EventHandler(this.dplmcnumbertxt_TextChanged);
             // 
             // dpsendtopharmacybut
             // 

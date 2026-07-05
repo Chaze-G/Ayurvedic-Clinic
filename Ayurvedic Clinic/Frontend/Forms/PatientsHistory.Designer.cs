@@ -86,6 +86,7 @@
             this.phnametxt.Name = "phnametxt";
             this.phnametxt.Size = new System.Drawing.Size(476, 22);
             this.phnametxt.TabIndex = 25;
+            this.phnametxt.TextChanged += new System.EventHandler(this.phnametxt_TextChanged_1);
             // 
             // PatientsHistory
             // 
