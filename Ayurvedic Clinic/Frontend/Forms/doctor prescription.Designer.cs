@@ -140,6 +140,7 @@
             this.dvnametxt.Name = "dvnametxt";
             this.dvnametxt.Size = new System.Drawing.Size(527, 22);
             this.dvnametxt.TabIndex = 28;
+            this.dvnametxt.TextChanged += new System.EventHandler(this.dvnametxt_TextChanged);
             // 
             // dpagetxt
             // 
@@ -205,7 +206,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(788, 753);
+            this.ClientSize = new System.Drawing.Size(843, 753);
             this.Controls.Add(this.dpsearchnicbut);
             this.Controls.Add(this.dpformorepatientdetailbut);
             this.Controls.Add(this.Address);
