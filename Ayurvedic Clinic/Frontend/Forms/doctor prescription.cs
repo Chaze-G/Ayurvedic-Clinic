@@ -218,17 +218,11 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                 return;
             }
 
-         
 
-            //to show wht exclt drprescr hve
-            MedicalPharmacy pharmacy = new MedicalPharmacy(
 
-                dvnametxt.Text,
-                dpDatetxt.Text,
-                dpagetxt.Text,
-                dplmcnumbertxt.Text,
-                dpallergiestxt.Text,
-                dpnotestxt.Text);
+            MedicalPharmacy pharmacy = new MedicalPharmacy(currentPatient.NIC);
+            pharmacy.Show();
+            this.Hide();
            
         }
 

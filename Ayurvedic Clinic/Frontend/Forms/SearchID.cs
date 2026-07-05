@@ -42,7 +42,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             }
             else if (Session.Role == "Pharmacist")
             {
-                MedicalPharmacy form = new MedicalPharmacy();
+                MedicalPharmacy form = new MedicalPharmacy(nic);
                 form.Show();
                 this.Hide();
             }

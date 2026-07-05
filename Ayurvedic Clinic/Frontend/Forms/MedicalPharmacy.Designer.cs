@@ -160,7 +160,7 @@
             this.mpSavebut.Name = "mpSavebut";
             this.mpSavebut.Size = new System.Drawing.Size(117, 36);
             this.mpSavebut.TabIndex = 21;
-            this.mpSavebut.Text = "Back";
+            this.mpSavebut.Text = "Back To Search Id";
             this.mpSavebut.UseVisualStyleBackColor = false;
             this.mpSavebut.Click += new System.EventHandler(this.mpbut01_Click);
             // 
