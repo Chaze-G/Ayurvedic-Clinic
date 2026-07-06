@@ -21,11 +21,12 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
             InitializeComponent();
             LoadPatientDetails(nic);
-            LoadPatientDetails(nic);
-        }
-       
+            LoadLatestPrescription(nic);
 
-   
+        }
+
+
+
 
 
         private void LoadPatientDetails(string nic)
