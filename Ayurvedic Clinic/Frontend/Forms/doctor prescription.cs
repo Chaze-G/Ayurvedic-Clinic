@@ -210,9 +210,21 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
 
 
-            if (currentPatient != null)
+            if (currentPatient == null)
             {
-                historyDB.SavePrescription(currentPatient.NIC, currentAMCNo, dpnotestxt.Text);
+                MessageBox.Show("No patient loaded.");
+                return;
+            }
+
+            // Use  from textbox if available,use currentAMCNo
+            string amcToSave = !string.IsNullOrWhiteSpace(dplmcnumbertxt.Text)
+                                ? dplmcnumbertxt.Text
+                                : currentAMCNo;
+
+
+
+            {
+                historyDB.SavePrescription(currentPatient.NIC, amcToSave, dpnotestxt.Text);
 
                 MessageBox.Show("Prescription added to the pharmacy and updated patients History ");
                 return;

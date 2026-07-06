@@ -27,14 +27,14 @@ namespace Ayurvedic_Clinic.Database
 
                 cmd.Parameters.AddWithValue("@VisitDate", DateTime.Now.Date);
 
-                cmd.Parameters.AddWithValue("@AMCNumber", amcNumber);
+                cmd.Parameters.AddWithValue("@AMCNumber", string.IsNullOrEmpty(amcNumber) ? "N/A" : amcNumber);
 
                 cmd.Parameters.AddWithValue("@Prescription", prescriptionText);
 
                 conn.Open();
 
 
-                cmd.ExecuteNonQuery();
+                int rowsAffectedcmd=cmd.ExecuteNonQuery();
             }
         }
 
@@ -49,13 +49,13 @@ namespace Ayurvedic_Clinic.Database
             {
 
 
-                string query = @"SELECT HistoryID, 
-                                    VisitDate, 
-                                    AMCNumber, 
-                                    Prescription 
-                             FROM PatientHistory 
-                             WHERE NIC = @NIC 
-                             ORDER BY VisitDate DESC";
+                string query = @"SELECT 
+                            AMCNumber AS [AMC Number],
+                            VisitDate AS [Visit Date],
+                            Prescription 
+                         FROM PatientHistory 
+                         WHERE NIC = @NIC 
+                         ORDER BY VisitDate DESC";
 
 
 

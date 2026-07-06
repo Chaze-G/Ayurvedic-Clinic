@@ -89,14 +89,14 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             LoadHistory();
 
             //taking dpamctxt  hisgrid having atleast  row
-            if (!string.IsNullOrEmpty(amcNumber) && dataGridView1.Rows.Count >= 0)
+            /*if (!string.IsNullOrEmpty(amcNumber) && dataGridView1.Rows.Count > 0)
             {
                 dataGridView1.Rows[0].Cells["AMCNumber"].Value = amcNumber;
 
 
 
 
-            }
+            }*/
         }
 
 

@@ -84,9 +84,7 @@ namespace project_test
 
             MessageBox.Show("Packs added successfully!");
             this.Close();
-            MessageBox.Show("Packs added to prescription successfully!");
-
-            this.Close();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

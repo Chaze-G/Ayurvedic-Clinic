@@ -257,11 +257,11 @@
             // 
             // Patient_registration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            //this.AutoScaleDimensions = new System.Drawing.SizeF(13F,4F);
+            //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(669, 553);
+            this.ClientSize = new System.Drawing.Size(888, 700);
             this.Controls.Add(this.prnictxt);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.prifchildbut);
