@@ -38,7 +38,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         //load name to phnametxt 
           private void LoadPatientName()
         {
-            string connString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
+            string connString = "Server=(localdb)\\MSSQLLocalDB;Database=SuwasewanaDB;Trusted_Connection=True;";
 
             using (SqlConnection conn = new SqlConnection(connString))
             {
