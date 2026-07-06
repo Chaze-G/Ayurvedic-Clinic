@@ -21,6 +21,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
             InitializeComponent();
             LoadPatientDetails(nic);
+            LoadPatientDetails(nic);
         }
        
 
@@ -53,6 +54,32 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                 else
                 {
                     MessageBox.Show("Patient not found.");
+                }
+            }
+        }
+
+        private void LoadLatestPrescription(string nic)
+        {
+            using (SqlConnection con = DBConnection.GetConnection())
+            {
+                con.Open();
+
+                string query = @"SELECT TOP 1
+                                AMCNumber,
+                                Prescription
+                         FROM PatientHistory
+                         WHERE NIC = @NIC
+                         ORDER BY VisitDate DESC";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@NIC", nic);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    mpDrslmcnumbertxt.Text = reader["AMCNumber"].ToString();
+                    mpDescriptiontxt.Text = reader["Prescription"].ToString();
                 }
             }
         }

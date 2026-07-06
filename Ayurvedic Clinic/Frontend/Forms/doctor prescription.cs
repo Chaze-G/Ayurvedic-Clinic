@@ -232,9 +232,6 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
 
 
-            MedicalPharmacy pharmacy = new MedicalPharmacy(currentPatient.NIC);
-            pharmacy.Show();
-            this.Hide();
            
         }
 
