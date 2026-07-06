@@ -32,34 +32,29 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
 
 
-    
+
 
 
         //load name to phnametxt 
-          private void LoadPatientName()
+        private void LoadPatientName()
         {
-            string connString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
-
-            using (SqlConnection conn = new SqlConnection(connString))
+            using (SqlConnection conn = DBConnection.GetConnection())
             {
-
                 string query = "SELECT PatientName FROM Patient WHERE NIC = @NIC";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@NIC", currentNIC);
 
-                cmd.Parameters.AddWithValue("@NIC", currentNIC);
+                    conn.Open();
+                    object result = cmd.ExecuteScalar();
 
-
-                conn.Open();
-                object result = cmd.ExecuteScalar();
-
-                phnametxt.Text = result?.ToString() ?? "Unknown Patient";
-
-
+                    phnametxt.Text = result?.ToString() ?? "Unknown Patient";
+                }
             }
-        } 
-           
-        
+        }
+
+
 
 
 
