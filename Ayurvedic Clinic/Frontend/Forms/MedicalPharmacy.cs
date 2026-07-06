@@ -68,6 +68,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                 string query = @"SELECT TOP 1
                                 AMCNumber,
                                 Prescription
+                                VisitDate
                          FROM PatientHistory
                          WHERE NIC = @NIC
                          ORDER BY VisitDate DESC";
@@ -81,6 +82,9 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                 {
                     mpDrslmcnumbertxt.Text = reader["AMCNumber"].ToString();
                     mpDescriptiontxt.Text = reader["Prescription"].ToString();
+
+                    DateTime vistDate = Convert.ToDateTime(reader["VisitDate"]);
+                    mpDateandtimetxt.Text = vistDate.ToString("dd/MM/yyyy HH:mm");
                 }
             }
         }
