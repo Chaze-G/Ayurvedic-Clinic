@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.prgenderdropdown=new System.Windows.Forms.ComboBox();
             this.prsavebut = new System.Windows.Forms.Button();
             this.prallergiestxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -41,28 +40,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.prnametxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.prbackbut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.prifchildbut = new System.Windows.Forms.Button();
             this.prnictxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            prgenderdropdown = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // prgenderdropdown
-            // 
-            prgenderdropdown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            prgenderdropdown.FormattingEnabled = true;
-            prgenderdropdown.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            prgenderdropdown.Location = new System.Drawing.Point(253, 335);
-            prgenderdropdown.Margin = new System.Windows.Forms.Padding(4);
-            prgenderdropdown.Name = "prgenderdropdown";
-            prgenderdropdown.Size = new System.Drawing.Size(403, 24);
-            prgenderdropdown.TabIndex = 28;
-            prgenderdropdown.SelectedIndexChanged += new System.EventHandler(this.prgenderdropdown_SelectedIndexChanged);
             // 
             // prsavebut
             // 
@@ -187,16 +170,6 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Patient Name:";
             // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox2.Location = new System.Drawing.Point(-3, 14);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 22);
-            this.textBox2.TabIndex = 31;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
             // prbackbut
             // 
             this.prbackbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
@@ -257,8 +230,6 @@
             // 
             // Patient_registration
             // 
-            //this.AutoScaleDimensions = new System.Drawing.SizeF(13F,4F);
-            //this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Ayurvedic_Clinic.Properties.Resources.Background_img;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(888, 700);
@@ -266,9 +237,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.prifchildbut);
             this.Controls.Add(this.prbackbut);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.prsavebut);
-            this.Controls.Add(prgenderdropdown);
             this.Controls.Add(this.prallergiestxt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.praddresstxt);
@@ -303,13 +272,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox prnametxt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button prbackbut;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button prifchildbut;
         private System.Windows.Forms.TextBox prnictxt;
         private System.Windows.Forms.Label label8;
-
-        private System.Windows.Forms.ComboBox prgenderdropdown;
     }
 }
