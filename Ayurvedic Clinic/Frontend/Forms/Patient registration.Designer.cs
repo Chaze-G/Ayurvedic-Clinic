@@ -277,5 +277,6 @@
         private System.Windows.Forms.Button prifchildbut;
         private System.Windows.Forms.TextBox prnictxt;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox prgenderdropdown;
     }
 }
