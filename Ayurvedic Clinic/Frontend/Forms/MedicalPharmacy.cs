@@ -67,7 +67,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
                 string query = @"SELECT TOP 1
                                 AMCNumber,
-                                Prescription
+                                Prescription,
                                 VisitDate
                          FROM PatientHistory
                          WHERE NIC = @NIC

@@ -34,8 +34,8 @@ namespace Ayurvedic_Clinic
 
 
             //Application.Run(new DoctorRegistor());
-            //Application.Run(new Login());
-            Application.Run(new AdminDashboard());
+            Application.Run(new Login());
+            //Application.Run(new AdminDashboard());
 
 
         }
