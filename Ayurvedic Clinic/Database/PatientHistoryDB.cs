@@ -1,49 +1,76 @@
-﻿using System;
+﻿using Ayurvedic_Clinic.Database;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
-public class PatientHistoryDB
+namespace Ayurvedic_Clinic.Database
 {
-    private string connectionString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
-
-    public void SavePrescription(string nic, string amcNumber, string prescriptionText)
+    public class PatientHistoryDB
     {
-        using (SqlConnection conn = new SqlConnection(connectionString))
+
+
+        //methd-to save wht dr writes 
+
+        public void SavePrescription(string nic, string amcNumber, string prescriptionText)
         {
-            string query = @"INSERT INTO PatientHistory (NIC, VisitDate, AMCNumber, Prescription) 
+            using (SqlConnection conn = DBConnection.GetConnection())
+            {
+
+
+
+                string query = @"INSERT INTO PatientHistory (NIC, VisitDate, AMCNumber, Prescription) 
                            VALUES (@NIC, @VisitDate, @AMCNumber, @Prescription)";
 
-            SqlCommand cmd = new SqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@NIC", nic);
-            cmd.Parameters.AddWithValue("@VisitDate", DateTime.Now.Date);
-            cmd.Parameters.AddWithValue("@AMCNumber", amcNumber);
-            cmd.Parameters.AddWithValue("@Prescription", prescriptionText);
+                SqlCommand cmd = new SqlCommand(query, conn);
 
-            conn.Open();
-            cmd.ExecuteNonQuery();
+                cmd.Parameters.AddWithValue("@NIC", nic);
+
+                cmd.Parameters.AddWithValue("@VisitDate", DateTime.Now.Date);
+
+                cmd.Parameters.AddWithValue("@AMCNumber", string.IsNullOrEmpty(amcNumber) ? "N/A" : amcNumber);
+
+                cmd.Parameters.AddWithValue("@Prescription", prescriptionText);
+
+                conn.Open();
+
+
+                int rowsAffectedcmd=cmd.ExecuteNonQuery();
+            }
         }
-    }
 
 
-    public DataTable GetPatientHistory(string nic)
-    {
-        DataTable dt = new DataTable();
 
-        using (SqlConnection conn = new SqlConnection(connectionString))
+        //methd to show his under nic
+        public DataTable GetPatientHistory(string nic)
         {
-            string query = @"SELECT HistoryID, 
-                                    VisitDate, 
-                                    AMCNumber, 
-                                    Prescription 
-                             FROM PatientHistory 
-                             WHERE NIC = @NIC 
-                             ORDER BY VisitDate DESC";
+            DataTable dt = new DataTable();// creats empty tble to store 
 
-            SqlDataAdapter da = new SqlDataAdapter(query, conn);
-            da.SelectCommand.Parameters.AddWithValue("@NIC", nic);
-            da.Fill(dt);
+            using (SqlConnection conn = DBConnection.GetConnection())
+            {
+
+
+                string query = @"SELECT 
+                            AMCNumber AS [AMC Number],
+                            VisitDate AS [Visit Date],
+                            Prescription 
+                         FROM PatientHistory 
+                         WHERE NIC = @NIC 
+                         ORDER BY VisitDate DESC";
+
+
+
+
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                //sqldatadapter-to fill dta from db
+
+                da.SelectCommand.Parameters.AddWithValue("@NIC", nic);
+
+                da.Fill(dt);
+
+
+            }
+
+            return dt;
         }
-
-        return dt;
     }
 }

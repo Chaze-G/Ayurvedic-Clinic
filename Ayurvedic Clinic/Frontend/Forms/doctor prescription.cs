@@ -42,13 +42,11 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         private Patient GetPatientByNIC(string nic)
         {
-            string connString = @"Server=(localdb)\MSSQLLocalDB.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
-
             using (SqlConnection conn = DBConnection.GetConnection())
-            
-               
 
-                {
+
+
+            {
                     string query = "SELECT * FROM Patient WHERE NIC = @NIC";
 
 
@@ -166,7 +164,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             PatientsHistory hisFrm = new PatientsHistory();
 
 
-            hisFrm.LoadPatientHistory(currentPatient.NIC);
+            hisFrm.LoadPatientHistory(currentPatient.NIC, dplmcnumbertxt.Text);//amc numb passing
 
             hisFrm.Show();
 
@@ -212,25 +210,28 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
 
 
-            if (currentPatient != null)
+            if (currentPatient == null)
             {
-                historyDB.SavePrescription(currentPatient.NIC, currentAMCNo, dpnotestxt.Text);
+                MessageBox.Show("No patient loaded.");
+                return;
+            }
+
+            // Use  from textbox if available,use currentAMCNo
+            string amcToSave = !string.IsNullOrWhiteSpace(dplmcnumbertxt.Text)
+                                ? dplmcnumbertxt.Text
+                                : currentAMCNo;
+
+
+
+            {
+                historyDB.SavePrescription(currentPatient.NIC, amcToSave, dpnotestxt.Text);
 
                 MessageBox.Show("Prescription added to the pharmacy and updated patients History ");
                 return;
             }
 
-         
 
-            //to show wht exclt drprescr hve
-            MedicalPharmacy pharmacy = new MedicalPharmacy(
 
-                dvnametxt.Text,
-                dpDatetxt.Text,
-                dpagetxt.Text,
-                dplmcnumbertxt.Text,
-                dpallergiestxt.Text,
-                dpnotestxt.Text);
            
         }
 
@@ -272,6 +273,16 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             sid.Show();
 
             this.Hide();
+
+        }
+
+        private void dvnametxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dplmcnumbertxt_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

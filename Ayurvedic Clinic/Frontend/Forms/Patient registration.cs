@@ -113,7 +113,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
         public void LoadPatientForView(string nic)
         {
-            string connString = @"Server=.\SQLEXPRESS;Database=SuwasewanaDB;Integrated Security=True;";
+            string connString = "Server=(localdb)\\MSSQLLocalDB;Database=SuwasewanaDB;Trusted_Connection=True;";
 
             using (SqlConnection con = new SqlConnection(connString))
             {

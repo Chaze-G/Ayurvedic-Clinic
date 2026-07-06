@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using Ayurvedic_Clinic.Database;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ayurvedic_Clinic.Database;
+using System.Data.SqlClient;
 
 namespace Ayurvedic_Clinic.Frontend.Forms
 {
@@ -18,28 +17,11 @@ namespace Ayurvedic_Clinic.Frontend.Forms
         {
             InitializeComponent();
         }
-
-        public MedicalPharmacy(
-            string patientName,
-            string visitDate,
-            string age,
-            string doctorSLMC,
-            string allergies,
-            string description)
+        public MedicalPharmacy(string nic)
         {
             InitializeComponent();
-
-            
-
-          
-            
-            mpPatientnametxt.Text = patientName;
-            mpDateandtimetxt.Text = visitDate;
-            mpAgetxt.Text = age;
-            mpDrslmcnumbertxt.Text = doctorSLMC;
-            mpAllergiestxt.Text = allergies;
-            mpDescriptiontxt.Text = description;
-
+            LoadPatientDetails(nic);
+            LoadLatestPrescription(nic);
 
         }
 
@@ -47,53 +29,82 @@ namespace Ayurvedic_Clinic.Frontend.Forms
 
 
 
+        private void LoadPatientDetails(string nic)
+        {
+            using (SqlConnection con = DBConnection.GetConnection())
+            {
+                con.Open();
 
+                string query = @"SELECT PatientName,
+                                Age,
+                                Allergies
+                         FROM Patient
+                         WHERE NIC = @NIC";
 
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@NIC", nic);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    mpPatientnametxt.Text = reader["PatientName"].ToString();
+                    mpAgetxt.Text = reader["Age"].ToString();
+                    mpAllergiestxt.Text = reader["Allergies"].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Patient not found.");
+                }
+            }
+        }
+
+        private void LoadLatestPrescription(string nic)
+        {
+            using (SqlConnection con = DBConnection.GetConnection())
+            {
+                con.Open();
+
+                string query = @"SELECT TOP 1
+                                AMCNumber,
+                                Prescription,
+                                VisitDate
+                         FROM PatientHistory
+                         WHERE NIC = @NIC
+                         ORDER BY VisitDate DESC";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@NIC", nic);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    mpDrslmcnumbertxt.Text = reader["AMCNumber"].ToString();
+                    mpDescriptiontxt.Text = reader["Prescription"].ToString();
+
+                    DateTime vistDate = Convert.ToDateTime(reader["VisitDate"]);
+                    mpDateandtimetxt.Text = vistDate.ToString("dd/MM/yyyy HH:mm");
+                }
+            }
+        }
 
         private void mpbut01_Click(object sender, EventArgs e)
         {
-            try
-            {
-                using (SqlConnection con = DBConnection.GetConnection())
-                {
-                    con.Open();
-
-                    string query = @"INSERT INTO MedicalPharmacy
-                            (PatientID, DoctorID, Description, VisitDate)
-                            VALUES
-                            (@PatientID, @DoctorID, @Description, @VisitDate)";
-
-                    SqlCommand cmd = new SqlCommand(query, con);
-
-                    // Temporary IDs until Patient Search is completed
-                    cmd.Parameters.AddWithValue("@PatientID", 1);
-                    cmd.Parameters.AddWithValue("@DoctorID", 1);
-
-                    cmd.Parameters.AddWithValue("@Description", mpDescriptiontxt.Text);
-                    cmd.Parameters.AddWithValue("@VisitDate", DateTime.Now);
-
-                    cmd.ExecuteNonQuery();
-
-                    MessageBox.Show("Record saved successfully!",
-                                    "Success",
-                                    MessageBoxButtons.OK,
-                                    MessageBoxIcon.Information);
-
-                    // Clear only the description box
-                    mpDescriptiontxt.Clear();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message,
-                                "Database Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-            }
+            SearchID search = new SearchID();
+            search.Show();
+            this.Close();
         }
 
-        
-       
+
+
+
+
+
+
+
+
+
         private void label10_Click(object sender, EventArgs e)
         {
             // Write your code here, or leave it empty if you just want to silence the error

@@ -99,6 +99,7 @@ namespace Ayurvedic_Clinic.Frontend.Forms
             User u = UserDB.ValidateLogin(loginusernametxt.Text, loginpasswordtxt.Text);
 
             if (u != null)
+
             {
                 Session.Username = u.Username;
                 Session.Role = u.Role;
@@ -109,9 +110,16 @@ namespace Ayurvedic_Clinic.Frontend.Forms
                 form.Show();
                 this.Hide();
             }
+
+
+
             else
             {
+
+
                 MessageBox.Show("Invalid username or password!");
+
+
             }
         }
     }
