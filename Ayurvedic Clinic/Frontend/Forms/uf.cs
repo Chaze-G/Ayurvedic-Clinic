@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ayurvedic_Clinic.Frontend.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,17 +14,18 @@ namespace project_test
 {
     public partial class uf : Form
     {
-        Dictionary <string, string> prescriptions= new Dictionary <string, string> ();
-        string currentPackage = "";
-        Label lastSelectedLabel = null;
+        private doctor_prescription prescriptionForm;
+
         public uf()
         {
             InitializeComponent();
         }
 
-        
-
-        
+        public uf(doctor_prescription form)
+        {
+            InitializeComponent();
+            prescriptionForm = form;
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -35,97 +37,81 @@ namespace project_test
 
         }
 
-        private void btnAddMedicine_Click(object sender, EventArgs e)
-        {
-            string selectedPacks = "";
-
-            if (ufbut2.Checked)
-                selectedPacks += "Back Pain Care Pack\n";
-
-            if (ufbut3.Checked)
-                selectedPacks += "Bowel Care Pack\n";
-
-            if (ufbut4.Checked)
-                selectedPacks += "Cough Care Pack\n";
-
-            if (ufbut5.Checked)
-                selectedPacks += "Diabetic Care Pack\n";
-
-            if (ufbut6.Checked)
-                selectedPacks += "Digestive Care Pack\n";
-
-            if (ufbut7.Checked)
-                selectedPacks += "Fever Care Pack\n";
-
-            if (ufbut8.Checked)
-                selectedPacks += "Gastric Relief Pack\n";
-
-            if (ufbut9.Checked)
-                selectedPacks += "Skin Care Pack\n";
-
-            if (ufbut10.Checked)
-                selectedPacks += "Sleep Support Pack\n";
-
-            
-
-            MessageBox.Show(selectedPacks);
-        }
-
-        
-            private void btnAddPrescription2_Click(object sender, EventArgs e)
+        private void btnAddPrescription2_Click(object sender, EventArgs e)
         {
             string prescription = "";
 
             if (ufbut1.Checked)
-                prescription += "• Back Pain Care Pack\n";
+                prescription += "• Beheth erandu mul,Belimul,Elabatumul,Katuwelbatu,Nasnaranmul,Polpala,Gokatumul\r\n\r\n";
 
             if (ufbut2.Checked)
-                prescription += "• Bowel Care Pack\n";
+                prescription += "• Aralu,Bulu,Nelli\r\n";
 
             if (ufbut3.Checked)
-                prescription += "• Cough Care Pack\n";
+                prescription += "• Wiyali inguru,Dewadara,Koththamalli,Elabatumul,Katuwelbatu\r\n\r\n";
 
             if (ufbut4.Checked)
-                prescription += "• Diabetic Care Pack\n";
+                prescription += "• Alukesel ala,Kothalahimbatu,Nelli,Gokatumul,Suduhandun,Bawilamu\r\n";
 
             if (ufbut5.Checked)
-                prescription += "• Digestive Care Pack\n";
+                prescription += "• Koththamalli,Wiyali inguru ,Kaladuru ala,Iriweriya dandu Belimu\r\n";
 
             if (ufbut6.Checked)
-                prescription += "• Fever Care Pack\n";
+                prescription += "• Suwandakottan,Rasakinda,Wiyali inguru,Iriweriyadandu,Katuwelbatu\r\n";
 
             if (ufbut7.Checked)
-                prescription += "• Gastric Relief Pack\n";
+                prescription += "• Barly ata,Thippilimul, Dummalla dandu\r\n";
 
             if (ufbut8.Checked)
-                prescription += "• Skin Care Pack\n";
+                prescription += "• Welmada,Aralu Bulu , Nelli,Ktukroshana,Wadakaha,Dewadara,Wiyali kaha,Rasakinda,Kohomba pothu\r\n";
 
             if (ufbut9.Checked)
-                prescription += "• Sleep Support Pack\n";
+                prescription += "• Lunuwila dandu, Gotukola\r\n";
 
             if (ufbut10.Checked)
-                prescription += "• Urinary Care Pack\n";
+                prescription += "• Aswenna ,Polpala,Elabatumul,Katuwelbatu \r\n";
 
             if (prescription == "")
             {
-                MessageBox.Show("Please select at least one medicine pack.",
-                                "No Selection",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
+                MessageBox.Show("Please select at least one medicine pack.");
+                return;
             }
-            else
+
+            if (prescriptionForm != null)
             {
-                MessageBox.Show("Prescription:\n\n" + prescription,
-                                "Selected Medicine Packs",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
+                prescriptionForm.AddMedicinePack(prescription);
             }
+
+            MessageBox.Show("Packs added successfully!");
+            this.Close();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MedicalPharmacy form2 = new Ayurvedic_Clinic.Frontend.Forms.MedicalPharmacy();
+            form2.Show();
         }
 
         private void uf_Load(object sender, EventArgs e)
         {
 
         }
-    }
-    }
 
+        private void ufbut1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phbackbut_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+        }
+
+        private void IbIMedicines_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

@@ -32,17 +32,17 @@
             this.lblPageTitle = new System.Windows.Forms.Label();
             this.panelPatientCard = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnRegisterPatient = new System.Windows.Forms.Button();
+            this.rpbut = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelDoctorCard = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnRegisterDoctor = new System.Windows.Forms.Button();
+            this.rdbut = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panelPharmacistCard = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnRegisterPharmacist = new System.Windows.Forms.Button();
+            this.rphbut = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -70,7 +70,7 @@
             // 
             this.panelPatientCard.BackColor = System.Drawing.Color.White;
             this.panelPatientCard.Controls.Add(this.pictureBox1);
-            this.panelPatientCard.Controls.Add(this.btnRegisterPatient);
+            this.panelPatientCard.Controls.Add(this.rpbut);
             this.panelPatientCard.Controls.Add(this.label3);
             this.panelPatientCard.Controls.Add(this.label2);
             this.panelPatientCard.Location = new System.Drawing.Point(48, 327);
@@ -88,20 +88,20 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // btnRegisterPatient
+            // rpbut
             // 
-            this.btnRegisterPatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(216)))), ((int)(((byte)(204)))));
-            this.btnRegisterPatient.FlatAppearance.BorderSize = 0;
-            this.btnRegisterPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterPatient.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegisterPatient.ForeColor = System.Drawing.Color.White;
-            this.btnRegisterPatient.Location = new System.Drawing.Point(20, 245);
-            this.btnRegisterPatient.Name = "btnRegisterPatient";
-            this.btnRegisterPatient.Size = new System.Drawing.Size(240, 45);
-            this.btnRegisterPatient.TabIndex = 2;
-            this.btnRegisterPatient.Text = "Register Patient";
-            this.btnRegisterPatient.UseVisualStyleBackColor = false;
-            this.btnRegisterPatient.Click += new System.EventHandler(this.btnRegisterPatient_Click);
+            this.rpbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(216)))), ((int)(((byte)(204)))));
+            this.rpbut.FlatAppearance.BorderSize = 0;
+            this.rpbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rpbut.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rpbut.ForeColor = System.Drawing.Color.White;
+            this.rpbut.Location = new System.Drawing.Point(20, 245);
+            this.rpbut.Name = "rpbut";
+            this.rpbut.Size = new System.Drawing.Size(240, 45);
+            this.rpbut.TabIndex = 2;
+            this.rpbut.Text = "Register Patient";
+            this.rpbut.UseVisualStyleBackColor = false;
+            this.rpbut.Click += new System.EventHandler(this.btnRegisterPatient_Click);
             // 
             // label3
             // 
@@ -128,7 +128,7 @@
             // 
             this.panelDoctorCard.BackColor = System.Drawing.Color.White;
             this.panelDoctorCard.Controls.Add(this.pictureBox2);
-            this.panelDoctorCard.Controls.Add(this.btnRegisterDoctor);
+            this.panelDoctorCard.Controls.Add(this.rdbut);
             this.panelDoctorCard.Controls.Add(this.label4);
             this.panelDoctorCard.Controls.Add(this.label5);
             this.panelDoctorCard.Location = new System.Drawing.Point(358, 327);
@@ -146,19 +146,20 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // btnRegisterDoctor
+            // rdbut
             // 
-            this.btnRegisterDoctor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(216)))), ((int)(((byte)(204)))));
-            this.btnRegisterDoctor.FlatAppearance.BorderSize = 0;
-            this.btnRegisterDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterDoctor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegisterDoctor.ForeColor = System.Drawing.Color.White;
-            this.btnRegisterDoctor.Location = new System.Drawing.Point(20, 245);
-            this.btnRegisterDoctor.Name = "btnRegisterDoctor";
-            this.btnRegisterDoctor.Size = new System.Drawing.Size(240, 45);
-            this.btnRegisterDoctor.TabIndex = 2;
-            this.btnRegisterDoctor.Text = "Register Patient";
-            this.btnRegisterDoctor.UseVisualStyleBackColor = false;
+            this.rdbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(216)))), ((int)(((byte)(204)))));
+            this.rdbut.FlatAppearance.BorderSize = 0;
+            this.rdbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rdbut.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbut.ForeColor = System.Drawing.Color.White;
+            this.rdbut.Location = new System.Drawing.Point(20, 245);
+            this.rdbut.Name = "rdbut";
+            this.rdbut.Size = new System.Drawing.Size(240, 45);
+            this.rdbut.TabIndex = 2;
+            this.rdbut.Text = "Register Doctor";
+            this.rdbut.UseVisualStyleBackColor = false;
+            this.rdbut.Click += new System.EventHandler(this.rdbut_Click);
             // 
             // label4
             // 
@@ -185,7 +186,7 @@
             // 
             this.panelPharmacistCard.BackColor = System.Drawing.Color.White;
             this.panelPharmacistCard.Controls.Add(this.pictureBox3);
-            this.panelPharmacistCard.Controls.Add(this.btnRegisterPharmacist);
+            this.panelPharmacistCard.Controls.Add(this.rphbut);
             this.panelPharmacistCard.Controls.Add(this.label6);
             this.panelPharmacistCard.Controls.Add(this.label7);
             this.panelPharmacistCard.Location = new System.Drawing.Point(668, 327);
@@ -203,19 +204,21 @@
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
-            // btnRegisterPharmacist
+            // rphbut
             // 
-            this.btnRegisterPharmacist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(216)))), ((int)(((byte)(204)))));
-            this.btnRegisterPharmacist.FlatAppearance.BorderSize = 0;
-            this.btnRegisterPharmacist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegisterPharmacist.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegisterPharmacist.ForeColor = System.Drawing.Color.White;
-            this.btnRegisterPharmacist.Location = new System.Drawing.Point(20, 245);
-            this.btnRegisterPharmacist.Name = "btnRegisterPharmacist";
-            this.btnRegisterPharmacist.Size = new System.Drawing.Size(240, 45);
-            this.btnRegisterPharmacist.TabIndex = 2;
-            this.btnRegisterPharmacist.Text = "Register Pharmacist";
-            this.btnRegisterPharmacist.UseVisualStyleBackColor = false;
+            this.rphbut.AutoSize = true;
+            this.rphbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(216)))), ((int)(((byte)(204)))));
+            this.rphbut.FlatAppearance.BorderSize = 0;
+            this.rphbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rphbut.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rphbut.ForeColor = System.Drawing.Color.White;
+            this.rphbut.Location = new System.Drawing.Point(20, 245);
+            this.rphbut.Name = "rphbut";
+            this.rphbut.Size = new System.Drawing.Size(240, 45);
+            this.rphbut.TabIndex = 2;
+            this.rphbut.Text = "Register Pharmacist";
+            this.rphbut.UseVisualStyleBackColor = false;
+            this.rphbut.Click += new System.EventHandler(this.rphbut_Click);
             // 
             // label6
             // 
@@ -297,15 +300,15 @@
         #endregion
         private System.Windows.Forms.Label lblPageTitle;
         private System.Windows.Forms.Panel panelPatientCard;
-        private System.Windows.Forms.Button btnRegisterPatient;
+        private System.Windows.Forms.Button rpbut;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelDoctorCard;
-        private System.Windows.Forms.Button btnRegisterDoctor;
+        private System.Windows.Forms.Button rdbut;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panelPharmacistCard;
-        private System.Windows.Forms.Button btnRegisterPharmacist;
+        private System.Windows.Forms.Button rphbut;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
