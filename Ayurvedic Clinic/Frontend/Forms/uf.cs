@@ -42,34 +42,34 @@ namespace project_test
             string prescription = "";
 
             if (ufbut1.Checked)
-                prescription += "• Back Pain Care Pack\r\n";
+                prescription += "• Beheth erandu mul,Belimul,Elabatumul,Katuwelbatu,Nasnaranmul,Polpala,Gokatumul\r\n\r\n";
 
             if (ufbut2.Checked)
-                prescription += "• Bowel Care Pack\r\n";
+                prescription += "• Aralu,Bulu,Nelli\r\n";
 
             if (ufbut3.Checked)
-                prescription += "• Cough Care Pack\r\n";
+                prescription += "• Wiyali inguru,Dewadara,Koththamalli,Elabatumul,Katuwelbatu\r\n\r\n";
 
             if (ufbut4.Checked)
-                prescription += "• Diabetic Care Pack\r\n";
+                prescription += "• Alukesel ala,Kothalahimbatu,Nelli,Gokatumul,Suduhandun,Bawilamu\r\n";
 
             if (ufbut5.Checked)
-                prescription += "• Digestive Care Pack\r\n";
+                prescription += "• Koththamalli,Wiyali inguru ,Kaladuru ala,Iriweriya dandu Belimu\r\n";
 
             if (ufbut6.Checked)
-                prescription += "• Fever Care Pack\r\n";
+                prescription += "• Suwandakottan,Rasakinda,Wiyali inguru,Iriweriyadandu,Katuwelbatu\r\n";
 
             if (ufbut7.Checked)
-                prescription += "• Gastric Relief Pack\r\n";
+                prescription += "• Barly ata,Thippilimul, Dummalla dandu\r\n";
 
             if (ufbut8.Checked)
-                prescription += "• Skin Care Pack\r\n";
+                prescription += "• Welmada,Aralu Bulu , Nelli,Ktukroshana,Wadakaha,Dewadara,Wiyali kaha,Rasakinda,Kohomba pothu\r\n";
 
             if (ufbut9.Checked)
-                prescription += "• Sleep Support Pack\r\n";
+                prescription += "• Lunuwila dandu, Gotukola\r\n";
 
             if (ufbut10.Checked)
-                prescription += "• Urinary Care Pack\r\n";
+                prescription += "• Aswenna ,Polpala,Elabatumul,Katuwelbatu \r\n";
 
             if (prescription == "")
             {
@@ -107,6 +107,11 @@ namespace project_test
         {
             
             this.Close();
+        }
+
+        private void IbIMedicines_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
