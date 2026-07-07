@@ -117,6 +117,7 @@
             this.IbIMedicines.Size = new System.Drawing.Size(371, 9);
             this.IbIMedicines.TabIndex = 1;
             this.IbIMedicines.Text = "Beheth erandu mul,Belimul,Elabatumul,Katuwelbatu,Nasnaranmul,Polpala,Gokatumul\r\n";
+            this.IbIMedicines.Click += new System.EventHandler(this.IbIMedicines_Click);
             // 
             // IbIPackName
             // 
